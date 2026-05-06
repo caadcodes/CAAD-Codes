@@ -3,12 +3,10 @@ let speed = 0;
 let angle = 0;
 let angle2 = 0;
 let angle3;
-let Start;
-let Duration = 4000;
 let courier;
 
 function preload() {
-  
+
   courier = loadFont("Courier New Bold copy.ttf");
 }
 
@@ -16,7 +14,6 @@ function setup() {
   createCanvas(1000, 1000, WEBGL);
   rectMode(CENTER);
   angle3 = radians(-45);
-  Start = millis();
   textFont(courier);
 }
 
@@ -68,23 +65,7 @@ function draw() {
   rotateZ(radians(angle2));
   rotateY(radians(angle2));
   box(250, 20, 20);
-  pop(); 
-  
-  if (millis() - Start < Duration) {
-    push();
-    
-    translate(0, 0, 30); 
-    fill(255, 245);
-    noStroke();
-    rect(0, 0, width, height);
-    
-    fill(0);
-    textSize(35);
-    textAlign(CENTER, CENTER);
-    text("Type number then press enter to set speed", 0, -50);
-    text("enter 0 to reset", 0, 50);
-    pop();
-  }
+  pop();
 }
 
 function keyPressed() {

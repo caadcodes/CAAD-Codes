@@ -24,7 +24,11 @@ let startingDist = 180;
 // CONTINUOUS MOTION
 let inOutTime = 30;
 let inOutDistance = 10;
-let startFrame = 0;
+// Wall-clock anchor (ms). Driving the animation off elapsed time rather
+// than frameCount keeps Chrome (which runs rAF at the display refresh
+// rate, often 60Hz+) in sync with Safari — frameRate(30) only caps
+// draws, it doesn't guarantee one tick per advance.
+let startMillis = 0;
 
 function preload() {
   redWave1 = loadImage("redWave1.svg");
@@ -48,13 +52,16 @@ function setup() {
   createCanvas(700, 805);
   pixelDensity(1);
   frameRate(30);
+  startMillis = millis();
 }
 
 function draw() {
   background(0);
   circles();
 
-  let t = frameCount - startFrame;
+  // Elapsed time → 30fps virtual frames, so all constants below (still
+  // expressed in frame units) keep their original numeric meaning.
+  let t = (millis() - startMillis) * 30 / 1000;
   let totalPairs = 7;
   let entryEndT = (totalPairs - 1) * waveDelay + waveDuration;
 
@@ -176,5 +183,5 @@ function circles() {
 }
 
 function mousePressed() {
-  startFrame = frameCount;
+  startMillis = millis();
 }

@@ -26,7 +26,7 @@
     "id": "deema-typelab-D",
     "student": "Deema Abdalrahman",
     "department": "GRD",
-    "title": "D",
+    "title": "Breezy D",
     "category": "Typelab",
     "types": [
       "Type"
@@ -37,7 +37,7 @@
     "id": "deema-typelab-K",
     "student": "Deema Abdalrahman",
     "department": "GRD",
-    "title": "K",
+    "title": "3D K",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -107,15 +107,6 @@
     ],
     "sketchFile": "farida-playground-spinning-cube/farida-playground-spinning-cube.js",
     "instructions": "Cube follows your mouse."
-  },
-  {
-    "id": "farida-remix-arnoutremix",
-    "student": "Farida Mohamed",
-    "department": "GRD",
-    "title": "Arnout Remix",
-    "category": "Remix",
-    "types": [],
-    "sketchFile": "farida-remix-arnoutremix/farida-remix-arnoutremix.js"
   },
   {
     "id": "farida-typelab-spikey-8",
@@ -219,7 +210,7 @@
     "id": "fatma-playground-layered-rotating-G",
     "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "Layered Rotating G",
+    "title": "Layered G",
     "category": "Playground",
     "types": [
       "Type",
@@ -311,7 +302,7 @@
     "id": "fatma-typelab-3",
     "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "3",
+    "title": "Buzzing 3",
     "category": "Typelab",
     "types": [
       "Type",
@@ -323,7 +314,7 @@
     "id": "fatma-typelab-G",
     "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "G",
+    "title": "3D Grid G",
     "category": "Typelab",
     "types": [
       "Type",
@@ -335,7 +326,7 @@
     "id": "fatma-typelab-H",
     "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "H",
+    "title": "Sandy H",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -343,13 +334,13 @@
       "Particles"
     ],
     "sketchFile": "fatma-typelab-H/fatma-typelab-H.js",
-    "instructions": "Move the mouse to push the orange."
+    "instructions": "Move the mouse to push the orange sand."
   },
   {
     "id": "fatma-typelab-plus",
     "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "+",
+    "title": "Pulsing +",
     "category": "Typelab",
     "types": [
       "Type"
@@ -394,7 +385,7 @@
     "id": "jana-playground-typography",
     "student": "Jana Khalifa",
     "department": "FNM",
-    "title": "&",
+    "title": "AEIO&",
     "category": "Playground",
     "types": [
       "Mouse",
@@ -428,7 +419,7 @@
     "id": "jana-typelab-ampersand",
     "student": "Jana Khalifa",
     "department": "FNM",
-    "title": "&",
+    "title": "& in the Rain",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -442,31 +433,33 @@
     "id": "jana-typelab-E",
     "student": "Jana Khalifa",
     "department": "FNM",
-    "title": "E",
+    "title": "Curly E",
     "category": "Typelab",
     "types": [
       "Type"
     ],
-    "sketchFile": "jana-typelab-E/jana-typelab-E.js"
+    "sketchFile": "jana-typelab-E/jana-typelab-E.js",
+    "instructions": "Click to restrain the E."
+
   },
   {
     "id": "jana-typelab-I",
     "student": "Jana Khalifa",
     "department": "FNM",
-    "title": "I",
+    "title": "Eye I",
     "category": "Typelab",
     "types": [
       "Mouse",
       "Type"
     ],
     "sketchFile": "jana-typelab-I/jana-typelab-I.js",
-    "instructions": "Click to reveal."
+    "instructions": "Click and hold to reveal."
   },
   {
     "id": "jana-typelab-O",
     "student": "Jana Khalifa",
     "department": "FNM",
-    "title": "O",
+    "title": "Tunnel O",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -517,7 +510,7 @@
     "id": "kavya-playground-digital-xray",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Digital XRay",
+    "title": "XRay 9",
     "category": "Playground",
     "types": [
       "Mouse",
@@ -544,7 +537,7 @@
     "id": "kavya-playground-following-eyes",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Following Eyes",
+    "title": "Staring 9",
     "category": "Playground",
     "types": [
       "Mouse",
@@ -615,7 +608,7 @@
     "id": "kavya-playground-hide-and-seek",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Hide and Seek",
+    "title": "Hide and Seek 9",
     "category": "Playground",
     "types": [
       "Mouse",
@@ -629,7 +622,7 @@
     "id": "kavya-playground-jumping-9",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Bouncing 9",
+    "title": "Terrified 9",
     "category": "Playground",
     "types": [
       "Mouse",
@@ -656,7 +649,7 @@
     "id": "kavya-playground-press-to-reveal-W",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Reveal W",
+    "title": "W Walkway",
     "category": "Playground",
     "types": [
       "Mouse",
@@ -694,7 +687,7 @@
     "id": "kavya-playground-red-tubelight-S",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Red Tubelight S",
+    "title": "Tubelight S",
     "category": "Playground",
     "types": [
       "Mouse",
@@ -856,7 +849,7 @@
     "id": "kavya-typelab-appearing-hash",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Appearing #",
+    "title": "Chalky #",
     "category": "Typelab",
     "types": [
       "Type"
@@ -894,7 +887,7 @@
     "id": "layan-typelab-C",
     "student": "Layan Al-Mutawakel",
     "department": "GRD",
-    "title": "C",
+    "title": "Black Hole C",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -907,7 +900,7 @@
     "id": "layan-typelab-flee-N",
     "student": "Layan Al-Mutawakel",
     "department": "GRD",
-    "title": "Fleeing Quotes",
+    "title": "Particle Quotes",
     "category": "Typelab",
     "types": [
       "Type",
@@ -984,7 +977,7 @@
     "id": "leena-typelab-0",
     "student": "Leena Ulaiwi",
     "department": "GRD",
-    "title": "0",
+    "title": "Lighting 0",
     "category": "Typelab",
     "types": [
       "Type"
@@ -995,7 +988,7 @@
     "id": "leena-typelab-R",
     "student": "Leena Ulaiwi",
     "department": "GRD",
-    "title": "R",
+    "title": "Zooming R",
     "category": "Typelab",
     "types": [
       "Type",
@@ -1205,7 +1198,7 @@
     "id": "mohamed-typelab-every-script",
     "student": "Mohamed Kashwani",
     "department": "GRD",
-    "title": "Every Script",
+    "title": "Every Scrip 5",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1239,7 +1232,7 @@
       "3D"
     ],
     "sketchFile": "mohamed-typelab-set-speed/mohamed-typelab-set-speed.js",
-    "instructions": "Type in number to set speed."
+    "instructions": "Type in number to set speed, and press enter. Enter 0 to reset."
   },
   {
     "id": "noura-playground-w3.1",
@@ -1314,7 +1307,7 @@
     "id": "noura-typelab-7",
     "student": "Noura Almutawa",
     "department": "DES",
-    "title": "7",
+    "title": "Flowy 7",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1328,7 +1321,7 @@
     "id": "noura-typelab-at",
     "student": "Noura Almutawa",
     "department": "DES",
-    "title": "@",
+    "title": "Digital @",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1343,7 +1336,7 @@
     "id": "noura-typelab-L",
     "student": "Noura Almutawa",
     "department": "DES",
-    "title": "L",
+    "title": "O L's",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1357,7 +1350,7 @@
     "id": "noura-typelab-V",
     "student": "Noura Almutawa",
     "department": "DES",
-    "title": "V",
+    "title": "Disco V",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1402,6 +1395,66 @@
     ],
     "sketchFile": "shalina-remix-joan-miro/shalina-remix-joan-miro.js",
     "instructions": "Move the mouse over the red lines."
+  },
+  {
+    "id": "shalina-remix-syed-raza",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Syed Raza",
+    "category": "Remix",
+    "types": [
+      "Keyboard"
+    ],
+    "sketchFile": "shalina-remix-syed-raza/shalina-remix-syed-raza.js",
+    "instructions": "Use arrow keys to move the circles."
+  },
+  {
+    "id": "shalina-typelab-1",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Binary 1",
+    "category": "Typelab",
+    "types": [
+      "Type"
+    ],
+    "sketchFile": "shalina-typelab-1/shalina-typelab-1.js",
+    "instructions": ""
+  },
+  {
+    "id": "shalina-typelab-M",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "M",
+    "category": "Typelab",
+    "types": [
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "shalina-typelab-M/shalina-typelab-M.js",
+    "instructions": "Click and hold to influence the particles."
+  },
+  {
+    "id": "shalina-typelab-T",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Listening T",
+    "category": "Typelab",
+    "types": [],
+    "sketchFile": "shalina-typelab-T/shalina-typelab-T.js",
+    "instructions": "Click to turn on mic."
+  },
+  {
+    "id": "shalina-typelab-Y",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Extruding Y",
+    "category": "Typelab",
+    "types": [
+      "Type",
+      "3D"
+    ],
+    "sketchFile": "shalina-typelab-Y/shalina-typelab-Y.js",
+    "instructions": "Click to expand."
   },
   {
     "id": "thuraya-playground-AHHH",
@@ -1561,7 +1614,7 @@
     "id": "thuraya-typelab-6",
     "student": "Thuraya Ezzulddin",
     "department": "GRD",
-    "title": "6",
+    "title": "Listening 6",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1569,13 +1622,13 @@
       "Sound"
     ],
     "sketchFile": "thuraya-typelab-6/thuraya-typelab-6.js",
-    "instructions": "Click anywhere on the sketch to trigger."
+    "instructions": "Click anywhere to enable your microphone..."
   },
   {
     "id": "thuraya-typelab-Q",
     "student": "Thuraya Ezzulddin",
     "department": "GRD",
-    "title": "Q",
+    "title": "Cracking Q",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1591,7 +1644,7 @@
     "id": "thuraya-typelab-question",
     "student": "Thuraya Ezzulddin",
     "department": "GRD",
-    "title": "?",
+    "title": "? Petals",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -1605,7 +1658,7 @@
     "id": "thuraya-typelab-x",
     "student": "Thuraya Ezzulddin",
     "department": "GRD",
-    "title": "X",
+    "title": "Squishy X",
     "category": "Typelab",
     "types": [
       "Mouse",

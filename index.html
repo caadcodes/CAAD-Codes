@@ -465,24 +465,49 @@
     }
     #overlay-instructions[hidden] { display: none; }
 
+    /* Close — bare x glyph, pinned to the top-right corner of the
+       overlay (full-screen, not the inner sketch box). */
     #overlay-close {
       position: absolute;
-      top: 0.9rem; right: 0.9rem;
-      background: rgba(255,255,255,0.05);
-      color: rgba(240,237,230,0.7);
-      border: 0.5px solid rgba(255,255,255,0.1);
+      top: 1.5rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      padding: 0.6rem 0.9rem;
+      color: #FFFFFF;
       font-family: var(--mono);
-      font-size: 0.6rem;
-      letter-spacing: 0.08em;
-      padding: 0.4rem 0.8rem;
+      font-size: 30px;
+      line-height: 1;
       cursor: pointer;
       z-index: 10;
-      transition: background 0.12s, color 0.12s;
+      opacity: 0.85;
+      transition: opacity 0.12s;
     }
-    #overlay-close:hover {
-      background: rgba(255,255,255,0.1);
-      color: var(--text);
+    #overlay-close:hover { opacity: 1; }
+    /* Prev / next — bare arrow glyphs, no frame. Padding kept only as an
+       invisible hit-target; with no background or border it doesn't render
+       as a box. */
+    #overlay-prev,
+    #overlay-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      padding: 0.6rem 0.9rem;
+      color: #FFFFFF;
+      font-family: var(--mono);
+      font-size: 30px;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 10;
+      opacity: 0.85;
+      transition: opacity 0.12s;
     }
+    #overlay-prev:hover,
+    #overlay-next:hover { opacity: 1; }
+    #overlay-prev { left:  1.5rem; }
+    #overlay-next { right: 1.5rem; }
 
   </style>
 </head>
@@ -583,9 +608,11 @@
 <!-- ── Fullscreen overlay ─────────────────────────────── -->
 <div id="overlay">
   <div id="overlay-inner">
-    <button id="overlay-close">ESC&thinsp;×</button>
-    <iframe id="overlay-frame" sandbox="allow-scripts allow-same-origin" scrolling="no"></iframe>
+    <iframe id="overlay-frame" sandbox="allow-scripts allow-same-origin" allow="microphone" scrolling="no"></iframe>
   </div>
+  <button id="overlay-close" aria-label="Close">x</button>
+  <button id="overlay-prev" aria-label="Previous sketch">←</button>
+  <button id="overlay-next" aria-label="Next sketch">→</button>
   <div id="overlay-info">
     <div id="overlay-category"></div>
     <div id="overlay-title"></div>
@@ -740,6 +767,12 @@ function makeIframe(code, opts) {
      also what asset-loading sketches (loadFont / loadImage) need so their
      XHRs to the sketch folder work. */
   iframe.setAttribute('sandbox',   'allow-scripts allow-same-origin');
+  /* Permissions Policy: sketches that call getUserMedia() (e.g. p5.AudioIn
+     for sound-reactive pieces) need the host iframe to delegate the
+     "microphone" permission. The browser still prompts the user for
+     consent on first call — this attribute just makes the prompt
+     reachable. Sketches that don't touch the mic are unaffected. */
+  iframe.setAttribute('allow',     'microphone');
   iframe.setAttribute('scrolling', 'no');
   iframe.setAttribute('tabindex',  '-1');
   if (opts.preview) {
@@ -970,6 +1003,10 @@ function renderCard(project, code) {
   }
   /* exposed so ?debug=1 mode can pre-load every iframe at startup */
   card._ensureFrame = ensureFrame;
+  /* exposed so the overlay's prev/next navigator can pull the same data
+     without rebuilding it from projects.json */
+  card._project = project;
+  card._code    = code;
 
   card.addEventListener('mouseenter', () => {
     /* Strict 1-at-a-time: kill any other live preview iframe BEFORE creating
@@ -1022,6 +1059,7 @@ function openOverlay(project, code) {
      Safari (cross-origin blocked otherwise) and so asset-loading sketches
      can fetch their local fonts/images. */
   fresh.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+  fresh.setAttribute('allow', 'microphone');
   fresh.setAttribute('scrolling', 'no');
 
   /* Use srcdoc rather than a blob: URL — see makeIframe() comment for why
@@ -1054,12 +1092,47 @@ function openOverlay(project, code) {
     instr.hidden = true;
   }
 
+  /* Remember which sketch is showing so prev/next can find its index in
+     the live filtered card list and step from there. */
+  currentOverlayProject = project;
+
   overlayEl.classList.add('active');
   console.log(`[caad] overlay → ${project.id}`);
 }
 
+/* ═══════════════════════════════════════════════════
+   Overlay prev / next navigation
+   - operates on the LIVE filtered list (cards without `.filtered-out`)
+     in DOM order, so an active student/type/category filter cycles
+     through only those cards.
+   - wraps around at the ends.
+   - if the currently-displayed sketch isn't in the visible list
+     (e.g. user changed the filter while the overlay was open), step
+     starts at the first visible card.
+═══════════════════════════════════════════════════ */
+let currentOverlayProject = null;
+
+function visibleOverlayCards() {
+  return Array.from(document.querySelectorAll('.card:not(.filtered-out)'))
+    .filter(c => c._project && c._code);
+}
+
+function navigateOverlay(delta) {
+  if (!currentOverlayProject) return;
+  const cards = visibleOverlayCards();
+  if (cards.length === 0) return;
+  const currentId = currentOverlayProject.id;
+  const idx = cards.findIndex(c => c._project.id === currentId);
+  const nextIdx = idx === -1
+    ? 0
+    : (idx + delta + cards.length) % cards.length;
+  const target = cards[nextIdx];
+  openOverlay(target._project, target._code);
+}
+
 function closeOverlay() {
   overlayEl.classList.remove('active');
+  currentOverlayProject = null;
   /* Actually destroy the fullscreen iframe (not just navigate it to about:blank)
      so the sketch stops drawing immediately and its blob URL is freed. Replace
      with an empty placeholder element so the static <iframe id="overlay-frame">
@@ -1075,8 +1148,18 @@ function closeOverlay() {
 }
 
 document.getElementById('overlay-close').addEventListener('click', closeOverlay);
+document.getElementById('overlay-prev') .addEventListener('click', e => { e.stopPropagation(); navigateOverlay(-1); });
+document.getElementById('overlay-next') .addEventListener('click', e => { e.stopPropagation(); navigateOverlay( 1); });
 overlayEl.addEventListener('click', e => { if (e.target === overlayEl) closeOverlay(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeOverlay(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape')        closeOverlay();
+  /* Arrow keys only navigate when the overlay is the active surface,
+     so left/right arrows on the gallery itself (e.g. focused filter
+     buttons) are unaffected. */
+  if (!overlayEl.classList.contains('active')) return;
+  if (e.key === 'ArrowLeft')     { e.preventDefault(); navigateOverlay(-1); }
+  else if (e.key === 'ArrowRight'){ e.preventDefault(); navigateOverlay( 1); }
+});
 
 /* ═══════════════════════════════════════════════════
    Init — fetch data then populate grid

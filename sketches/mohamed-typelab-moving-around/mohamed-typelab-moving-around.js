@@ -1,15 +1,12 @@
 var x, y;
 var speedx, speedy;
 var ch = "{";
-var Start;
-var Duration = 3000;
 var filo = 150;
 var rain;
 
 function setup() {
   createCanvas(800, 800);
-  Start = millis();
-  
+
   x = width / 2;
   y = height / 2;
   
@@ -71,26 +68,10 @@ function draw() {
   fill(rain);
   textSize(filo);
   text(ch, x, y);
-  
-  if (millis() - Start < Duration) {
-    displayInstructions();
-  }
 }
 
 function triggerBounce() {
   rain = color(random(150, 255), random(150, 255), random(150, 255));
-}
-
-function displayInstructions() {
-  push();
-  fill(0, 180);
-  rect(0, 0, width, height);
-  fill(255);
-  textAlign(CENTER, CENTER);
-  textSize(30);
-  text("Press UP to Speed Up", width / 2, height / 2 - 40);
-  text("Press DOWN to Slow Down", width / 2, height / 2 + 40);
-  pop();
 }
 
 function keyPressed() {

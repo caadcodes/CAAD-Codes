@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "farida-playground-illusion-bloom",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Illusion Bloom",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "farida-playground-illusion-bloom/farida-playground-illusion-bloom.js",
+    "instructions": "Hover over the white circle."
+  },
+  {
+    "id": "farida-playground-interactive-polygon",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Interactive Polygon",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "farida-playground-interactive-polygon/farida-playground-interactive-polygon.js",
+    "instructions": "Move the mouse to the center."
+  },
+  {
+    "id": "farida-playground-rainbow-spiral",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Rainbow Spiral",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "farida-playground-rainbow-spiral/farida-playground-rainbow-spiral.js"
+  },
+  {
+    "id": "farida-playground-rotating-ring",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Rotating Ring",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "farida-playground-rotating-ring/farida-playground-rotating-ring.js",
+    "instructions": "Hover over the ring."
+  },
+  {
+    "id": "farida-playground-spinning-cube",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Spinning Cube",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "farida-playground-spinning-cube/farida-playground-spinning-cube.js",
+    "instructions": "Cube follows your mouse."
+  },
+  {
+    "id": "farida-typelab-spikey-8",
+    "student": "Farida Mohamed",
+    "department": "GRD",  
+    "title": "Spikey 8",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid"
+    ],
+    "sketchFile": "farida-typelab-spikey-8/farida-typelab-spikey-8.js",
+    "instructions": "Move the mouse horizontally to change rotation speed and vertically to change spike length. Click to flip rotation direction."
+  },
+  {
+    "id": "farida-typelab-triphobia-I",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Triphobic I",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid"
+    ],
+    "sketchFile": "farida-typelab-triphobia-I/farida-typelab-triphobia-I.js",
+    "instructions": "Move the mouse over the i."
+  },
+  {
+    "id": "fatma-playground-3d-orbit",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "3d Orbit",
+    "category": "Playground",
+    "types": [
+      "3D"
+    ],
+    "sketchFile": "fatma-playground-3d-orbit/fatma-playground-3d-orbit.js"
+  },
+  {
+    "id": "fatma-playground-catch-me",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Catch Me",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-catch-me/fatma-playground-catch-me.js",
+    "instructions": "Try to catch the circles..."
+  },
+  {
+    "id": "fatma-playground-confetti",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Confetti",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-confetti/fatma-playground-confetti.js",
+    "instructions": "Move the mouse to erase. Click to reset."
+  },
+  {
+    "id": "fatma-playground-continuous-layers",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Continuous Layers",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-continuous-layers/fatma-playground-continuous-layers.js",
+    "instructions": "Layers follow your mouse."
+  },
+  {
+    "id": "fatma-playground-expanding-rings",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Expanding Rings",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-expanding-rings/fatma-playground-expanding-rings.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "fatma-playground-growing-circles",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Growing Circles",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-growing-circles/fatma-playground-growing-circles.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "fatma-playground-layered-rotating-G",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Layered Rotating G",
+    "category": "Playground",
+    "types": [
+      "Type",
+      "3D"
+    ],
+    "sketchFile": "fatma-playground-layered-rotating-G/fatma-playground-layered-rotating-G.js"
+  },
+  {
+    "id": "fatma-playground-oscillating-orbit",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Oscillating Orbit",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-oscillating-orbit/fatma-playground-oscillating-orbit.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "fatma-playground-overlapping-circles",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Overlapping Circles",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-overlapping-circles/fatma-playground-overlapping-circles.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "fatma-playground-points-forming-H",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Points Forming H",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "fatma-playground-points-forming-H/fatma-playground-points-forming-H.js"
+  },
+  {
+    "id": "fatma-playground-rotating-circles",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Rotating Circles",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "fatma-playground-rotating-circles/fatma-playground-rotating-circles.js"
+  },
+  {
+    "id": "fatma-playground-rotating-squares",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Rotating Squares",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-rotating-squares/fatma-playground-rotating-squares.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "fatma-remix-mohamedmelehi",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Mohamed Melehi",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "fatma-remix-mohamedmelehi/fatma-remix-mohamedmelehi.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "fatma-remix-vera-molnar",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Vera Molnar",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "fatma-remix-vera-molnar/fatma-remix-vera-molnar.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "fatma-typelab-plus",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Plus",
+    "category": "Typelab",
+    "types": [
+      "Grid"
+    ],
+    "sketchFile": "fatma-typelab-plus/fatma-typelab-plus.js"
+  },
+  {
+    "id": "fatma-typelab-3",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "3",
+    "category": "Typelab",
+    "types": [
+      "Type",
+      "Grid",
+      "Image"
+    ],
+    "sketchFile": "fatma-typelab-3/fatma-typelab-3.js"
+  },
+  {
+    "id": "fatma-typelab-G",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "G",
+    "category": "Typelab",
+    "types": [
+      "Type",
+      "Grid",
+      "3D",
+      "Image"
+    ],
+    "sketchFile": "fatma-typelab-G/fatma-typelab-G.js"
+  },
+  {
+    "id": "fatma-typelab-H",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "H",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid",
+      "Image"
+    ],
+    "sketchFile": "fatma-typelab-H/fatma-typelab-H.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "layan-typelab-flee-N",
+    "student": "Layan Al-Mutawakel",
+    "department": "GRD",
+    "title": "Fleeing Quotes",
+    "category": "Typelab",
+    "types": [
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "layan-typelab-flee-N/layan-typelab-flee-N.js"
+  },
+  {
+    "id": "layan-typelab-flee-N2",
+    "student": "Layan Al-Mutawakel",
+    "department": "GRD",
+    "title": "Fleeing N",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "layan-typelab-flee-N2/layan-typelab-flee-N2.js",
+    "instructions": "Move the mouse over the N."
+  },
+  {
+    "id": "leena-playground-3D",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "3D",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "leena-playground-3D/leena-playground-3D.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "leena-playground-smiley-face",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "Smiley Face",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "leena-playground-smiley-face/leena-playground-smiley-face.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "leena-remix-dancing",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "Dancing",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "leena-remix-dancing/leena-remix-dancing.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "leena-typelab-0",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "0",
+    "category": "Typelab",
+    "types": [
+      "Type",
+      "Grid",
+      "Image"
+    ],
+    "sketchFile": "leena-typelab-0/leena-typelab-0.js"
+  },
+  {
+    "id": "leena-typelab-R",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "R",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Image"
+    ],
+    "sketchFile": "leena-typelab-R/leena-typelab-R.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "mohamed-playground-R-party",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "R Party",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "mohamed-playground-R-party/mohamed-playground-R-party.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "mohamed-playground-circle-pattern",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Circle Pattern",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "mohamed-playground-circle-pattern/mohamed-playground-circle-pattern.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "mohamed-playground-disco-dots",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Disco Dots",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "mohamed-playground-disco-dots/mohamed-playground-disco-dots.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "mohamed-playground-expanding-circle",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Expanding Circle",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "mohamed-playground-expanding-circle/mohamed-playground-expanding-circle.js"
+  },
+  {
+    "id": "mohamed-playground-illegal-circle-pattern",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Illegal Circle Pattern",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "mohamed-playground-illegal-circle-pattern/mohamed-playground-illegal-circle-pattern.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "mohamed-playground-infinite-scaffolding",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Infinite Scaffolding",
+    "category": "Playground",
+    "types": [
+      "3D"
+    ],
+    "sketchFile": "mohamed-playground-infinite-scaffolding/mohamed-playground-infinite-scaffolding.js"
+  },
+  {
+    "id": "mohamed-playground-jungle-spiral",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Jungle Spiral",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "mohamed-playground-jungle-spiral/mohamed-playground-jungle-spiral.js"
+  },
+  {
+    "id": "mohamed-playground-lol-crazy",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Lol Crazy",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "mohamed-playground-lol-crazy/mohamed-playground-lol-crazy.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "mohamed-playground-marshmallow-paint-splat",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Marshmallow Paint Splat",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "mohamed-playground-marshmallow-paint-splat/mohamed-playground-marshmallow-paint-splat.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "mohamed-playground-marshmallow-rainbow",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Marshmallow Rainbow",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "mohamed-playground-marshmallow-rainbow/mohamed-playground-marshmallow-rainbow.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "mohamed-playground-mouse-circle-square",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Mouse Circle Square",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "mohamed-playground-mouse-circle-square/mohamed-playground-mouse-circle-square.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "mohamed-playground-mouse-disco-dots",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Mouse Disco Dots",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "mohamed-playground-mouse-disco-dots/mohamed-playground-mouse-disco-dots.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "mohamed-playground-move-square",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Move Square",
+    "category": "Playground",
+    "types": [
+      "Keyboard"
+    ],
+    "sketchFile": "mohamed-playground-move-square/mohamed-playground-move-square.js",
+    "instructions": "Use the arrow keys to move the shape."
+  },
+  {
+    "id": "mohamed-playground-real-clock",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Real Clock",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "mohamed-playground-real-clock/mohamed-playground-real-clock.js"
+  },
+  {
+    "id": "mohamed-playground-rotating-rectangle",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Rotating Rectangle",
+    "category": "Playground",
+    "types": [
+      "3D"
+    ],
+    "sketchFile": "mohamed-playground-rotating-rectangle/mohamed-playground-rotating-rectangle.js"
+  },
+  {
+    "id": "mohamed-playground-spiral-debris",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Spiral Debris",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "mohamed-playground-spiral-debris/mohamed-playground-spiral-debris.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "mohamed-remix-culture",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Culture",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "mohamed-remix-culture/mohamed-remix-culture.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "mohamed-remix-elements",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Elements",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "mohamed-remix-elements/mohamed-remix-elements.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "mohamed-typelab-every-script",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Every Script",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid"
+    ],
+    "sketchFile": "mohamed-typelab-every-script/mohamed-typelab-every-script.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "mohamed-typelab-moving-around",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Moving Around",
+    "category": "Typelab",
+    "types": [
+      "Keyboard",
+      "Type"
+    ],
+    "sketchFile": "mohamed-typelab-moving-around/mohamed-typelab-moving-around.js",
+    "instructions": "Use the arrow keys to move the shape."
+  },
+  {
+    "id": "mohamed-typelab-set-speed",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Set Speed",
+    "category": "Typelab",
+    "types": [
+      "Keyboard",
+      "Type",
+      "3D"
+    ],
+    "sketchFile": "mohamed-typelab-set-speed/mohamed-typelab-set-speed.js",
+    "instructions": "Press any key to trigger an action."
+  },
+  {
+    "id": "noura-playground-w3.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "W3.1",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "noura-playground-w3.1/noura-playground-w3.1.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "noura-playground-w4.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "W4.1",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "noura-playground-w4.1/noura-playground-w4.1.js"
+  },
+  {
+    "id": "noura-playground-w5.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "W5.1",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "noura-playground-w5.1/noura-playground-w5.1.js"
+  },
+  {
+    "id": "noura-playground-w6",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "W6",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type",
+      "Image"
+    ],
+    "sketchFile": "noura-playground-w6/noura-playground-w6.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "noura-remix-1.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "1.1",
+    "category": "Remix",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "noura-remix-1.1/noura-remix-1.1.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "noura-remix-1.2",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "1.2",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "noura-remix-1.2/noura-remix-1.2.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "noura-typelab-7",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "7",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "noura-typelab-7/noura-typelab-7.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "noura-typelab-at",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "At",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid",
+      "3D",
+      "Image"
+    ],
+    "sketchFile": "noura-typelab-at/noura-typelab-at.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "noura-typelab-L",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "L",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "3D"
+    ],
+    "sketchFile": "noura-typelab-L/noura-typelab-L.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "noura-typelab-v",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "V",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "3D",
+      "Image"
+    ],
+    "sketchFile": "noura-typelab-v/noura-typelab-v.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "shalina-playground-ellipse-layers",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Ellipse Layers",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "shalina-playground-ellipse-layers/shalina-playground-ellipse-layers.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "shalina-playground-fan-exhaust",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Fan Exhaust",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "shalina-playground-fan-exhaust/shalina-playground-fan-exhaust.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "shalina-remix-joan-miro",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Joan Miro",
+    "category": "Remix",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "shalina-remix-joan-miro/shalina-remix-joan-miro.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-playground-AHHH",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "AHHH",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "thuraya-playground-AHHH/thuraya-playground-AHHH.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "thuraya-playground-circles",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Circles",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "thuraya-playground-circles/thuraya-playground-circles.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-playground-dancing-q",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Dancing Q",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "thuraya-playground-dancing-q/thuraya-playground-dancing-q.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-playground-disco lights",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Disco Lights",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "thuraya-playground-disco lights/thuraya-playground-disco lights.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-playground-dotty-q",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Dotty Q",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Grid",
+      "Image"
+    ],
+    "sketchFile": "thuraya-playground-dotty-q/thuraya-playground-dotty-q.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-playground-ello",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Ello",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "thuraya-playground-ello/thuraya-playground-ello.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-playground-fish",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Fish",
+    "category": "Playground",
+    "types": [
+      "Type",
+      "Image"
+    ],
+    "sketchFile": "thuraya-playground-fish/thuraya-playground-fish.js"
+  },
+  {
+    "id": "thuraya-playground-glittery-box",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Glittery Box",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "thuraya-playground-glittery-box/thuraya-playground-glittery-box.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  },
+  {
+    "id": "thuraya-playground-rotating-sphere",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Rotating Sphere",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "thuraya-playground-rotating-sphere/thuraya-playground-rotating-sphere.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-playground-spikey",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Spikey",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "thuraya-playground-spikey/thuraya-playground-spikey.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-remix-mushrooms",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Mushrooms",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "thuraya-remix-mushrooms/thuraya-remix-mushrooms.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "thuraya-remix-triangles",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Triangles",
+    "category": "Remix",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "thuraya-remix-triangles/thuraya-remix-triangles.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-typelab-6",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "6",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Sound"
+    ],
+    "sketchFile": "thuraya-typelab-6/thuraya-typelab-6.js",
+    "instructions": "Click anywhere on the sketch to trigger."
+  },
+  {
+    "id": "thuraya-typelab-question",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Question",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "thuraya-typelab-question/thuraya-typelab-question.js",
+    "instructions": "Move the mouse over the sketch to influence the animation."
+  },
+  {
+    "id": "thuraya-typelab-Q",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Q",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Keyboard",
+      "Type",
+      "Grid",
+      "Image"
+    ],
+    "sketchFile": "thuraya-typelab-Q/thuraya-typelab-Q.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect. Press any key to trigger an action."
+  },
+  {
+    "id": "thuraya-typelab-x",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "X",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "thuraya-typelab-x/thuraya-typelab-x.js",
+    "instructions": "Move the mouse to influence the sketch and click for a different effect."
+  }
+]

@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAAD Codes</title>
+  <link rel="stylesheet" href="https://webfonts.fontstand.com/WF-025639-e4432dcb836f901095e479460e4ee8e7.css" type="text/css"/>
+  <style>
+    /* ── Tokens ────────────────────────────────────── */
+    :root {
+      --bg:       #0A0A08;
+      --text:     #F0EDE6;
+      --muted:    #6B6B66;
+      --dim:      #242220;
+      --border:   rgba(240,237,230,0.09);
+      --surface:  #111110;
+      --head:     'Whyte Inktrap Book', system-ui, sans-serif;
+      --body:     'Whyte Inktrap Book', system-ui, sans-serif;
+      --mono:     'ABC Diatype Mono Regular', 'Courier New', monospace;
+    }
+
+    /* ── Reset ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /*
+     * Shared 5-column grid used by topbar, header, and index panel.
+     * No outer horizontal padding on any of the three containers —
+     * inner padding on cells keeps content from the edges. This is
+     * what makes column edges align perfectly across all three rows.
+     */
+    :root {
+      --cols: 457fr 334fr 220fr 185fr 185fr;
+      --cell-px: 1.25rem;
+    }
+
+    /* ── Top bar ───────────────────────────────────── */
+    #topbar {
+      display: grid;
+      grid-template-columns: var(--cols);
+      align-items: start;
+    }
+    #topbar span {
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 7px var(--cell-px);
+      line-height: 1.2;
+    }
+
+    /* ── Header ────────────────────────────────────── */
+    header {
+      display: grid;
+      grid-template-columns: var(--cols);
+      align-items: end;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .site-title {
+      grid-column: 1 / 5;
+      font-family: var(--head);
+      font-size: clamp(48px, 6vw, 80px);
+      line-height: 0.88;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      padding: 16px 0 14px var(--cell-px);
+    }
+    .header-links {
+      grid-column: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: end;
+      gap: 0.15rem;
+      padding: 0 var(--cell-px) 14px;
+    }
+    .header-links a {
+      font-family: var(--mono);
+      font-size: 0.92rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      transition: color 0.12s;
+    }
+    .header-links a:hover { color: #FFFFFF; }
+
+    /* ── Index panel ───────────────────────────────── */
+    #index-panel {
+      display: grid;
+      grid-template-columns: var(--cols);
+      border-bottom: 0.5px solid var(--border);
+    }
+    .index-col {
+      padding: 0.6rem 1.25rem 3rem;
+      border-right: 0.5px solid var(--border);
+    }
+    .index-col:last-child { border-right: none; }
+
+    .col-label {
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      color: var(--muted);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding-bottom: 0.6rem;
+      border-bottom: 0.5px solid var(--border);
+      margin-bottom: 0;
+    }
+
+    /* Students two-column sub-layout */
+    .students-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    /* About */
+    .about-text {
+      font-family: var(--body);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--text);
+      padding: 0.25rem 0 0;
+    }
+    /* Secondary instruction line under the About paragraph; reads as a hint,
+       not main copy — same family/size as the body, in the muted label grey. */
+    .about-instruction {
+      font-family: var(--body);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--muted);
+      padding-top: 1.5em; /* one empty line of space */
+    }
+
+    /* Filter lists */
+    .filter-list {
+      list-style: none;
+    }
+    .filter-list li {
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .filter-btn {
+      display: flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      padding: 0.25rem 0.4rem 0.25rem 0;
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.1s;
+      border-radius: 0;
+    }
+    .filter-btn:hover {
+      background: rgba(240,237,230,0.04);
+    }
+    .filter-btn.active {
+      background: rgba(240,237,230,0.06);
+    }
+    .filter-num {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: var(--muted);
+      min-width: 2.2ch;
+      flex-shrink: 0;
+      transition: color 0.1s;
+    }
+    .filter-name {
+      font-family: var(--body);
+      font-size: 0.72rem;
+      color: var(--text);
+      transition: color 0.1s;
+      line-height: 1.3;
+    }
+    /* Project descriptor — a short subtitle under the project name in the
+       Projects column. Same monospace family as labels but smaller and a
+       lighter grey, to read as secondary info. */
+    .filter-desc {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      margin-top: 0.15rem;
+      line-height: 1.3;
+    }
+    .filter-dept {
+      font-family: var(--mono);
+      font-size: 0.45rem;
+      color: var(--text);
+      vertical-align: super;
+      letter-spacing: 0.05em;
+      margin-left: 0.15rem;
+      transition: color 0.1s;
+    }
+    /* Hover = pure white + subtle underline on the name */
+    .filter-btn:hover .filter-name   {
+      color: #FFFFFF;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 0.5px;
+    }
+    .filter-btn:hover .filter-dept   { color: #FFFFFF; }
+    .filter-btn.active .filter-name  { color: #FFFFFF; }
+    .filter-btn.active .filter-dept  { color: #FFFFFF; }
+
+    /* Tools list (display only) */
+    .tools-list { list-style: none; }
+    .tools-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      padding: 0.25rem 0;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .tools-num {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: var(--muted);
+      min-width: 2.2ch;
+    }
+    .tools-name {
+      font-family: var(--body);
+      font-size: 0.75rem;
+      color: var(--text);
+    }
+
+    /* ── Grid ──────────────────────────────────────── */
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0;
+      width: 100%;
+    }
+
+    /* ── Card ──────────────────────────────────────── */
+    .card {
+      aspect-ratio: 1 / 1;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--surface);
+      transition: opacity 0.35s;
+    }
+    /* When a filter is active, non-matching cards are removed from layout
+       so the grid reflows and matching cards pull up from the top-left.
+       Cards re-entering the layout (filter cleared / new filter selected)
+       fade in via the .fade-in-now animation below. */
+    .card.filtered-out { display: none; }
+
+    @keyframes caad-fade-in {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .card.fade-in-now { animation: caad-fade-in 0.3s ease-out; }
+
+    /* dark blueprint placeholder — visible behind the iframe before hover */
+    .card-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: #0E0E0C;
+      background-image:
+        linear-gradient(rgba(240,237,230,0.022) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(240,237,230,0.022) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Visible only in ?debug=1 — overlays a card whose sketch failed to
+       render (error or no canvas after timeout). Shows the first line of
+       the error message so all broken sketches are visible at a glance. */
+    .card-debug-error {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      background: rgba(170, 40, 40, 0.86);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.02em;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      word-break: break-word;
+      pointer-events: none;
+    }
+
+    /* sketch iframe */
+    .card-preview {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+    .card-preview iframe {
+      /* Auto-scale (in JS) computes an explicit translate that centres the
+         drawing region inside the card. Positioning is top:0/left:0 with
+         transform-origin: top left so the JS pixel translates and scale
+         compose cleanly. */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      opacity: 0;
+      transition: opacity 0.2s 0.04s;
+      transform-origin: top left;
+      /* Sketch iframe must NOT swallow pointer events — without this, clicking
+         the card area (where the iframe sits on top) is captured by the iframe
+         and the card's click→openOverlay handler never fires. Sketch interaction
+         (mouseX/mousePressed) only happens in the fullscreen overlay, where the
+         #overlay-frame keeps its default pointer-events. */
+      pointer-events: none;
+      will-change: transform;   /* GPU compositing hint — keeps the scaled
+                                   iframe on its own layer so framerate stays
+                                   smooth as it composites with the page. */
+    }
+    .card:hover .card-preview iframe { opacity: 1; }
+
+    /* text overlay — always on top */
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 9px 10px;
+      pointer-events: none;
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.42) 0%,
+          transparent 32%,
+          transparent 52%,
+          rgba(0,0,0,0.72) 100%
+        );
+    }
+    .card-category {
+      font-family: var(--mono);
+      font-size: 0.47rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      text-shadow: 0 1px 5px rgba(0,0,0,0.95);
+    }
+    .card-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 0.12rem;
+    }
+    .card-title {
+      font-family: var(--body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #fff;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.95);
+      line-height: 1.25;
+    }
+    .card-byline {
+      font-family: var(--body);
+      font-size: 0.48rem;
+      color: var(--muted);
+      text-shadow: 0 1px 6px rgba(0,0,0,0.95);
+      letter-spacing: 0.03em;
+    }
+    .card-byline sup {
+      font-size: 0.38rem;
+      color: rgba(255,255,255,0.38);
+      vertical-align: super;
+      letter-spacing: 0.07em;
+      margin-left: 0.1rem;
+    }
+
+    /* ── Fullscreen overlay ────────────────────────── */
+    #overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(10,10,8,0.94);
+      z-index: 1000;
+      flex-direction: column;       /* canvas on top, info below */
+      align-items: center;
+      justify-content: center;
+      gap: 1.1rem;
+      backdrop-filter: blur(12px);
+    }
+    #overlay.active { display: flex; }
+
+    /* Sketch container — width/height set by JS to canvas aspect, capped at
+       80vmin so there's always room for the info block below it. */
+    #overlay-inner {
+      position: relative;
+      width:  min(80vw, 80vh);
+      height: min(80vw, 80vh);
+      background: var(--surface);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    #overlay-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      transform-origin: top left;
+    }
+
+    /* Info block — sits BELOW the sketch (sibling of #overlay-inner).
+       No gradient, no background; just left-aligned text. JS sets its
+       width to match the sketch container so the title's left edge
+       aligns with the sketch's left edge. */
+    #overlay-info {
+      width: min(80vw, 80vh);
+      display: flex;
+      flex-direction: column;
+      gap: 0.18rem;
+      pointer-events: none;
+    }
+    #overlay-category {
+      font-family: var(--mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    #overlay-title {
+      font-family: var(--body);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    #overlay-meta {
+      font-family: var(--body);
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0;
+    }
+    #overlay-meta sup {
+      font-size: 0.62em;
+      letter-spacing: 0.05em;
+      margin-left: 0.15em;
+      vertical-align: super;
+    }
+    /* Optional per-sketch instructions, populated only when projects.json
+       has a non-empty `instructions` field on the entry. */
+    #overlay-instructions {
+      font-family: var(--body);
+      font-size: 0.72rem;        /* ~11.5px */
+      line-height: 1.5;
+      color: var(--muted);
+      margin-top: 0.45rem;
+    }
+    #overlay-instructions[hidden] { display: none; }
+
+    #overlay-close {
+      position: absolute;
+      top: 0.9rem; right: 0.9rem;
+      background: rgba(255,255,255,0.05);
+      color: rgba(240,237,230,0.7);
+      border: 0.5px solid rgba(255,255,255,0.1);
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.12s, color 0.12s;
+    }
+    #overlay-close:hover {
+      background: rgba(255,255,255,0.1);
+      color: var(--text);
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ── Top bar ─────────────────────────────────────────── -->
+<!-- Cols 1–2 are empty; cols 3–5 carry the metadata,
+     left-aligned inside the same grid as the index panel. -->
+<div id="topbar">
+  <span></span>
+  <span></span>
+  <span>American University of Sharjah</span>
+  <span>DES 394 / 20<br>Intro to Creative Coding</span>
+  <span>Est. Spring 2026</span>
+</div>
+
+<!-- ── Header ─────────────────────────────────────────── -->
+<header>
+  <h1 class="site-title">CAAD Codes</h1>
+  <div class="header-links">
+    <a href="https://www.instagram.com/caadcodes" target="_blank" rel="noopener">@caadcodes →</a>
+    <a href="https://github.com/caadcodes" target="_blank" rel="noopener">github/caadcodes →</a>
+  </div>
+</header>
+
+<!-- ── Index panel ────────────────────────────────────── -->
+<div id="index-panel">
+
+  <!-- 1 · About -->
+  <div class="index-col">
+    <div class="col-label">About</div>
+    <p class="about-text">A repository for all creative coding sketches and projects<br>created by students from the College of Architecture,<br>Art &amp; Design at the American University of Sharjah.<br>The course is led by Prof.&nbsp;Naz&nbsp;Naddaf.</p>
+    <p class="about-instruction">Hover to preview — click to explore.</p>
+  </div>
+
+  <!-- 2 · Students (split 6 / 5 across two side-by-side columns) -->
+  <div class="index-col">
+    <div class="col-label">Students</div>
+    <div class="students-two-col">
+      <ul class="filter-list">
+        <li><button class="filter-btn" data-kind="student" data-value="Deema Abdalrahman"><span class="filter-num">01</span><span class="filter-name">Deema Abdalrahman<sup class="filter-dept">GRD</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Farida Mohamed"><span class="filter-num">02</span><span class="filter-name">Farida Mohamed<sup class="filter-dept">GRD</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Fatma Alnuaimi"><span class="filter-num">03</span><span class="filter-name">Fatma Alnuaimi<sup class="filter-dept">GRD</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Jana Khalifa"><span class="filter-num">04</span><span class="filter-name">Jana Khalifa<sup class="filter-dept">FNM</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Kavya Ajith"><span class="filter-num">05</span><span class="filter-name">Kavya Ajith<sup class="filter-dept">GRD</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Layan Al-Mutawakel"><span class="filter-num">06</span><span class="filter-name">Layan Al-Mutawakel<sup class="filter-dept">GRD</sup></span></button></li>
+      </ul>
+      <ul class="filter-list">
+        <li><button class="filter-btn" data-kind="student" data-value="Leena Ulaiwi"><span class="filter-num">07</span><span class="filter-name">Leena Ulaiwi<sup class="filter-dept">GRD</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Mohamed Kashwani"><span class="filter-num">08</span><span class="filter-name">Mohamed Kashwani<sup class="filter-dept">GRD</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Noura Almutawa"><span class="filter-num">09</span><span class="filter-name">Noura Almutawa<sup class="filter-dept">DES</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Shalina Siddiqui"><span class="filter-num">10</span><span class="filter-name">Shalina Siddiqui<sup class="filter-dept">GRD</sup></span></button></li>
+        <li><button class="filter-btn" data-kind="student" data-value="Thuraya Ezzulddin"><span class="filter-num">11</span><span class="filter-name">Thuraya Ezzulddin<sup class="filter-dept">GRD</sup></span></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3 · Types -->
+  <div class="index-col">
+    <div class="col-label">Types</div>
+    <ul class="filter-list">
+      <li><button class="filter-btn" data-kind="type" data-value="Mouse"><span class="filter-num">01</span><span class="filter-name">Mouse</span></button></li>
+      <li><button class="filter-btn" data-kind="type" data-value="Keyboard"><span class="filter-num">02</span><span class="filter-name">Keyboard</span></button></li>
+      <li><button class="filter-btn" data-kind="type" data-value="Type"><span class="filter-num">03</span><span class="filter-name">Type</span></button></li>
+      <li><button class="filter-btn" data-kind="type" data-value="Particles"><span class="filter-num">04</span><span class="filter-name">Particles</span></button></li>
+      <li><button class="filter-btn" data-kind="type" data-value="Grid"><span class="filter-num">05</span><span class="filter-name">Grid</span></button></li>
+      <li><button class="filter-btn" data-kind="type" data-value="3D"><span class="filter-num">06</span><span class="filter-name">3D</span></button></li>
+      <li><button class="filter-btn" data-kind="type" data-value="Sound"><span class="filter-num">07</span><span class="filter-name">Sound</span></button></li>
+      <li><button class="filter-btn" data-kind="type" data-value="Image"><span class="filter-num">08</span><span class="filter-name">Image</span></button></li>
+    </ul>
+  </div>
+
+  <!-- 4 · Projects -->
+  <div class="index-col">
+    <div class="col-label">Projects</div>
+    <ul class="filter-list">
+      <li><button class="filter-btn" data-kind="category" data-value="Playground"><span class="filter-num">01</span><span class="filter-name">Playground<span class="filter-desc">Weekly experiments<br>and trials</span></span></button></li>
+      <li><button class="filter-btn" data-kind="category" data-value="Remix"><span class="filter-num">02</span><span class="filter-name">Remix<span class="filter-desc">Recreating and reimagining artworks of the past</span></span></button></li>
+      <li><button class="filter-btn" data-kind="category" data-value="Typelab"><span class="filter-num">03</span><span class="filter-name">Typelab<span class="filter-desc">Experiments with letterforms</span></span></button></li>
+    </ul>
+  </div>
+
+  <!-- 5 · Tools -->
+  <div class="index-col">
+    <div class="col-label">Tools</div>
+    <ul class="tools-list">
+      <li class="tools-item"><span class="tools-num">01</span><span class="tools-name">Processing</span></li>
+      <li class="tools-item"><span class="tools-num">02</span><span class="tools-name">P5.js</span></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ── Sketch grid ─────────────────────────────────────── -->
+<div id="grid"></div>
+
+<!-- ── Fullscreen overlay ─────────────────────────────── -->
+<div id="overlay">
+  <div id="overlay-inner">
+    <button id="overlay-close">ESC&thinsp;×</button>
+    <iframe id="overlay-frame" sandbox="allow-scripts allow-same-origin" scrolling="no"></iframe>
+  </div>
+  <div id="overlay-info">
+    <div id="overlay-category"></div>
+    <div id="overlay-title"></div>
+    <div id="overlay-meta"></div>
+    <div id="overlay-instructions" hidden></div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════
+   Sketch wrapper — isolates global-mode p5 sketches
+═══════════════════════════════════════════════════ */
+/* Detect whether a sketch needs allow-same-origin: only sketches that load
+   their own asset files (fonts, images, sounds) require XHR back to the
+   parent origin. Pure procedural sketches don't, and giving them a tighter
+   sandbox lets the browser opt out of some same-origin bookkeeping.
+   Catches: p5 built-in load* methods, opentype.js (used by several typelab
+   sketches), and any direct fetch / XMLHttpRequest. */
+function sketchUsesAssets(code) {
+  return /\b(loadFont|loadImage|loadSound|loadJSON|loadStrings|loadModel|loadXML|loadBytes|loadTable|loadPixels|loadShader)\s*\(/.test(code)
+      || /\bopentype\s*\.\s*load\s*\(/.test(code)
+      || /\bnew\s+XMLHttpRequest\b/.test(code)
+      || /\bfetch\s*\(/.test(code);
+}
+
+function wrapSketch(code, opts) {
+  opts = opts || {};
+  const folder  = opts.folder || '';
+  const preview = !!opts.preview; // hover preview → cap frameRate at 30
+
+  /* CRITICAL: do NOT wrap in IIFE — p5.js global mode looks for setup/draw
+     on window, and IIFE-scoped function declarations never reach window so
+     p5 silently does nothing.
+     Also escape any literal closing script tag inside the sketch source so
+     the iframe HTML parser doesn't close the wrapper script early. */
+  const safe = code.replace(/<\/script/gi, '<\\/script');
+
+  /* <base href> makes relative asset paths inside the sketch resolve to the
+     sketch's own folder under /sketches/. Computed from location.href so it
+     works whether the gallery is at the host root (localhost:8000/) or under
+     a sub-path like https://caadcodes.github.io/CAAD-Codes/. */
+  const baseTag = folder
+    ? `<base href="${new URL('sketches/' + encodeURIComponent(folder) + '/', location.href).href}">`
+    : '';
+
+  /* In preview mode, cap frameRate at 30 once the canvas appears so the
+     thumbnail doesn't burn CPU at 60fps while the user just glances at it.
+     Fullscreen overlay runs full speed (no cap). */
+  const fpsCap = preview
+    ? "try { if (typeof frameRate === 'function') frameRate(30); } catch (e) {}"
+    : '';
+
+  /* Many sketches read mouseX / mouseY in draw() — without it they draw at
+     canvas (0, 0) and look blank. Preview iframes have pointer-events:none
+     (so card clicks reach the parent), so a real mouse never enters them.
+     In preview mode we synthesise a slow Lissajous-style mousemove so those
+     sketches animate convincingly. The fullscreen overlay gets real mouse
+     interaction, so it doesn't need this.
+     Belt-and-braces: dispatch the MouseEvent (so p5's listeners fire and
+     pmouseX/pmouseY update naturally) AND write window.mouseX/Y directly
+     for sketches that read those globals before any event has propagated
+     (or where p5's listener isn't binding the canvas for some reason). */
+  const mouseAnim = preview ? `
+    (function() {
+      let t = 0, prevX = 0, prevY = 0;
+      setInterval(() => {
+        /* faster sweep so sketches with small interaction zones (e.g.
+           Illusion Bloom needs mouseY in (200,400) on a 1080² canvas) get
+           hit within a couple of seconds of hover instead of ~5 s */
+        t += 0.09;
+        const W = parseFloat(c.style.width)  || c.offsetWidth  || c.width;
+        const H = parseFloat(c.style.height) || c.offsetHeight || c.height;
+        if (!W || !H) return;
+        const x = (Math.sin(t)       * 0.4 + 0.5) * W;
+        const y = (Math.cos(t * 0.7) * 0.4 + 0.5) * H;
+        try {
+          window.pmouseX = prevX; window.pmouseY = prevY;
+          window.mouseX  = x;     window.mouseY  = y;
+          window.winMouseX = x;   window.winMouseY = y;
+        } catch (e) {}
+        prevX = x; prevY = y;
+        const ev = new MouseEvent('mousemove', { bubbles: true, clientX: x, clientY: y });
+        c.dispatchEvent(ev);
+        window.dispatchEvent(ev);
+      }, 80);
+    })();
+  ` : '';
+
+  return `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+${baseTag}
+<style>
+  * { margin:0; padding:0; overflow:hidden; }
+  body { background:#0A0A08; }
+  canvas { display:block; }
+</style>
+</head>
+<body>
+<script>
+${sketchUsesSound(code) ? LIB_BUNDLE_SOUND : LIB_BUNDLE_BASIC}
+<\/script>
+<script>
+${safe}
+<\/script>
+<script>
+(function () {
+  window.addEventListener('error', e =>
+    parent.postMessage({type:'caad-sketch-error', error:(e && e.message) || 'sketch error'}, '*')
+  );
+  function dims(c) {
+    const w = parseFloat(c.style.width)  || c.offsetWidth  || c.width;
+    const h = parseFloat(c.style.height) || c.offsetHeight || c.height;
+    return { w, h };
+  }
+  function send(c) {
+    const { w, h } = dims(c);
+    if (w && h) parent.postMessage({ type: 'caad-canvas-ready', w, h }, '*');
+  }
+  function find() {
+    const c = document.querySelector('canvas');
+    if (c) {
+      send(c);
+      ${fpsCap}
+      ${mouseAnim}
+      try { new ResizeObserver(() => send(c)).observe(c); } catch (e) {}
+    } else {
+      requestAnimationFrame(find);
+    }
+  }
+  requestAnimationFrame(find);
+})();
+<\/script>
+</body>
+</html>`;
+}
+
+function makeIframe(code, opts) {
+  opts = opts || {};
+  const iframe = document.createElement('iframe');
+  /* Use srcdoc instead of a blob: URL. Safari silently drops postMessage
+     from blob-iframes in sandbox="allow-scripts" (opaque-origin) mode, so
+     the auto-scale listener never fires and the sketch shows blank.
+     srcdoc-loaded iframes inherit the parent document's effective origin
+     for postMessage purposes and work consistently across Safari, Chrome,
+     and Firefox — and don't need URL.createObjectURL bookkeeping. */
+  /* Always set allow-same-origin alongside allow-scripts. Safari blocks
+     cross-origin script loads from a sandboxed iframe even with permissive
+     CDN headers, so the sketch can't fetch p5.js / opentype.js from
+     /libs/ unless it shares the parent's origin. The looser sandbox is
+     also what asset-loading sketches (loadFont / loadImage) need so their
+     XHRs to the sketch folder work. */
+  iframe.setAttribute('sandbox',   'allow-scripts allow-same-origin');
+  iframe.setAttribute('scrolling', 'no');
+  iframe.setAttribute('tabindex',  '-1');
+  if (opts.preview) {
+    iframe.loading = 'lazy';      // browser hint; harmless if always in viewport
+  }
+  iframe.srcdoc = wrapSketch(code, opts);
+  return iframe;
+}
+
+/* ═══════════════════════════════════════════════════
+   Strict 1-at-a-time preview lifecycle
+   - destroyPreviewIframe: tear down a single iframe + revoke its blob URL
+   - destroyOtherPreviews(except): kill every preview except the one in the
+       given card (called on mouseenter so only the hovered card runs)
+   - destroyAllPreviews:         kill every preview (called when overlay opens)
+═══════════════════════════════════════════════════ */
+function destroyPreviewIframe(iframe) {
+  if (!iframe) return;
+  iframe.remove();
+  /* Iframes now use srcdoc — no blob-URL bookkeeping is needed. The
+     iframe's contents are released as soon as the element is GC'd. */
+}
+function destroyOtherPreviews(exceptCard) {
+  document.querySelectorAll('.card-preview > iframe').forEach(iframe => {
+    if (!exceptCard || iframe.closest('.card') !== exceptCard) {
+      destroyPreviewIframe(iframe);
+    }
+  });
+}
+function destroyAllPreviews() { destroyOtherPreviews(null); }
+
+/* ═══════════════════════════════════════════════════
+   Per-sketch drawing-bounds overrides.
+   When a sketch draws its content within a sub-region of its canvas
+   (e.g. Spikey 8 calls translate(width/2 - 30, height/2 + 250) which
+   places the "8" glyph offset from the canvas centre), CSS scaling of
+   the *whole canvas* makes the drawing appear off-centre. An entry
+   here tells the auto-scale routine to centre & fit the named drawing
+   bbox (cx, cy, w, h in canvas-pixel space) instead of the full canvas.
+   Sketches NOT listed here just fit the full canvas as before.
+═══════════════════════════════════════════════════ */
+/* Per-sketch drawing-bounds overrides for the preview card only. Currently
+   no entries are needed — Spikey 8's translate was centred at source. */
+const SKETCH_BOUNDS = {};
+
+/* ═══════════════════════════════════════════════════
+   Auto-scale: fit the drawing region (or full canvas)
+   into the iframe's container. Works the same way for
+   preview cards and the fullscreen overlay — the only
+   difference is how the container itself is sized.
+═══════════════════════════════════════════════════ */
+function getBoundsFor(iframe) {
+  /* Bounds may be stored on the card (for preview iframes) or on the
+     iframe element itself (for the overlay iframe, which sits outside
+     any card). dataset.bounds is a JSON-serialised {cx, cy, w, h}. */
+  if (iframe.dataset.bounds) {
+    try { return JSON.parse(iframe.dataset.bounds); } catch { /* fall through */ }
+  }
+  const card = iframe.closest('.card');
+  if (card && card.dataset.bounds) {
+    try { return JSON.parse(card.dataset.bounds); } catch { /* fall through */ }
+  }
+  return null;
+}
+
+window.addEventListener('message', (e) => {
+  const d = e.data;
+  if (!d || d.type !== 'caad-canvas-ready' || !d.w || !d.h) return;
+
+  for (const iframe of document.querySelectorAll('iframe')) {
+    if (iframe.contentWindow !== e.source) continue;
+
+    if (iframe.id === 'overlay-frame') {
+      /* Fullscreen overlay: ALWAYS fit the FULL canvas (no bounds-based
+         zoom-in). The overlay container's aspect matches the canvas
+         exactly, capped at 80vw × 80vh (leaving room below for the info
+         block), and the iframe scales uniformly to fill it. */
+      const inner = document.getElementById('overlay-inner');
+      if (!inner) return;
+      const vw   = window.innerWidth;
+      const vh   = window.innerHeight;
+      const maxW = vw * 0.80;
+      const maxH = vh * 0.80;
+      const ar   = d.w / d.h;
+      let cw, ch;
+      if (maxW / ar <= maxH) { cw = maxW; ch = maxW / ar; }
+      else                   { ch = maxH; cw = maxH * ar; }
+      inner.style.width       = cw + 'px';
+      inner.style.height      = ch + 'px';
+      inner.style.aspectRatio = `${d.w} / ${d.h}`;
+      /* Match the info block's width so the title's left edge sits exactly
+         under the sketch's left edge regardless of canvas aspect ratio. */
+      const info = document.getElementById('overlay-info');
+      if (info) info.style.width = cw + 'px';
+      const ratio = Math.min(cw / d.w, ch / d.h);
+      iframe.style.width           = d.w + 'px';
+      iframe.style.height          = d.h + 'px';
+      iframe.style.transform       = `scale(${ratio})`;
+      iframe.style.transformOrigin = 'top left';
+    } else {
+      /* Preview card: use the bounds override (if any) so non-centred
+         drawings (e.g. Spikey 8) frame nicely in the small square card.
+         Sketches without a bounds entry fit the full canvas, same as
+         the overlay path. */
+      const b = getBoundsFor(iframe);
+      const draw = b || { cx: d.w / 2, cy: d.h / 2, w: d.w, h: d.h };
+      const rect = iframe.parentElement?.getBoundingClientRect();
+      if (!rect || !rect.width || !rect.height) return;
+      const cw = rect.width, ch = rect.height;
+      const ratio = Math.min(cw / draw.w, ch / draw.h);
+      const tx    = cw / 2 - draw.cx * ratio;
+      const ty    = ch / 2 - draw.cy * ratio;
+      iframe.style.width           = d.w + 'px';
+      iframe.style.height          = d.h + 'px';
+      iframe.style.transform       = `translate(${tx}px, ${ty}px) scale(${ratio})`;
+      iframe.style.transformOrigin = 'top left';
+    }
+    return;
+  }
+});
+
+/* ═══════════════════════════════════════════════════
+   Filter state — single active filter across all cols
+═══════════════════════════════════════════════════ */
+let activeFilter = null; // { kind: 'student'|'type'|'category', value: string } | null
+
+function setFilter(kind, value) {
+  if (activeFilter && activeFilter.kind === kind && activeFilter.value === value) {
+    activeFilter = null;       // toggle off
+  } else {
+    activeFilter = { kind, value };
+  }
+  applyFilter();
+  syncFilterUI();
+}
+
+function applyFilter() {
+  document.querySelectorAll('.card').forEach(card => {
+    const wasHidden = card.classList.contains('filtered-out');
+    let shouldHide;
+
+    if (!activeFilter) {
+      shouldHide = false;
+    } else {
+      const { kind, value } = activeFilter;
+      if      (kind === 'student')  shouldHide = card.dataset.student !== value;
+      else if (kind === 'type')     shouldHide = !(card.dataset.types || '').split(',').includes(value);
+      else if (kind === 'category') shouldHide = card.dataset.category !== value;
+      else                          shouldHide = false;
+    }
+
+    card.classList.toggle('filtered-out', shouldHide);
+
+    /* If this card just transitioned from hidden → visible (filter cleared
+       or new filter selected), fade it in. The animation plays once; we
+       remove the class after it ends so future hovers don't re-trigger. */
+    if (wasHidden && !shouldHide) {
+      card.classList.remove('fade-in-now');
+      // forced reflow lets us re-add the class to restart the animation
+      void card.offsetWidth;
+      card.classList.add('fade-in-now');
+      setTimeout(() => card.classList.remove('fade-in-now'), 350);
+    }
+  });
+}
+
+function syncFilterUI() {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    const on = activeFilter &&
+               btn.dataset.kind  === activeFilter.kind &&
+               btn.dataset.value === activeFilter.value;
+    btn.classList.toggle('active', on);
+  });
+}
+
+/* wire up filter buttons (already in DOM) */
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => setFilter(btn.dataset.kind, btn.dataset.value));
+});
+
+/* ═══════════════════════════════════════════════════
+   Card builder
+═══════════════════════════════════════════════════ */
+/* Folder ids contain spaces, '?', '@', etc. — not all are valid HTML id
+   characters. Sanitise so getElementById/scrollIntoView work reliably. */
+function cardElId(rawId) {
+  return 'card-' + String(rawId).replace(/[^A-Za-z0-9_.-]/g, '_');
+}
+
+function renderCard(project, code) {
+  const card = document.createElement('div');
+  card.id                 = cardElId(project.id);
+  card.className          = 'card';
+  card.dataset.student    = project.student;
+  card.dataset.types      = (project.types  || []).join(',');
+  card.dataset.category   = project.category || '';
+
+  /* sketchFile is "<folder>/<file>.js"; the folder portion is what relative
+     asset paths inside the sketch should resolve against. */
+  const folder = (project.sketchFile || '').split('/')[0];
+
+  /* If this sketch has a drawing-bounds override, attach it to the card so
+     the auto-scale routine can centre/fit just the drawing region. */
+  if (SKETCH_BOUNDS[project.id]) {
+    card.dataset.bounds = JSON.stringify(SKETCH_BOUNDS[project.id]);
+  }
+
+  /* dark blueprint placeholder */
+  const bg = document.createElement('div');
+  bg.className = 'card-bg';
+  card.appendChild(bg);
+
+  /* live sketch preview — iframe lazy-loads on first hover */
+  const preview = document.createElement('div');
+  preview.className = 'card-preview';
+  card.appendChild(preview);
+
+  /* DOM-as-source-of-truth: don't cache iframe in a closure. Querying the
+     preview slot lets the strict-1-at-a-time policy destroy iframes from
+     other cards without leaving stale closure references behind. */
+  function ensureFrame() {
+    let frame = preview.querySelector('iframe');
+    if (!frame) {
+      frame = makeIframe(code, { folder, preview: true });
+      preview.appendChild(frame);
+    }
+    return frame;
+  }
+  /* exposed so ?debug=1 mode can pre-load every iframe at startup */
+  card._ensureFrame = ensureFrame;
+
+  card.addEventListener('mouseenter', () => {
+    /* Strict 1-at-a-time: kill any other live preview iframe BEFORE creating
+       this one. Multiple iframes alive simultaneously each run their own p5
+       draw loop, which is the main source of perceived lag. */
+    destroyOtherPreviews(card);
+    ensureFrame();
+  }, { passive: true });
+
+  /* text overlay (always visible — title/student/category) */
+  const ov = document.createElement('div');
+  ov.className = 'card-overlay';
+  ov.innerHTML = `
+    <span class="card-category">${escHtml(project.category || '')}</span>
+    <div class="card-bottom">
+      <div class="card-title">${escHtml(project.title)}</div>
+      <div class="card-byline">${escHtml(project.student)}<sup>${escHtml(project.department || '')}</sup></div>
+    </div>`;
+  card.appendChild(ov);
+
+  card.addEventListener('click', () => openOverlay(project, code));
+  return card;
+}
+
+/* ═══════════════════════════════════════════════════
+   Fullscreen overlay
+═══════════════════════════════════════════════════ */
+const overlayEl    = document.getElementById('overlay');
+const overlayTitle = document.getElementById('overlay-title');
+const overlayMeta  = document.getElementById('overlay-meta');
+
+function openOverlay(project, code) {
+  const folder = (project.sketchFile || '').split('/')[0];
+
+  /* Kill all hover previews — the fullscreen iframe should be the only
+     sketch running while the overlay is open. */
+  destroyAllPreviews();
+
+  /* Build a fresh iframe each time so any transform/scale state from a
+     previous open is wiped clean. The auto-scale message listener will
+     resize this new iframe once its sketch reports canvas dimensions. */
+  const fresh = document.createElement('iframe');
+  fresh.id = 'overlay-frame';
+  /* Carry the drawing-bounds override (if any) onto the overlay iframe
+     itself, since #overlay-frame doesn't sit inside any .card element. */
+  if (SKETCH_BOUNDS[project.id]) {
+    fresh.dataset.bounds = JSON.stringify(SKETCH_BOUNDS[project.id]);
+  }
+  /* Always allow-same-origin so the iframe can load /libs/ scripts in
+     Safari (cross-origin blocked otherwise) and so asset-loading sketches
+     can fetch their local fonts/images. */
+  fresh.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+  fresh.setAttribute('scrolling', 'no');
+
+  /* Use srcdoc rather than a blob: URL — see makeIframe() comment for why
+     (Safari + sandboxed blob URLs silently drop postMessage). preview:false
+     means no frameRate cap, so the fullscreen view runs at native speed. */
+  fresh.srcdoc = wrapSketch(code, { folder, preview: false });
+
+  document.getElementById('overlay-frame').replaceWith(fresh);
+
+  /* Populate the info block (category / title / student+dept / optional
+     instructions). Each field has its own typography in CSS — title in
+     body off-white, student-and-dept in body muted-grey, category in
+     mono uppercase muted-grey. */
+  document.getElementById('overlay-category').textContent =
+    (project.category || '').toUpperCase();
+  document.getElementById('overlay-title').textContent = project.title || '';
+  document.getElementById('overlay-meta').innerHTML =
+    escHtml(project.student || '') +
+    (project.department ? `<sup>${escHtml(project.department)}</sup>` : '');
+
+  /* Optional instructions: only render the element if there's content,
+     so empty/missing fields take up no space at all. */
+  const instr = document.getElementById('overlay-instructions');
+  const instrText = (project.instructions || '').toString().trim();
+  if (instrText) {
+    instr.textContent = instrText;
+    instr.hidden = false;
+  } else {
+    instr.textContent = '';
+    instr.hidden = true;
+  }
+
+  overlayEl.classList.add('active');
+  console.log(`[caad] overlay → ${project.id}`);
+}
+
+function closeOverlay() {
+  overlayEl.classList.remove('active');
+  /* Actually destroy the fullscreen iframe (not just navigate it to about:blank)
+     so the sketch stops drawing immediately and its blob URL is freed. Replace
+     with an empty placeholder element so the static <iframe id="overlay-frame">
+     selector keeps working for the next open. */
+  const old = document.getElementById('overlay-frame');
+  if (old) {
+    const placeholder = document.createElement('iframe');
+    placeholder.id = 'overlay-frame';
+    placeholder.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+    placeholder.setAttribute('scrolling', 'no');
+    old.replaceWith(placeholder);
+  }
+}
+
+document.getElementById('overlay-close').addEventListener('click', closeOverlay);
+overlayEl.addEventListener('click', e => { if (e.target === overlayEl) closeOverlay(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeOverlay(); });
+
+/* ═══════════════════════════════════════════════════
+   Init — fetch data then populate grid
+═══════════════════════════════════════════════════ */
+/* Lib bundles inlined into every sketch iframe.
+
+   Background: Safari assigns srcdoc iframes a NULL (opaque) origin, even
+   without sandbox. From a null-origin iframe Safari refuses to load any
+   cross-origin scripts — including same-host /libs/p5.min.js — because
+   the iframe's origin doesn't match the parent's. The reliable cross-
+   browser fix is to inline the libraries directly into the srcdoc
+   string so no external script load happens.
+
+   We pre-fetch once from the parent (which has a normal origin) and
+   cache TWO bundles:
+     LIB_BUNDLE_BASIC = p5 + opentype          (used for the majority)
+     LIB_BUNDLE_SOUND = p5 + opentype + sound  (only when needed)
+
+   Reason for the split: p5.sound 1.9.0 dynamically loads an AudioWorklet
+   processor at startup. Safari blocks that load in a null-origin srcdoc
+   iframe ("Cross-origin script load denied by CORS policy"), which kills
+   p5 entirely. Sketches that don't use audio would be broken just by
+   bundling p5.sound with them, so we only include it when wrapSketch
+   detects the sketch actually calls a p5.sound API. */
+let LIB_BUNDLE_BASIC = '';
+let LIB_BUNDLE_SOUND = '';
+
+async function fetchLibBundle() {
+  if (LIB_BUNDLE_BASIC) return;
+  try {
+    const [p5, p5sound, opentype] = await Promise.all([
+      fetch('libs/p5.min.js').then(r => r.text()),
+      fetch('libs/p5.sound.min.js').then(r => r.text()),
+      fetch('libs/opentype.min.js').then(r => r.text()),
+    ]);
+    /* Any literal "</script" inside lib code would close the wrapping
+       <script> tag of every iframe. None of these libs contains it today,
+       but escape defensively. */
+    const esc = s => s.replace(/<\/script/gi, '<\\/script');
+    LIB_BUNDLE_BASIC = esc(p5 + '\n;\n' + opentype);
+    LIB_BUNDLE_SOUND = esc(p5 + '\n;\n' + opentype + '\n;\n' + p5sound);
+    console.log(`[caad] libs cached — basic: ${(LIB_BUNDLE_BASIC.length/1024).toFixed(0)} KB, with-sound: ${(LIB_BUNDLE_SOUND.length/1024).toFixed(0)} KB`);
+  } catch (e) {
+    console.warn('[caad] lib fetch failed:', e);
+  }
+}
+
+/* Detect whether a sketch needs p5.sound — check for any of p5.sound's
+   public API names. Only sketches that match get the larger bundle. */
+function sketchUsesSound(code) {
+  return /\b(loadSound|userStartAudio|getAudioContext|p5\.(AudioIn|Amplitude|FFT|Oscillator|Noise|SoundFile|Envelope|SoundLoop|Reverb|Delay|Filter|Compressor|EQ|Distortion|MonoSynth|PolySynth|Pulse|Comb|Convolver|Looper))\b/.test(code);
+}
+
+async function init() {
+  const gridEl = document.getElementById('grid');
+
+  /* Fetch libs FIRST — wrapSketch refuses to be useful until LIB_BUNDLE
+     is populated (would otherwise produce iframes with no p5). */
+  await fetchLibBundle();
+
+  let projects;
+  try {
+    const res = await fetch('projects.json');
+    if (!res.ok) throw new Error();
+    projects = await res.json();
+  } catch {
+    gridEl.innerHTML = '<p style="color:var(--muted);padding:2rem;font-family:var(--mono);font-size:.7rem;grid-column:1/-1">could not load projects.json</p>';
+    return;
+  }
+
+  /* sketchFile values are stored unencoded (e.g. "thuraya-typelab-?/...js");
+     each path segment must be URI-encoded before fetching, otherwise `?` is
+     read as a query separator and spaces produce malformed URLs. */
+  console.log(`[caad] fetching ${projects.length} sketches…`);
+  const sources = await Promise.all(
+    projects.map(p => {
+      const encoded = p.sketchFile.split('/').map(encodeURIComponent).join('/');
+      return fetch('sketches/' + encoded)
+        .then(r => r.ok ? r.text() : '// sketch unavailable')
+        .catch(()  => '// sketch unavailable');
+    })
+  );
+  const failed = sources.filter(s => s === '// sketch unavailable').length;
+  console.log(`[caad] sources loaded: ${sources.length - failed}/${sources.length} ok` + (failed ? `, ${failed} failed` : ''));
+
+  for (let i = 0; i < projects.length; i++) {
+    gridEl.appendChild(renderCard(projects[i], sources[i]));
+  }
+
+  /* ?debug=1 → eagerly load every iframe to surface any sketches that fail
+     to render. Each failure paints a red error overlay on its card and is
+     listed in the console summary. Doesn't block normal hover/click. */
+  if (DEBUG) {
+    debugDiagnose(projects, sources).catch(err =>
+      console.warn('[caad debug] pipeline error:', err)
+    );
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   ?debug=1 diagnostic
+   Loads every sketch in its real card-preview slot (so rAF works),
+   waits for either a canvas-ready or sketch-error message, and
+   marks failures both visually (.card-debug-error overlay) and in
+   a console summary. Batched 5-at-a-time so the page stays usable.
+═══════════════════════════════════════════════════ */
+const DEBUG = new URLSearchParams(location.search).get('debug') === '1';
+
+async function debugDiagnose(projects, sources) {
+  console.log(`[caad debug] scanning ${projects.length} sketches…`);
+  const results = new Map(); // project.id -> { ok, error }
+  const BATCH = 5, GAP_MS = 300;
+
+  for (let i = 0; i < projects.length; i += BATCH) {
+    const slice  = projects.slice(i, i + BATCH);
+    const codes  = sources.slice(i, i + BATCH);
+    await Promise.all(slice.map((p, j) => diagnoseOne(p, codes[j], results)));
+    if (i + BATCH < projects.length) {
+      await new Promise(r => setTimeout(r, GAP_MS));
+    }
+  }
+
+  const total   = results.size;
+  const okList  = [...results.entries()].filter(([, r]) =>  r.ok);
+  const failList = [...results.entries()].filter(([, r]) => !r.ok);
+  console.group(`[caad debug] complete — ${okList.length}/${total} rendered, ${failList.length} failed`);
+  if (failList.length === 0) {
+    console.log('all sketches rendered successfully');
+  } else {
+    failList.forEach(([id, r]) => {
+      const p = projects.find(x => x.id === id);
+      console.log(`  ✗  ${p ? p.sketchFile : id}\n     ${r.error}`);
+    });
+  }
+  console.groupEnd();
+}
+
+function diagnoseOne(project, code, results) {
+  return new Promise((resolve) => {
+    const card = document.getElementById(cardElId(project.id));
+    if (!card || !card._ensureFrame) {
+      results.set(project.id, { ok: false, error: 'card not found' });
+      resolve();
+      return;
+    }
+    const iframe = card._ensureFrame();   // pre-load (auto-hover)
+
+    let settled = false;
+    function done(ok, error) {
+      if (settled) return;
+      settled = true;
+      window.removeEventListener('message', onMsg);
+      clearTimeout(timer);
+      results.set(project.id, { ok, error: error || null });
+      if (!ok) showDebugError(card, error);
+      resolve();
+    }
+    function onMsg(e) {
+      if (e.source !== iframe.contentWindow) return;
+      const d = e.data;
+      if (!d) return;
+      if      (d.type === 'caad-canvas-ready')  done(true, null);
+      else if (d.type === 'caad-sketch-error')  done(false, d.error || 'sketch error');
+    }
+    window.addEventListener('message', onMsg);
+    /* If neither canvas-ready nor an error has arrived in 15s, treat the
+       sketch as failed. The window is generous because debug-mode loads 5
+       iframes in parallel, each pulling p5.js + addons from a CDN, and a
+       slow network can push first-frame past 8s for an otherwise fine
+       sketch. */
+    const timer = setTimeout(() => done(false, 'no canvas after 15s'), 15000);
+  });
+}
+
+function showDebugError(card, errorMsg) {
+  if (card.querySelector('.card-debug-error')) return;
+  const div = document.createElement('div');
+  div.className = 'card-debug-error';
+  div.textContent = String(errorMsg || 'failed').split('\n')[0].slice(0, 200);
+  card.appendChild(div);
+}
+
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+init();
+</script>
+</body>
+</html>

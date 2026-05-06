@@ -1,0 +1,14 @@
+# Local IDE/editor state
+.vscode/
+.idea/
+
+# Claude Code memory (private)
+.claude/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Logs / temp
+*.log
+*.tmp

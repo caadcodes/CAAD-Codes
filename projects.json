@@ -1,5 +1,120 @@
 [
   {
+    "id": "leena-remix-dancing",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "Dancing at the Disco",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "leena-remix-dancing/leena-remix-dancing.js",
+    "instructions": "Click to start the party! Move the mouse to dance!"
+  },
+  {
+    "id": "kavya-remix-herbert-franke-digital-einstein",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Digital Einstein – Herbert Franke",
+    "category": "Remix",
+    "types": [
+      "Grid"
+    ],
+    "sketchFile": "kavya-remix-herbert-franke-digital-einstein/kavya-remix-herbert-franke-digital-einstein.js"
+  },
+  {
+    "id": "noura-typelab-7",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Flowy 7",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "noura-typelab-7/noura-typelab-7.js",
+    "instructions": "Move the mouse to influence the wave."
+  },
+  {
+    "id": "thuraya-typelab-Q",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Cracking Q",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Keyboard",
+      "Type",
+      "Grid",
+      "Image"
+    ],
+    "sketchFile": "thuraya-typelab-Q/thuraya-typelab-Q.js",
+    "instructions": "Click anywhere on the Q. Press 'R' to reset."
+  },
+  {
+    "id": "fatma-remix-vera-molnar",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Disorder in Order – Vera Molnar",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "fatma-remix-vera-molnar/fatma-remix-vera-molnar.js",
+    "instructions": "Move the mouse to bring order to chaos."
+  },
+  {
+    "id": "layan-typelab-C",
+    "student": "Layan Al-Mutawakel",
+    "department": "GRD",
+    "title": "Black Hole C",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "layan-typelab-C/layan-typelab-C.js",
+    "instructions": "Move across the Y axis to change number of circles."
+  },
+  {
+    "id": "shalina-remix-joan-miro",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Joan Miro",
+    "category": "Remix",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "shalina-remix-joan-miro/shalina-remix-joan-miro.js",
+    "instructions": "Move the mouse over the red lines."
+  },
+  {
+    "id": "mohamed-playground-infinite-scaffolding",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Infinite Scaffolding",
+    "category": "Playground",
+    "types": [
+      "3D",
+      "Grid"
+    ],
+    "sketchFile": "mohamed-playground-infinite-scaffolding/mohamed-playground-infinite-scaffolding.js"
+  },
+  {
+    "id": "kavya-playground-blinking-neon-squares",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Blinking Neon Squares",
+    "category": "Playground",
+    "types": [
+      "3D"
+    ],
+    "sketchFile": "kavya-playground-blinking-neon-squares/kavya-playground-blinking-neon-squares.js"
+  },
+  {
     "id": "deema-remix-the-swan-no.-17",
     "student": "Deema Abdalrahman",
     "department": "GRD",
@@ -12,101 +127,24 @@
     "instructions": "Move the mouse to spin and multiply."
   },
   {
-    "id": "deema-remix_sol-leWitt-wal-drawing-#1115",
-    "student": "Deema Abdalrahman",
-    "department": "GRD",
-    "title": "Sol Lewitt – Wall Drawing #1115",
-    "category": "Remix",
-    "types": [
-      "Color"
-    ],
-    "sketchFile": "deema-remix_sol-leWitt-wal-drawing-#1115/deema-remix_sol-leWitt-wal-drawing-#1115.js"
-  },
-  {
-    "id": "deema-typelab-D",
-    "student": "Deema Abdalrahman",
-    "department": "GRD",
-    "title": "Breezy D",
-    "category": "Typelab",
-    "types": [
-      "Type"
-    ],
-    "sketchFile": "deema-typelab-D/deema-typelab-D.js"
-  },
-  {
-    "id": "deema-typelab-K",
-    "student": "Deema Abdalrahman",
-    "department": "GRD",
-    "title": "3D K",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "3D",
-      "Type"
-    ],
-    "sketchFile": "deema-typelab-K/deema-typelab-K.js",
-    "instructions": "Move the mouse horizontally to change rotation speed and view."
-  },
-  {
-    "id": "farida-playground-illusion-bloom",
-    "student": "Farida Mohamed",
-    "department": "GRD",
-    "title": "Illusion Bloom",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D"
-    ],
-    "sketchFile": "farida-playground-illusion-bloom/farida-playground-illusion-bloom.js",
-    "instructions": "Hover over the top of the white circle."
-  },
-  {
-    "id": "farida-playground-interactive-polygon",
-    "student": "Farida Mohamed",
-    "department": "GRD",
-    "title": "Interactive Polygon",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D"
-    ],
-    "sketchFile": "farida-playground-interactive-polygon/farida-playground-interactive-polygon.js",
-    "instructions": "Move the mouse to the center."
-  },
-  {
-    "id": "farida-playground-rainbow-spiral",
-    "student": "Farida Mohamed",
-    "department": "GRD",
-    "title": "Rainbow Spiral",
+    "id": "noura-playground-w4.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Orbiting O's",
     "category": "Playground",
     "types": [],
-    "sketchFile": "farida-playground-rainbow-spiral/farida-playground-rainbow-spiral.js"
+    "sketchFile": "noura-playground-w4.1/noura-playground-w4.1.js"
   },
   {
-    "id": "farida-playground-rotating-ring",
-    "student": "Farida Mohamed",
+    "id": "leena-typelab-0",
+    "student": "Leena Ulaiwi",
     "department": "GRD",
-    "title": "Rotating Ring",
-    "category": "Playground",
+    "title": "Lighting 0",
+    "category": "Typelab",
     "types": [
-      "Mouse",
-      "3D"
+      "Type"
     ],
-    "sketchFile": "farida-playground-rotating-ring/farida-playground-rotating-ring.js",
-    "instructions": "Hover over the ring."
-  },
-  {
-    "id": "farida-playground-spinning-cube",
-    "student": "Farida Mohamed",
-    "department": "GRD",
-    "title": "Spinning Cube",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D"
-    ],
-    "sketchFile": "farida-playground-spinning-cube/farida-playground-spinning-cube.js",
-    "instructions": "Cube follows your mouse."
+    "sketchFile": "leena-typelab-0/leena-typelab-0.js"
   },
   {
     "id": "farida-typelab-spikey-8",
@@ -122,65 +160,55 @@
     "instructions": "Move the mouse horizontally to change rotation speed and vertically to change spike length. Click to flip rotation direction."
   },
   {
-    "id": "farida-typelab-triphobia-I",
-    "student": "Farida Mohamed",
+    "id": "thuraya-remix-mushrooms",
+    "student": "Thuraya Ezzulddin",
     "department": "GRD",
-    "title": "Triphobic I",
-    "category": "Typelab",
+    "title": "Mushrooms",
+    "category": "Remix",
     "types": [
       "Mouse",
-      "Type",
-      "Grid"
+      "Image"
     ],
-    "sketchFile": "farida-typelab-triphobia-I/farida-typelab-triphobia-I.js",
-    "instructions": "Move the mouse over the i."
+    "sketchFile": "thuraya-remix-mushrooms/thuraya-remix-mushrooms.js",
+    "instructions": "Click to reveal effect of Mushrooms."
   },
   {
-    "id": "fatma-playground-3d-orbit",
-    "student": "Fatma Alnuaimi",
+    "id": "kavya-playground-fractal-tree",
+    "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "3d Orbit",
+    "title": "Fractal Tree",
     "category": "Playground",
     "types": [
+      "Mouse"
+    ],
+    "sketchFile": "kavya-playground-fractal-tree/kavya-playground-fractal-tree.js",
+    "instructions": "Move mouse horizontally to grow the fractal."
+  },
+  {
+    "id": "jana-playground-mona-lisa",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Glitchy Mona Lisa",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "jana-playground-mona-lisa/jana-playground-mona-lisa.js",
+    "instructions": "Click for a surprise."
+  },
+  {
+    "id": "mohamed-playground-spiral-debris",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Spiral Debris",
+    "category": "Playground",
+    "types": [
+      "Mouse",
       "3D"
     ],
-    "sketchFile": "fatma-playground-3d-orbit/fatma-playground-3d-orbit.js"
-  },
-  {
-    "id": "fatma-playground-catch-me",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Catch Me",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "fatma-playground-catch-me/fatma-playground-catch-me.js",
-    "instructions": "Try to catch the circles..."
-  },
-  {
-    "id": "fatma-playground-confetti",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Confetti",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "fatma-playground-confetti/fatma-playground-confetti.js",
-    "instructions": "Move the mouse to erase. Click to reset."
-  },
-  {
-    "id": "fatma-playground-continuous-layers",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Continuous Layers",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "fatma-playground-continuous-layers/fatma-playground-continuous-layers.js",
-    "instructions": "Layers follow your mouse."
+    "sketchFile": "mohamed-playground-spiral-debris/mohamed-playground-spiral-debris.js",
+    "instructions": "Move the mouse to influence the scale and position of debris."
   },
   {
     "id": "fatma-playground-expanding-rings",
@@ -195,120 +223,76 @@
     "instructions": "Move the mouse vertically to influence the distance, frequency, and number of rings."
   },
   {
-    "id": "fatma-playground-growing-circles",
-    "student": "Fatma Alnuaimi",
+    "id": "shalina-typelab-1",
+    "student": "Shalina Siddiqui",
     "department": "GRD",
-    "title": "Growing Circles",
-    "category": "Playground",
+    "title": "Binary 1",
+    "category": "Typelab",
     "types": [
-      "Mouse"
-    ],
-    "sketchFile": "fatma-playground-growing-circles/fatma-playground-growing-circles.js",
-    "instructions": "Circles follow mouse. Click to reset."
-  },
-  {
-    "id": "fatma-playground-layered-rotating-G",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Layered G",
-    "category": "Playground",
-    "types": [
-      "Type",
-      "3D"
-    ],
-    "sketchFile": "fatma-playground-layered-rotating-G/fatma-playground-layered-rotating-G.js"
-  },
-  {
-    "id": "fatma-playground-oscillating-orbit",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Oscillating Orbit",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "fatma-playground-oscillating-orbit/fatma-playground-oscillating-orbit.js",
-    "instructions": "Move the mouse to increase/decrease distance between circles."
-  },
-  {
-    "id": "fatma-playground-overlapping-circles",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Overlapping Circles",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "fatma-playground-overlapping-circles/fatma-playground-overlapping-circles.js",
-    "instructions": "Move the mouse horizontally to increase/decrease number of circles."
-  },
-  {
-    "id": "fatma-playground-points-forming-H",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Flocking H",
-    "category": "Playground",
-    "types": [
-      "Particles",
       "Type"
     ],
-    "sketchFile": "fatma-playground-points-forming-H/fatma-playground-points-forming-H.js"
+    "sketchFile": "shalina-typelab-1/shalina-typelab-1.js",
+    "instructions": "Hover over the 1..."
   },
   {
-    "id": "fatma-playground-rotating-circles",
-    "student": "Fatma Alnuaimi",
+    "id": "layan-typelab-flee-N",
+    "student": "Layan Al-Mutawakel",
     "department": "GRD",
-    "title": "Rotating Circles",
-    "category": "Playground",
-    "types": [],
-    "sketchFile": "fatma-playground-rotating-circles/fatma-playground-rotating-circles.js"
-  },
-  {
-    "id": "fatma-playground-rotating-squares",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Rotating Squares",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "fatma-playground-rotating-squares/fatma-playground-rotating-squares.js",
-    "instructions": "Move the mouse to increase/decrease speed and number of squares."
-  },
-  {
-    "id": "fatma-remix-mohamedmelehi",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Mohamed Melehi",
-    "category": "Remix",
-    "types": [],
-    "sketchFile": "fatma-remix-mohamedmelehi/fatma-remix-mohamedmelehi.js",
-    "instructions": "Click to reset."
-  },
-  {
-    "id": "fatma-remix-vera-molnar",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Vera Molnar",
-    "category": "Remix",
-    "types": [
-      "Mouse",
-      "Grid"
-    ],
-    "sketchFile": "fatma-remix-vera-molnar/fatma-remix-vera-molnar.js",
-    "instructions": "Move the mouse to bring order to chaos."
-  },
-  {
-    "id": "fatma-typelab-3",
-    "student": "Fatma Alnuaimi",
-    "department": "GRD",
-    "title": "Buzzing 3",
+    "title": "Particle Quotes",
     "category": "Typelab",
     "types": [
       "Type",
       "Particles"
     ],
-    "sketchFile": "fatma-typelab-3/fatma-typelab-3.js"
+    "sketchFile": "layan-typelab-flee-N/layan-typelab-flee-N.js"
+  },
+  {
+    "id": "kavya-playground-following-eyes",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Staring 9",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "kavya-playground-following-eyes/kavya-playground-following-eyes.js"
+  },
+  {
+    "id": "noura-playground-w5.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Sundial",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "noura-playground-w5.1/noura-playground-w5.1.js"
+  },
+  {
+    "id": "mohamed-playground-R-party",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "R Party",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type",
+      "Color"
+    ],
+    "sketchFile": "mohamed-playground-R-party/mohamed-playground-R-party.js",
+    "instructions": "Move the mouse to influence scale and position of R's."
+  },
+  {
+    "id": "thuraya-playground-disco lights",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Disco Lights",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "thuraya-playground-disco lights/thuraya-playground-disco lights.js",
+    "instructions": "Move the mouse to influence the grid."
   },
   {
     "id": "fatma-typelab-G",
@@ -321,6 +305,110 @@
       "3D"
     ],
     "sketchFile": "fatma-typelab-G/fatma-typelab-G.js"
+  },
+  {
+    "id": "leena-playground-smiley-face",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "Emotional Range",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "leena-playground-smiley-face/leena-playground-smiley-face.js",
+    "instructions": "Click for smiles and frowns."
+  },
+  {
+    "id": "kavya-playground-following-squares",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Flocking Squares",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "kavya-playground-following-squares/kavya-playground-following-squares.js",
+    "instructions": "Move mouse to spin and change color."
+  },
+  {
+    "id": "shalina-typelab-M",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "M",
+    "category": "Typelab",
+    "types": [
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "shalina-typelab-M/shalina-typelab-M.js",
+    "instructions": "Click and hold to influence the particles."
+  },
+  {
+    "id": "mohamed-playground-move-square",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Move Square",
+    "category": "Playground",
+    "types": [
+      "Keyboard"
+    ],
+    "sketchFile": "mohamed-playground-move-square/mohamed-playground-move-square.js",
+    "instructions": "Use the arrow keys to move the square."
+  },
+  {
+    "id": "noura-playground-w6",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "The more you think",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type",
+      "Image"
+    ],
+    "sketchFile": "noura-playground-w6/noura-playground-w6.js",
+    "instructions": "Move the mouse to influence text boxes."
+  },
+  {
+    "id": "kavya-playground-hide-and-seek",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Hide and Seek 9",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid"
+    ],
+    "sketchFile": "kavya-playground-hide-and-seek/kavya-playground-hide-and-seek.js",
+    "instructions": "Move the mouse to move the grid."
+  },
+  {
+    "id": "thuraya-playground-circles",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Circles",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "thuraya-playground-circles/thuraya-playground-circles.js"
+  },
+  {
+    "id": "layan-typelab-flee-N2",
+    "student": "Layan Al-Mutawakel",
+    "department": "GRD",
+    "title": "Fleeing N",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Particles"
+    ],
+    "sketchFile": "layan-typelab-flee-N2/layan-typelab-flee-N2.js",
+    "instructions": "Move the mouse over the N."
   },
   {
     "id": "fatma-typelab-H",
@@ -337,174 +425,153 @@
     "instructions": "Move the mouse to push the orange sand."
   },
   {
-    "id": "fatma-typelab-plus",
-    "student": "Fatma Alnuaimi",
+    "id": "mohamed-typelab-listening-U",
+    "student": "Mohamed Kashwani",
     "department": "GRD",
-    "title": "Pulsing +",
+    "title": "Listening U",
+    "category": "Typelab",
+    "types": [],
+    "sketchFile": "mohamed-typelab-listening-U/mohamed-typelab-listening-U.js",
+    "instructions": ""
+  },
+  {
+    "id": "kavya-playground-gradient-spiral-andmore",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Gradient Spiral",
+    "category": "Playground",
+    "types": [
+      "Color"
+    ],
+    "sketchFile": "kavya-playground-gradient-spiral-andmore/kavya-playground-gradient-spiral-andmore.js"
+  },
+  {
+    "id": "shalina-typelab-T",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Listening T",
+    "category": "Typelab",
+    "types": [],
+    "sketchFile": "shalina-typelab-T/shalina-typelab-T.js",
+    "instructions": "Click to turn on mic."
+  },
+  {
+    "id": "noura-remix-1.2",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Square Structures – Vera Molnar",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "noura-remix-1.2/noura-remix-1.2.js",
+    "instructions": "Click for chaos!"
+  },
+  {
+    "id": "thuraya-playground-glittery-box",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Glittery Cube",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D",
+      "Particles"
+    ],
+    "sketchFile": "thuraya-playground-glittery-box/thuraya-playground-glittery-box.js",
+    "instructions": "Click for the party!"
+  },
+  {
+    "id": "mohamed-typelab-moving-around",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Moving Parantheses",
     "category": "Typelab",
     "types": [
+      "Keyboard",
       "Type"
     ],
-    "sketchFile": "fatma-typelab-plus/fatma-typelab-plus.js"
+    "sketchFile": "mohamed-typelab-moving-around/mohamed-typelab-moving-around.js",
+    "instructions": "Click to start. Use the up and down arrow keys to adjust the speed."
   },
   {
-    "id": "jana-playground-cube&ball",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Cube & Ball",
+    "id": "kavya-playground-superb-umbrella",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Square Donut",
     "category": "Playground",
     "types": [
+      "Mouse"
+    ],
+    "sketchFile": "kavya-playground-superb-umbrella/kavya-playground-superb-umbrella.js",
+    "instructions": "Move the mouse to influence the shape and color."
+  },
+  {
+    "id": "noura-typelab-at",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Digit@l",
+    "category": "Typelab",
+    "types": [
       "Mouse",
+      "Type",
+      "Grid",
       "3D"
     ],
-    "sketchFile": "jana-playground-cube&ball/jana-playground-cube&ball.js"
+    "sketchFile": "noura-typelab-at/noura-typelab-at.js",
+    "instructions": "Hover over the @ to reveal."
   },
   {
-    "id": "jana-playground-mona-lisa",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Mona Lisa",
-    "category": "Playground",
+    "id": "shalina-typelab-Y",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Extruding Y",
+    "category": "Typelab",
     "types": [
-      "Mouse",
-      "Image"
+      "Type",
+      "3D"
     ],
-    "sketchFile": "jana-playground-mona-lisa/jana-playground-mona-lisa.js",
-    "instructions": "Click for a surprise."
+    "sketchFile": "shalina-typelab-Y/shalina-typelab-Y.js",
+    "instructions": "Click to expand."
   },
   {
-    "id": "jana-playground-spongebob",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Spongebob",
-    "category": "Playground",
-    "types": [],
-    "sketchFile": "jana-playground-spongebob/jana-playground-spongebob.js"
-  },
-  {
-    "id": "jana-playground-typography",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "AEIO&",
-    "category": "Playground",
+    "id": "leena-typelab-R",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "Zooming R",
+    "category": "Typelab",
     "types": [
-      "Mouse",
-      "Type"
+      "Type",
+      "Color"
     ],
-    "sketchFile": "jana-playground-typography/jana-playground-typography.js",
-    "instructions": "TBD"
+    "sketchFile": "leena-typelab-R/leena-typelab-R.js"
   },
   {
-    "id": "jana-remix-mohamed-melehi",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Mohamed Melehi",
-    "category": "Remix",
-    "types": [],
-    "sketchFile": "jana-remix-mohamed-melehi/jana-remix-mohamed-melehi.js"
-  },
-  {
-    "id": "jana-remix-syed-raza",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Syed Raza",
+    "id": "kavya-remix-karl-gerstner-color-lines",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Color Lines – Karl Gerstner",
     "category": "Remix",
     "types": [
       "Mouse"
     ],
-    "sketchFile": "jana-remix-syed-raza/jana-remix-syed-raza.js",
-    "instructions": "Click the maroon circle."
-  },
-  {
-    "id": "jana-typelab-ampersand",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "& in the Rain",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type",
-      "Grid"
-    ],
-    "sketchFile": "jana-typelab-ampersand/jana-typelab-ampersand.js",
-    "instructions": "Click and hold to pause the rain."
-  },
-  {
-    "id": "jana-typelab-E",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Curly E",
-    "category": "Typelab",
-    "types": [
-      "Type"
-    ],
-    "sketchFile": "jana-typelab-E/jana-typelab-E.js",
-    "instructions": "Click to restrain the E."
-
-  },
-  {
-    "id": "jana-typelab-I",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Eye I",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "jana-typelab-I/jana-typelab-I.js",
+    "sketchFile": "kavya-remix-karl-gerstner-color-lines/kavya-remix-karl-gerstner-color-lines.js",
     "instructions": "Click and hold to reveal."
   },
   {
-    "id": "jana-typelab-O",
-    "student": "Jana Khalifa",
-    "department": "FNM",
-    "title": "Tunnel O",
+    "id": "kavya-typelab-S-universe",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "S Universe",
     "category": "Typelab",
     "types": [
       "Mouse",
       "Type",
-      "3D"
+      "Particles"
     ],
-    "sketchFile": "jana-typelab-O/jana-typelab-O.js",
-    "instructions": "Click to speed up."
-  },
-  {
-    "id": "kavya-playground-3d-mouse-sphere",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "3D Mouse Sphere",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D"
-    ],
-    "sketchFile": "kavya-playground-3d-mouse-sphere/kavya-playground-3d-mouse-sphere.js",
-    "instructions": "Move to influence polygon detail, color and scale."
-  },
-  {
-    "id": "kavya-playground-blinking-neon-squares",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Blinking Neon Squares",
-    "category": "Playground",
-    "types": [
-      "3D"
-    ],
-    "sketchFile": "kavya-playground-blinking-neon-squares/kavya-playground-blinking-neon-squares.js"
-  },
-  {
-    "id": "kavya-playground-colourful-sunstar",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Sunstar",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D"
-    ],
-    "sketchFile": "kavya-playground-colourful-sunstar/kavya-playground-colourful-sunstar.js",
-    "instructions": "Click to stop"
+    "sketchFile": "kavya-typelab-S-universe/kavya-typelab-S-universe.js",
+    "instructions": "Move the mouse horizontally to reveal the universe."
   },
   {
     "id": "kavya-playground-digital-xray",
@@ -531,283 +598,55 @@
       "Mouse",
       "Type"
     ],
-    "sketchFile": "kavya-playground-draw-with-time/kavya-playground-draw-with-time.js"
+    "sketchFile": "kavya-playground-draw-with-time/kavya-playground-draw-with-time.js",
+    "instructions": "Click to reset."
   },
   {
-    "id": "kavya-playground-following-eyes",
-    "student": "Kavya Ajith",
+    "id": "mohamed-playground-jungle-spiral",
+    "student": "Mohamed Kashwani",
     "department": "GRD",
-    "title": "Staring 9",
+    "title": "Jungle Spiral",
     "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "kavya-playground-following-eyes/kavya-playground-following-eyes.js"
+    "types": [],
+    "sketchFile": "mohamed-playground-jungle-spiral/mohamed-playground-jungle-spiral.js"
   },
   {
-    "id": "kavya-playground-following-squares",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Flocking Squares",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Grid"
-    ],
-    "sketchFile": "kavya-playground-following-squares/kavya-playground-following-squares.js",
-    "instructions": "Move mouse to spin and change color."
-  },
-  {
-    "id": "kavya-playground-fractal-tree",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Fractal Tree",
-    "category": "Playground",
+    "id": "jana-remix-syed-raza",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Tree – Syed Haider Raza",
+    "category": "Remix",
     "types": [
       "Mouse"
     ],
-    "sketchFile": "kavya-playground-fractal-tree/kavya-playground-fractal-tree.js",
-    "instructions": "Move mouse horizontally to grow the fractal."
+    "sketchFile": "jana-remix-syed-raza/jana-remix-syed-raza.js",
+    "instructions": "Click the maroon circle."
   },
   {
-    "id": "kavya-playground-gradient-spiral-andmore",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Gradient Spiral and More",
-    "category": "Playground",
-    "types": [
-      "Color"
-    ],
-    "sketchFile": "kavya-playground-gradient-spiral-andmore/kavya-playground-gradient-spiral-andmore.js"
-  },
-  {
-    "id": "kavya-playground-growing-RGB-circnsquare",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "RGB Circle Square",
-    "category": "Playground",
-    "types": [
-      "Color"
-    ],
-    "sketchFile": "kavya-playground-growing-RGB-circnsquare/kavya-playground-growing-RGB-circnsquare.js"
-  },
-  {
-    "id": "kavya-playground-growing-tan-W",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Growing Tan W",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "kavya-playground-growing-tan-W/kavya-playground-growing-tan-W.js",
-    "instructions": "Move mouse horizontally to increase/decrease the size of squares."
-  },
-  {
-    "id": "kavya-playground-hide-and-seek",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Hide and Seek 9",
-    "category": "Playground",
+    "id": "jana-typelab-O",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Tunnel O",
+    "category": "Typelab",
     "types": [
       "Mouse",
       "Type",
-      "Grid"
-    ],
-    "sketchFile": "kavya-playground-hide-and-seek/kavya-playground-hide-and-seek.js",
-    "instructions": "Move the mouse to move the grid."
-  },
-  {
-    "id": "kavya-playground-jumping-9",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Terrified 9",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type",
-      "Grid"
-    ],
-    "sketchFile": "kavya-playground-jumping-9/kavya-playground-jumping-9.js",
-    "instructions": "Move the mouse to move the grid."
-  },
-  {
-    "id": "kavya-playground-mouse-reactive-trigonometric-S",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Trigonometric S",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "kavya-playground-mouse-reactive-trigonometric-S/kavya-playground-mouse-reactive-trigonometric-S.js",
-    "instructions": "Move the mouse to influence the lines."
-  },
-  {
-    "id": "kavya-playground-press-to-reveal-W",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "W Walkway",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "kavya-playground-press-to-reveal-W/kavya-playground-press-to-reveal-W.js",
-    "instructions": "Press and hold to reveal."
-  },
-  {
-    "id": "kavya-playground-random-shapes",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Random Shapes",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Color"
-    ],
-    "sketchFile": "kavya-playground-random-shapes/kavya-playground-random-shapes.js",
-    "instructions": "Move the mouse across quadrants."
-  },
-  {
-    "id": "kavya-playground-random-square-circle-cursor",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Random Square Circle",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "kavya-playground-random-square-circle-cursor/kavya-playground-random-square-circle-cursor.js",
-    "instructions": "Move the mouse to change the number of squares."
-  },
-  {
-    "id": "kavya-playground-red-tubelight-S",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Tubelight S",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "kavya-playground-red-tubelight-S/kavya-playground-red-tubelight-S.js",
-    "instructions": "Move the mouse horizontally to increase/decrease intensity of light."
-  },
-  {
-    "id": "kavya-playground-RGB-circandsquare",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "RGB Circle Square",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Color",
       "3D"
     ],
-    "sketchFile": "kavya-playground-RGB-circandsquare/kavya-playground-RGB-circandsquare.js"
+    "sketchFile": "jana-typelab-O/jana-typelab-O.js",
+    "instructions": "Click to speed up."
   },
   {
-    "id": "kavya-playground-RGB-growing-overlapping-squares",
-    "student": "Kavya Ajith",
+    "id": "fatma-playground-growing-circles",
+    "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "RGB Growing Squares",
-    "category": "Playground",
-    "types": [
-      "Color"
-    ],
-    "sketchFile": "kavya-playground-RGB-growing-overlapping-squares/kavya-playground-RGB-growing-overlapping-squares.js"
-  },
-  {
-    "id": "kavya-playground-rotating-text",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Rotating Text",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "kavya-playground-rotating-text/kavya-playground-rotating-text.js"
-  },
-  {
-    "id": "kavya-playground-running-square",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Running Square",
-    "category": "Playground",
-    "types": [],
-    "sketchFile": "kavya-playground-running-square/kavya-playground-running-square.js"
-  },
-  {
-    "id": "kavya-playground-smooth_trigonometric-S",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Smooth S",
+    "title": "Growing Circles",
     "category": "Playground",
     "types": [
       "Mouse"
     ],
-    "sketchFile": "kavya-playground-smooth_trigonometric-S/kavya-playground-smooth_trigonometric-S.js",
-    "instructions": "Move the mouse to influence the outline."
-  },
-  {
-    "id": "kavya-playground-stack-of-pages-W",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Stacked W",
-    "category": "Playground",
-    "types": [
-      "Type"
-    ],
-    "sketchFile": "kavya-playground-stack-of-pages-W/kavya-playground-stack-of-pages-W.js"
-  },
-  {
-    "id": "kavya-playground-stars-and-appearing-circles",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Stars & Circles",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "kavya-playground-stars-and-appearing-circles/kavya-playground-stars-and-appearing-circles.js",
-    "instructions": "Click for random."
-  },
-  {
-    "id": "kavya-playground-sunstar",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Sunstar",
-    "category": "Playground",
-    "types": [
-      "Color",
-      "3D"
-    ],
-    "sketchFile": "kavya-playground-sunstar/kavya-playground-sunstar.js"
-  },
-  {
-    "id": "kavya-playground-superb-umbrella",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Superb Umbrella",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "kavya-playground-superb-umbrella/kavya-playground-superb-umbrella.js",
-    "instructions": "Move the mouse to influence the shape and color."
-  },
-  {
-    "id": "kavya-playground-ticking_clock",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Ticking Clock",
-    "category": "Playground",
-    "types": [],
-    "sketchFile": "kavya-playground-ticking_clock/kavya-playground-ticking_clock.js"
+    "sketchFile": "fatma-playground-growing-circles/fatma-playground-growing-circles.js",
+    "instructions": "Circles follow mouse. Click to reset."
   },
   {
     "id": "kavya-playground-W-electricity",
@@ -823,263 +662,333 @@
     "instructions": "Move the mouse to influence the jitter."
   },
   {
-    "id": "kavya-remix-herbert-franke-digital-einstein",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Herbert Ftanke – Digital Einstein",
-    "category": "Remix",
+    "id": "noura-typelab-V",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Emoticon V",
+    "category": "Typelab",
     "types": [
+      "Mouse",
+      "Type",
+      "3D",
+      "Image"
+    ],
+    "sketchFile": "noura-typelab-V/noura-typelab-V.js",
+    "instructions": "Click to dance. Click again to reset."
+  },
+  {
+    "id": "thuraya-playground-ello",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Ello",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "thuraya-playground-ello/thuraya-playground-ello.js"
+  },
+  {
+    "id": "fatma-playground-overlapping-circles",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Overlapping Circles",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-overlapping-circles/fatma-playground-overlapping-circles.js",
+    "instructions": "Move the mouse horizontally to increase/decrease number of circles."
+  },
+  {
+    "id": "jana-typelab-ampersand",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "& in the Rain",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
       "Grid"
     ],
-    "sketchFile": "kavya-remix-herbert-franke-digital-einstein/kavya-remix-herbert-franke-digital-einstein.js"
+    "sketchFile": "jana-typelab-ampersand/jana-typelab-ampersand.js",
+    "instructions": "Click and hold to pause the rain. R to reset."
   },
   {
-    "id": "kavya-remix-karl-gerstner-color-lines",
+    "id": "jana-typelab-E",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Curly E",
+    "category": "Typelab",
+    "types": [
+      "Type"
+    ],
+    "sketchFile": "jana-typelab-E/jana-typelab-E.js",
+    "instructions": "Click to restrain the E."
+  },
+  {
+    "id": "thuraya-playground-dotty-q",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Dotty Q",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Grid"
+    ],
+    "sketchFile": "thuraya-playground-dotty-q/thuraya-playground-dotty-q.js",
+    "instructions": "Move the mouse to infuence the scale of the grid."
+  },
+  {
+    "id": "kavya-playground-press-to-reveal-W",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Karl Gerstner – Color Lines",
-    "category": "Remix",
+    "title": "W Walkway",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "kavya-playground-press-to-reveal-W/kavya-playground-press-to-reveal-W.js",
+    "instructions": "Press and hold to reveal."
+  },
+  {
+    "id": "shalina-playground-ellipse-layers",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Ellipse Layers",
+    "category": "Playground",
     "types": [
       "Mouse"
     ],
-    "sketchFile": "kavya-remix-karl-gerstner-color-lines/kavya-remix-karl-gerstner-color-lines.js",
-    "instructions": "Click and hold to reveal."
+    "sketchFile": "shalina-playground-ellipse-layers/shalina-playground-ellipse-layers.js",
+    "instructions": "Move the mouse to expand or contract."
   },
   {
-    "id": "kavya-typelab-appearing-hash",
+    "id": "kavya-playground-3d-mouse-sphere",
     "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Chalky #",
-    "category": "Typelab",
-    "types": [
-      "Type"
-    ],
-    "sketchFile": "kavya-typelab-appearing-hash/kavya-typelab-appearing-hash.js"
-  },
-  {
-    "id": "kavya-typelab-fractal-field-9",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "Fractal 9",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "kavya-typelab-fractal-field-9/kavya-typelab-fractal-field-9.js",
-    "instructions": "Move the mouse to influence the fractals."
-  },
-  {
-    "id": "kavya-typelab-S-universe",
-    "student": "Kavya Ajith",
-    "department": "GRD",
-    "title": "S Universe",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type",
-      "Particles"
-    ],
-    "sketchFile": "kavya-typelab-S-universe/kavya-typelab-S-universe.js",
-    "instructions": "Move the mouse horizontally to reveal the universe."
-  },
-  {
-    "id": "layan-typelab-C",
-    "student": "Layan Al-Mutawakel",
-    "department": "GRD",
-    "title": "Black Hole C",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "layan-typelab-C/layan-typelab-C.js",
-    "instructions": "Move to influence the size of the circles."
-  },
-  {
-    "id": "layan-typelab-flee-N",
-    "student": "Layan Al-Mutawakel",
-    "department": "GRD",
-    "title": "Particle Quotes",
-    "category": "Typelab",
-    "types": [
-      "Type",
-      "Particles"
-    ],
-    "sketchFile": "layan-typelab-flee-N/layan-typelab-flee-N.js"
-  },
-  {
-    "id": "layan-typelab-flee-N2",
-    "student": "Layan Al-Mutawakel",
-    "department": "GRD",
-    "title": "Fleeing N",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type",
-      "Particles"
-    ],
-    "sketchFile": "layan-typelab-flee-N2/layan-typelab-flee-N2.js",
-    "instructions": "Move the mouse over the N."
-  },
-  {
-    "id": "layan_remix_hilma_af_klint_evolution",
-    "student": "Layan Al-Mutawakel",
-    "department": "GRD",
-    "title": "Hilma af Klint – Evolution",
-    "category": "Remix",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "layan_remix_hilma_af_klint_evolution/layan_remix_hilma_af_klint_evolution.js",
-    "instructions": "Click to evolve."
-  },
-  {
-    "id": "leena-playground-3D",
-    "student": "Leena Ulaiwi",
-    "department": "GRD",
-    "title": "3D",
+    "title": "3D Polygon",
     "category": "Playground",
     "types": [
       "Mouse",
       "3D"
     ],
-    "sketchFile": "leena-playground-3D/leena-playground-3D.js",
-    "instructions": "Move the mouse to influence the polygons. Click for new polygons."
+    "sketchFile": "kavya-playground-3d-mouse-sphere/kavya-playground-3d-mouse-sphere.js",
+    "instructions": "Move to influence polygon detail, color and scale."
   },
   {
-    "id": "leena-playground-smiley-face",
-    "student": "Leena Ulaiwi",
+    "id": "fatma-typelab-plus",
+    "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "Smiley Face",
+    "title": "Pulsing +",
+    "category": "Typelab",
+    "types": [
+      "Type"
+    ],
+    "sketchFile": "fatma-typelab-plus/fatma-typelab-plus.js"
+  },
+  {
+    "id": "farida-playground-rainbow-spiral",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Rainbow Spiral",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "farida-playground-rainbow-spiral/farida-playground-rainbow-spiral.js"
+  },
+  {
+    "id": "kavya-playground-RGB-circandsquare",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "RGB Circle Square",
     "category": "Playground",
     "types": [
       "Mouse",
-      "Image"
+      "Color",
+      "3D"
     ],
-    "sketchFile": "leena-playground-smiley-face/leena-playground-smiley-face.js",
-    "instructions": "Click for smiles and frowns."
+    "sketchFile": "kavya-playground-RGB-circandsquare/kavya-playground-RGB-circandsquare.js"
   },
   {
-    "id": "leena-remix-dancing",
-    "student": "Leena Ulaiwi",
+    "id": "fatma-remix-mohamedmelehi",
+    "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "Dancing",
+    "title": "Mohamed Melehi",
+    "category": "Remix",
+    "types": [],
+    "sketchFile": "fatma-remix-mohamedmelehi/fatma-remix-mohamedmelehi.js",
+    "instructions": "Click to reset."
+  },
+  {
+    "id": "deema-typelab-D",
+    "student": "Deema Abdalrahman",
+    "department": "GRD",
+    "title": "Breezy D",
+    "category": "Typelab",
+    "types": [
+      "Type"
+    ],
+    "sketchFile": "deema-typelab-D/deema-typelab-D.js"
+  },
+  {
+    "id": "thuraya-remix-triangles",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Triangles",
+    "category": "Remix",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "thuraya-remix-triangles/thuraya-remix-triangles.js",
+    "instructions": "Move the mouse horizontally to influence the lines."
+  },
+  {
+    "id": "thuraya-playground-AHHH",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "AHHH",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "thuraya-playground-AHHH/thuraya-playground-AHHH.js"
+  },
+  {
+    "id": "kavya-playground-running-square",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Running Square",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "kavya-playground-running-square/kavya-playground-running-square.js"
+  },
+  {
+    "id": "mohamed-remix-culture",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Rhythmical Composition with Red – Saloua Randa Choucair",
     "category": "Remix",
     "types": [
       "Mouse",
+      "Image",
+      "Color"
+    ],
+    "sketchFile": "mohamed-remix-culture/mohamed-remix-culture.js",
+    "instructions": "Click and hold on each shape in the image."
+  },
+  {
+    "id": "kavya-playground-colourful-sunstar",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Sunstar",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "kavya-playground-colourful-sunstar/kavya-playground-colourful-sunstar.js",
+    "instructions": "Click to stop"
+  },
+  {
+    "id": "kavya-playground-growing-tan-W",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Growing Tan W",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "kavya-playground-growing-tan-W/kavya-playground-growing-tan-W.js",
+    "instructions": "Move mouse horizontally to increase/decrease the size of squares."
+  },
+  {
+    "id": "shalina-remix-syed-raza",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Syed Haider Raza",
+    "category": "Remix",
+    "types": [
+      "Keyboard"
+    ],
+    "sketchFile": "shalina-remix-syed-raza/shalina-remix-syed-raza.js",
+    "instructions": "Use arrow keys to move the circles."
+  },
+  {
+    "id": "thuraya-playground-fish",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Fish",
+    "category": "Playground",
+    "types": [
+      "Type",
       "Image"
     ],
-    "sketchFile": "leena-remix-dancing/leena-remix-dancing.js",
-    "instructions": "Move the mouse to dance!"
+    "sketchFile": "thuraya-playground-fish/thuraya-playground-fish.js"
   },
   {
-    "id": "leena-typelab-0",
-    "student": "Leena Ulaiwi",
+    "id": "kavya-playground-red-tubelight-S",
+    "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Lighting 0",
-    "category": "Typelab",
+    "title": "Tubelight S",
+    "category": "Playground",
     "types": [
+      "Mouse",
       "Type"
     ],
-    "sketchFile": "leena-typelab-0/leena-typelab-0.js"
+    "sketchFile": "kavya-playground-red-tubelight-S/kavya-playground-red-tubelight-S.js",
+    "instructions": "Move the mouse horizontally to increase/decrease intensity of light."
   },
   {
-    "id": "leena-typelab-R",
-    "student": "Leena Ulaiwi",
+    "id": "farida-playground-spinning-cube",
+    "student": "Farida Mohamed",
     "department": "GRD",
-    "title": "Zooming R",
-    "category": "Typelab",
-    "types": [
-      "Type",
-      "Color"
-    ],
-    "sketchFile": "leena-typelab-R/leena-typelab-R.js"
-  },
-  {
-    "id": "mohamed-playground-circle-pattern",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Circle Pattern",
+    "title": "Spinning Cube",
     "category": "Playground",
     "types": [
       "Mouse",
-      "Color"
+      "3D"
     ],
-    "sketchFile": "mohamed-playground-circle-pattern/mohamed-playground-circle-pattern.js",
-    "instructions": "Click to reset and change colors."
+    "sketchFile": "farida-playground-spinning-cube/farida-playground-spinning-cube.js",
+    "instructions": "Cube follows your mouse."
   },
   {
-    "id": "mohamed-playground-disco-dots",
+    "id": "mohamed-playground-mouse-circle-square",
     "student": "Mohamed Kashwani",
     "department": "GRD",
-    "title": "Dancing Dots and Squares",
+    "title": "Disco Dots",
     "category": "Playground",
     "types": [
       "Mouse",
-      "Color"
-    ],
-    "sketchFile": "mohamed-playground-disco-dots/mohamed-playground-disco-dots.js",
-    "instructions": "Hover over the shapes to continue build. Click to reset and change colors. "
-  },
-  {
-    "id": "mohamed-playground-expanding-circle",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Expanding Circle",
-    "category": "Playground",
-    "types": [
-      "Color"
-    ],
-    "sketchFile": "mohamed-playground-expanding-circle/mohamed-playground-expanding-circle.js"
-  },
-  {
-    "id": "mohamed-playground-illegal-circle-pattern",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Illegal Circle Pattern",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type",
-      "Color"
-    ],
-    "sketchFile": "mohamed-playground-illegal-circle-pattern/mohamed-playground-illegal-circle-pattern.js",
-    "instructions": "Click..."
-  },
-  {
-    "id": "mohamed-playground-infinite-scaffolding",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Infinite Scaffolding",
-    "category": "Playground",
-    "types": [
-      "3D",
       "Grid"
     ],
-    "sketchFile": "mohamed-playground-infinite-scaffolding/mohamed-playground-infinite-scaffolding.js"
+    "sketchFile": "mohamed-playground-mouse-circle-square/mohamed-playground-mouse-circle-square.js",
+    "instructions": "Click to change grid."
   },
   {
-    "id": "mohamed-playground-jungle-spiral",
-    "student": "Mohamed Kashwani",
+    "id": "kavya-playground-stars-and-appearing-circles",
+    "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Jungle Spiral",
-    "category": "Playground",
-    "types": [],
-    "sketchFile": "mohamed-playground-jungle-spiral/mohamed-playground-jungle-spiral.js"
-  },
-  {
-    "id": "mohamed-playground-lol-crazy",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Lol Crazy",
+    "title": "Stars & Circles",
     "category": "Playground",
     "types": [
-      "Mouse",
-      "Type"
+      "Mouse"
     ],
-    "sketchFile": "mohamed-playground-lol-crazy/mohamed-playground-lol-crazy.js",
-    "instructions": "Move the mouse to influence color and position."
+    "sketchFile": "kavya-playground-stars-and-appearing-circles/kavya-playground-stars-and-appearing-circles.js",
+    "instructions": "Click for random."
+  },
+  {
+    "id": "fatma-playground-oscillating-orbit",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Oscillating Orbit",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-oscillating-orbit/fatma-playground-oscillating-orbit.js",
+    "instructions": "Move the mouse to increase/decrease distance between circles."
   },
   {
     "id": "mohamed-playground-marshmallow-paint-splat",
@@ -1096,43 +1005,111 @@
     "instructions": "Move the mouse."
   },
   {
-    "id": "mohamed-playground-mouse-circle-square",
-    "student": "Mohamed Kashwani",
+    "id": "kavya-playground-smooth_trigonometric-S",
+    "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Confetti Grid",
+    "title": "Bubbles S",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "kavya-playground-smooth_trigonometric-S/kavya-playground-smooth_trigonometric-S.js",
+    "instructions": "Move the mouse to influence the outline."
+  },
+  {
+    "id": "fatma-playground-continuous-layers",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Continuous Layers",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-continuous-layers/fatma-playground-continuous-layers.js",
+    "instructions": "Layers follow your mouse."
+  },
+  {
+    "id": "kavya-playground-rotating-text",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Something Cool",
     "category": "Playground",
     "types": [
       "Mouse",
-      "Grid"
+      "Type"
     ],
-    "sketchFile": "mohamed-playground-mouse-circle-square/mohamed-playground-mouse-circle-square.js",
-    "instructions": "Click to change grid."
+    "sketchFile": "kavya-playground-rotating-text/kavya-playground-rotating-text.js"
   },
   {
-    "id": "mohamed-playground-move-square",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Move Square",
-    "category": "Playground",
-    "types": [
-      "Keyboard"
-    ],
-    "sketchFile": "mohamed-playground-move-square/mohamed-playground-move-square.js",
-    "instructions": "Use the arrow keys to move the square."
-  },
-  {
-    "id": "mohamed-playground-R-party",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "R Party",
+    "id": "jana-playground-typography",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "AEIO&",
     "category": "Playground",
     "types": [
       "Mouse",
-      "Type",
+      "Type"
+    ],
+    "sketchFile": "jana-playground-typography/jana-playground-typography.js"
+  },
+  {
+    "id": "fatma-playground-3d-orbit",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "3d Orbit",
+    "category": "Playground",
+    "types": [
+      "3D"
+    ],
+    "sketchFile": "fatma-playground-3d-orbit/fatma-playground-3d-orbit.js"
+  },
+  {
+    "id": "deema-remix_sol-leWitt-wal-drawing-#1115",
+    "student": "Deema Abdalrahman",
+    "department": "GRD",
+    "title": "Wall Drawing #1115 – Sol Lewitt",
+    "category": "Remix",
+    "types": [
       "Color"
     ],
-    "sketchFile": "mohamed-playground-R-party/mohamed-playground-R-party.js",
-    "instructions": "Move the mouse to influence scale and position of R's."
+    "sketchFile": "deema-remix_sol-leWitt-wal-drawing-#1115/deema-remix_sol-leWitt-wal-drawing-#1115.js"
+  },
+  {
+    "id": "noura-remix-1.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Daybreak – Joan Miró",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Color"
+    ],
+    "sketchFile": "noura-remix-1.1/noura-remix-1.1.js",
+    "instructions": "Click to change colors."
+  },
+  {
+    "id": "fatma-playground-points-forming-H",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Flocking H",
+    "category": "Playground",
+    "types": [
+      "Particles",
+      "Type"
+    ],
+    "sketchFile": "fatma-playground-points-forming-H/fatma-playground-points-forming-H.js"
+  },
+  {
+    "id": "layan_remix_hilma_af_klint_evolution",
+    "student": "Layan Al-Mutawakel",
+    "department": "GRD",
+    "title": "Evolution no. 9 – Hilma af Klint",
+    "category": "Remix",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "layan_remix_hilma_af_klint_evolution/layan_remix_hilma_af_klint_evolution.js",
+    "instructions": "Click to evolve."
   },
   {
     "id": "mohamed-playground-real-clock",
@@ -1144,432 +1121,30 @@
     "sketchFile": "mohamed-playground-real-clock/mohamed-playground-real-clock.js"
   },
   {
-    "id": "mohamed-playground-rotating-rectangle",
-    "student": "Mohamed Kashwani",
+    "id": "kavya-playground-jumping-9",
+    "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Rotating Rectangle",
+    "title": "Terrified 9",
     "category": "Playground",
-    "types": [
-      "3D"
-    ],
-    "sketchFile": "mohamed-playground-rotating-rectangle/mohamed-playground-rotating-rectangle.js"
-  },
-  {
-    "id": "mohamed-playground-spiral-debris",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Spiral Debris",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D"
-    ],
-    "sketchFile": "mohamed-playground-spiral-debris/mohamed-playground-spiral-debris.js",
-    "instructions": "Move the mouse to influence the scale and position of debris."
-  },
-  {
-    "id": "mohamed-remix-culture",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Culture",
-    "category": "Remix",
-    "types": [
-      "Mouse",
-      "Image",
-      "Color"
-    ],
-    "sketchFile": "mohamed-remix-culture/mohamed-remix-culture.js",
-    "instructions": "Click and hold on each shape in the image."
-  },
-  {
-    "id": "mohamed-remix-elements",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Elements",
-    "category": "Remix",
-    "types": [
-      "Mouse",
-      "Image"
-    ],
-    "sketchFile": "mohamed-remix-elements/mohamed-remix-elements.js",
-    "instructions": "Click and hold on each of the vertical circles."
-  },
-  {
-    "id": "mohamed-typelab-every-script",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Every Scrip 5",
-    "category": "Typelab",
     "types": [
       "Mouse",
       "Type",
       "Grid"
     ],
-    "sketchFile": "mohamed-typelab-every-script/mohamed-typelab-every-script.js",
-    "instructions": "Click to change scripts."
+    "sketchFile": "kavya-playground-jumping-9/kavya-playground-jumping-9.js",
+    "instructions": "Move the mouse to move the grid."
   },
   {
-    "id": "mohamed-typelab-moving-around",
-    "student": "Mohamed Kashwani",
+    "id": "fatma-typelab-3",
+    "student": "Fatma Alnuaimi",
     "department": "GRD",
-    "title": "Moving Parantheses",
-    "category": "Typelab",
-    "types": [
-      "Keyboard",
-      "Type"
-    ],
-    "sketchFile": "mohamed-typelab-moving-around/mohamed-typelab-moving-around.js"
-  },
-  {
-    "id": "mohamed-typelab-set-speed",
-    "student": "Mohamed Kashwani",
-    "department": "GRD",
-    "title": "Set Speed",
-    "category": "Typelab",
-    "types": [
-      "Keyboard",
-      "Type",
-      "3D"
-    ],
-    "sketchFile": "mohamed-typelab-set-speed/mohamed-typelab-set-speed.js",
-    "instructions": "Type in number to set speed, and press enter. Enter 0 to reset."
-  },
-  {
-    "id": "noura-playground-w3.1",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Paintbrush",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "noura-playground-w3.1/noura-playground-w3.1.js",
-    "instructions": "Move the mouse to influence shape of the brush."
-  },
-  {
-    "id": "noura-playground-w4.1",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Orbiting O's",
-    "category": "Playground",
-    "types": [],
-    "sketchFile": "noura-playground-w4.1/noura-playground-w4.1.js"
-  },
-  {
-    "id": "noura-playground-w5.1",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Starlight",
-    "category": "Playground",
-    "types": [],
-    "sketchFile": "noura-playground-w5.1/noura-playground-w5.1.js"
-  },
-  {
-    "id": "noura-playground-w6",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "About: Chairs",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type",
-      "Image"
-    ],
-    "sketchFile": "noura-playground-w6/noura-playground-w6.js",
-    "instructions": "Move the mouse to influence text boxes."
-  },
-  {
-    "id": "noura-remix-1.1",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Joan Miró,",
-    "category": "Remix",
-    "types": [
-      "Mouse",
-      "Color"
-    ],
-    "sketchFile": "noura-remix-1.1/noura-remix-1.1.js",
-    "instructions": "Click to change colors."
-  },
-  {
-    "id": "noura-remix-1.2",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Vera Molnar",
-    "category": "Remix",
-    "types": [
-      "Mouse",
-      "Grid"
-    ],
-    "sketchFile": "noura-remix-1.2/noura-remix-1.2.js"
-  },
-  {
-    "id": "noura-typelab-7",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Flowy 7",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type",
-      "Particles"
-    ],
-    "sketchFile": "noura-typelab-7/noura-typelab-7.js",
-    "instructions": "Move the mouse to influence the wave."
-  },
-  {
-    "id": "noura-typelab-at",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Digital @",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type",
-      "Grid",
-      "3D"
-    ],
-    "sketchFile": "noura-typelab-at/noura-typelab-at.js",
-    "instructions": "Hover over the @ to reveal."
-  },
-  {
-    "id": "noura-typelab-L",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "O L's",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type",
-      "3D"
-    ],
-    "sketchFile": "noura-typelab-L/noura-typelab-L.js",
-    "instructions": "Move the mouse to influence color and rotation."
-  },
-  {
-    "id": "noura-typelab-V",
-    "student": "Noura Almutawa",
-    "department": "DES",
-    "title": "Disco V",
-    "category": "Typelab",
-    "types": [
-      "Mouse",
-      "Type",
-      "3D",
-      "Image"
-    ],
-    "sketchFile": "noura-typelab-V/noura-typelab-V.js",
-    "instructions": "Click to dance. Click again to reset."
-  },
-  {
-    "id": "shalina-playground-ellipse-layers",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "Ellipse Layers",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "shalina-playground-ellipse-layers/shalina-playground-ellipse-layers.js",
-    "instructions": "Move the mouse to expand or contract."
-  },
-  {
-    "id": "shalina-playground-fan-exhaust",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "Random Path",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "shalina-playground-fan-exhaust/shalina-playground-fan-exhaust.js"
-  },
-  {
-    "id": "shalina-remix-joan-miro",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "Joan Miro",
-    "category": "Remix",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "shalina-remix-joan-miro/shalina-remix-joan-miro.js",
-    "instructions": "Move the mouse over the red lines."
-  },
-  {
-    "id": "shalina-remix-syed-raza",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "Syed Raza",
-    "category": "Remix",
-    "types": [
-      "Keyboard"
-    ],
-    "sketchFile": "shalina-remix-syed-raza/shalina-remix-syed-raza.js",
-    "instructions": "Use arrow keys to move the circles."
-  },
-  {
-    "id": "shalina-typelab-1",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "Binary 1",
-    "category": "Typelab",
-    "types": [
-      "Type"
-    ],
-    "sketchFile": "shalina-typelab-1/shalina-typelab-1.js",
-    "instructions": ""
-  },
-  {
-    "id": "shalina-typelab-M",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "M",
+    "title": "Buzzing 3",
     "category": "Typelab",
     "types": [
       "Type",
       "Particles"
     ],
-    "sketchFile": "shalina-typelab-M/shalina-typelab-M.js",
-    "instructions": "Click and hold to influence the particles."
-  },
-  {
-    "id": "shalina-typelab-T",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "Listening T",
-    "category": "Typelab",
-    "types": [],
-    "sketchFile": "shalina-typelab-T/shalina-typelab-T.js",
-    "instructions": "Click to turn on mic."
-  },
-  {
-    "id": "shalina-typelab-Y",
-    "student": "Shalina Siddiqui",
-    "department": "GRD",
-    "title": "Extruding Y",
-    "category": "Typelab",
-    "types": [
-      "Type",
-      "3D"
-    ],
-    "sketchFile": "shalina-typelab-Y/shalina-typelab-Y.js",
-    "instructions": "Click to expand."
-  },
-  {
-    "id": "thuraya-playground-AHHH",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "AHHH",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "thuraya-playground-AHHH/thuraya-playground-AHHH.js"
-  },
-  {
-    "id": "thuraya-playground-circles",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Circles",
-    "category": "Playground",
-    "types": [
-      "Mouse"
-    ],
-    "sketchFile": "thuraya-playground-circles/thuraya-playground-circles.js"
-  },
-  {
-    "id": "thuraya-playground-dancing-q",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Dancing Q",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type",
-      "Color"
-    ],
-    "sketchFile": "thuraya-playground-dancing-q/thuraya-playground-dancing-q.js",
-    "instructions": "Move the mouse over the Q to influence particles."
-  },
-  {
-    "id": "thuraya-playground-disco lights",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Disco Lights",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Grid"
-    ],
-    "sketchFile": "thuraya-playground-disco lights/thuraya-playground-disco lights.js",
-    "instructions": "Move the mouse to influence the grid."
-  },
-  {
-    "id": "thuraya-playground-dotty-q",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Dotty Q",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Grid"
-    ],
-    "sketchFile": "thuraya-playground-dotty-q/thuraya-playground-dotty-q.js",
-    "instructions": "Move the mouse to infuence the scale of the grid."
-  },
-  {
-    "id": "thuraya-playground-ello",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Ello",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "Type"
-    ],
-    "sketchFile": "thuraya-playground-ello/thuraya-playground-ello.js"
-  },
-  {
-    "id": "thuraya-playground-fish",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Fish",
-    "category": "Playground",
-    "types": [
-      "Type",
-      "Image"
-    ],
-    "sketchFile": "thuraya-playground-fish/thuraya-playground-fish.js"
-  },
-  {
-    "id": "thuraya-playground-glittery-box",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Glittery Cube",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D",
-      "Particles"
-    ],
-    "sketchFile": "thuraya-playground-glittery-box/thuraya-playground-glittery-box.js",
-    "instructions": "Click for the party!"
-  },
-  {
-    "id": "thuraya-playground-rotating-sphere",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Rotating Sphere",
-    "category": "Playground",
-    "types": [
-      "Mouse",
-      "3D",
-      "Color"
-    ],
-    "sketchFile": "thuraya-playground-rotating-sphere/thuraya-playground-rotating-sphere.js",
-    "instructions": "Move the mouse to change color."
+    "sketchFile": "fatma-typelab-3/fatma-typelab-3.js"
   },
   {
     "id": "thuraya-playground-spikey",
@@ -1586,29 +1161,43 @@
     "instructions": "Move the mouse horizontally to influence spikes. Move vertically to change color."
   },
   {
-    "id": "thuraya-remix-mushrooms",
-    "student": "Thuraya Ezzulddin",
+    "id": "kavya-playground-sunstar",
+    "student": "Kavya Ajith",
     "department": "GRD",
-    "title": "Mushrooms",
-    "category": "Remix",
+    "title": "Sunstar",
+    "category": "Playground",
     "types": [
-      "Mouse",
-      "Image"
+      "Color",
+      "3D"
     ],
-    "sketchFile": "thuraya-remix-mushrooms/thuraya-remix-mushrooms.js",
-    "instructions": "Click to reveal effect of Mushrooms."
+    "sketchFile": "kavya-playground-sunstar/kavya-playground-sunstar.js"
   },
   {
-    "id": "thuraya-remix-triangles",
-    "student": "Thuraya Ezzulddin",
-    "department": "GRD",
-    "title": "Triangles",
-    "category": "Remix",
+    "id": "jana-typelab-I",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Eye I",
+    "category": "Typelab",
     "types": [
-      "Mouse"
+      "Mouse",
+      "Type"
     ],
-    "sketchFile": "thuraya-remix-triangles/thuraya-remix-triangles.js",
-    "instructions": "Move the mouse horizontally to influence the lines."
+    "sketchFile": "jana-typelab-I/jana-typelab-I.js",
+    "instructions": "Click and hold to reveal."
+  },
+  {
+    "id": "deema-typelab-K",
+    "student": "Deema Abdalrahman",
+    "department": "GRD",
+    "title": "3D K",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "3D",
+      "Type"
+    ],
+    "sketchFile": "deema-typelab-K/deema-typelab-K.js",
+    "instructions": "Move the mouse horizontally to change rotation speed and view."
   },
   {
     "id": "thuraya-typelab-6",
@@ -1625,20 +1214,88 @@
     "instructions": "Click anywhere to enable your microphone..."
   },
   {
-    "id": "thuraya-typelab-Q",
+    "id": "jana-playground-spongebob",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Spongebob",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "jana-playground-spongebob/jana-playground-spongebob.js"
+  },
+  {
+    "id": "fatma-playground-catch-me",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Catch Me",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-catch-me/fatma-playground-catch-me.js",
+    "instructions": "Try to catch the circles..."
+  },
+  {
+    "id": "jana-playground-cube&ball",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Cube & Ball",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "jana-playground-cube&ball/jana-playground-cube&ball.js"
+  },
+  {
+    "id": "farida-playground-rotating-ring",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Rotating Ring",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "farida-playground-rotating-ring/farida-playground-rotating-ring.js",
+    "instructions": "Hover over the ring."
+  },
+  {
+    "id": "kavya-playground-random-shapes",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Random Shapes",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Color"
+    ],
+    "sketchFile": "kavya-playground-random-shapes/kavya-playground-random-shapes.js",
+    "instructions": "Move the mouse across quadrants."
+  },
+  {
+    "id": "thuraya-typelab-x",
     "student": "Thuraya Ezzulddin",
     "department": "GRD",
-    "title": "Cracking Q",
+    "title": "Squishy X",
     "category": "Typelab",
     "types": [
       "Mouse",
-      "Keyboard",
-      "Type",
-      "Grid",
-      "Image"
+      "Type"
     ],
-    "sketchFile": "thuraya-typelab-Q/thuraya-typelab-Q.js",
-    "instructions": "Click anywhere on the Q. Press 'R' to reset."
+    "sketchFile": "thuraya-typelab-x/thuraya-typelab-x.js",
+    "instructions": "Click and hold the X."
+  },
+  {
+    "id": "noura-playground-w3.1",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Paintbrush",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "noura-playground-w3.1/noura-playground-w3.1.js",
+    "instructions": "Move the mouse to influence shape of the brush."
   },
   {
     "id": "thuraya-typelab-question",
@@ -1655,16 +1312,383 @@
     "instructions": "Move the mouse to influence the particles."
   },
   {
-    "id": "thuraya-typelab-x",
+    "id": "jana-remix-mohamed-melehi",
+    "student": "Jana Khalifa",
+    "department": "FNM",
+    "title": "Untitled – Mohamed Melehi",
+    "category": "Remix",
+    "types": [],
+    "sketchFile": "jana-remix-mohamed-melehi/jana-remix-mohamed-melehi.js",
+    "instructions": "Click to hear it come to life."
+  },
+  {
+    "id": "noura-typelab-L",
+    "student": "Noura Almutawa",
+    "department": "DES",
+    "title": "Concentric L's",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "3D"
+    ],
+    "sketchFile": "noura-typelab-L/noura-typelab-L.js",
+    "instructions": "Move the mouse to influence color and rotation."
+  },
+  {
+    "id": "mohamed-playground-rotating-rectangle",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Rotating Rectangle",
+    "category": "Playground",
+    "types": [
+      "3D"
+    ],
+    "sketchFile": "mohamed-playground-rotating-rectangle/mohamed-playground-rotating-rectangle.js"
+  },
+  {
+    "id": "mohamed-remix-elements",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Panctatwa by Syed Haider Reza",
+    "category": "Remix",
+    "types": [
+      "Mouse",
+      "Image"
+    ],
+    "sketchFile": "mohamed-remix-elements/mohamed-remix-elements.js",
+    "instructions": "Click and hold on each of the vertical circles."
+  },
+  {
+    "id": "thuraya-playground-rotating-sphere",
     "student": "Thuraya Ezzulddin",
     "department": "GRD",
-    "title": "Squishy X",
+    "title": "Rotating Sphere",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D",
+      "Color"
+    ],
+    "sketchFile": "thuraya-playground-rotating-sphere/thuraya-playground-rotating-sphere.js",
+    "instructions": "Move the mouse to change color."
+  },
+  {
+    "id": "kavya-typelab-appearing-hash",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Chalky #",
+    "category": "Typelab",
+    "types": [
+      "Type"
+    ],
+    "sketchFile": "kavya-typelab-appearing-hash/kavya-typelab-appearing-hash.js"
+  },
+  {
+    "id": "mohamed-playground-circle-pattern",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Circle Pattern",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Color"
+    ],
+    "sketchFile": "mohamed-playground-circle-pattern/mohamed-playground-circle-pattern.js",
+    "instructions": "Click to reset and change colors."
+  },
+  {
+    "id": "kavya-playground-RGB-growing-overlapping-squares",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "RGB Growing Squares",
+    "category": "Playground",
+    "types": [
+      "Color"
+    ],
+    "sketchFile": "kavya-playground-RGB-growing-overlapping-squares/kavya-playground-RGB-growing-overlapping-squares.js"
+  },
+  {
+    "id": "fatma-playground-rotating-squares",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Rotating Squares",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-rotating-squares/fatma-playground-rotating-squares.js",
+    "instructions": "Move the mouse to increase/decrease speed and number of squares."
+  },
+  {
+    "id": "farida-playground-illusion-bloom",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Illusion Bloom",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "farida-playground-illusion-bloom/farida-playground-illusion-bloom.js",
+    "instructions": "Hover over the top of the white circle."
+  },
+  {
+    "id": "mohamed-playground-lol-crazy",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Lol Crazy",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "mohamed-playground-lol-crazy/mohamed-playground-lol-crazy.js",
+    "instructions": "Move the mouse to influence color and position."
+  },
+  {
+    "id": "thuraya-playground-dancing-q",
+    "student": "Thuraya Ezzulddin",
+    "department": "GRD",
+    "title": "Dancing Q",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type",
+      "Color"
+    ],
+    "sketchFile": "thuraya-playground-dancing-q/thuraya-playground-dancing-q.js",
+    "instructions": "Move the mouse over the Q to influence particles."
+  },
+  {
+    "id": "kavya-typelab-fractal-field-9",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Fractal 9",
     "category": "Typelab",
     "types": [
       "Mouse",
       "Type"
     ],
-    "sketchFile": "thuraya-typelab-x/thuraya-typelab-x.js",
-    "instructions": "Click and hold the X."
+    "sketchFile": "kavya-typelab-fractal-field-9/kavya-typelab-fractal-field-9.js",
+    "instructions": "Move the mouse to influence the fractals."
+  },
+  {
+    "id": "mohamed-playground-expanding-circle",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Expanding Circle",
+    "category": "Playground",
+    "types": [
+      "Color"
+    ],
+    "sketchFile": "mohamed-playground-expanding-circle/mohamed-playground-expanding-circle.js"
+  },
+  {
+    "id": "kavya-playground-growing-RGB-circnsquare",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "RGB Circle Square",
+    "category": "Playground",
+    "types": [
+      "Color"
+    ],
+    "sketchFile": "kavya-playground-growing-RGB-circnsquare/kavya-playground-growing-RGB-circnsquare.js"
+  },
+  {
+    "id": "kavya-playground-random-square-circle-cursor",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Random Square Circle",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "kavya-playground-random-square-circle-cursor/kavya-playground-random-square-circle-cursor.js",
+    "instructions": "Move the mouse to change the number of squares."
+  },
+  {
+    "id": "mohamed-typelab-every-script",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Every Script 5",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid"
+    ],
+    "sketchFile": "mohamed-typelab-every-script/mohamed-typelab-every-script.js",
+    "instructions": "Click to change scripts."
+  },
+  {
+    "id": "fatma-playground-layered-rotating-G",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Layered G",
+    "category": "Playground",
+    "types": [
+      "Type",
+      "3D"
+    ],
+    "sketchFile": "fatma-playground-layered-rotating-G/fatma-playground-layered-rotating-G.js"
+  },
+  {
+    "id": "mohamed-playground-disco-dots",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Dancing Dots and Squares",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Color"
+    ],
+    "sketchFile": "mohamed-playground-disco-dots/mohamed-playground-disco-dots.js",
+    "instructions": "Hover over the shapes to continue build. Click to reset and change colors. "
+  },
+  {
+    "id": "fatma-playground-confetti",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Confetti",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "fatma-playground-confetti/fatma-playground-confetti.js",
+    "instructions": "Move the mouse to erase. Click to reset."
+  },
+  {
+    "id": "kavya-playground-ticking_clock",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Ticking Clock",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "kavya-playground-ticking_clock/kavya-playground-ticking_clock.js"
+  },
+  {
+    "id": "mohamed-typelab-set-speed",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Set Speed %",
+    "category": "Typelab",
+    "types": [
+      "Keyboard",
+      "Type",
+      "3D"
+    ],
+    "sketchFile": "mohamed-typelab-set-speed/mohamed-typelab-set-speed.js",
+    "instructions": "Type in number to set speed, and press enter. Enter 0 to reset."
+  },
+  {
+    "id": "fatma-playground-rotating-circles",
+    "student": "Fatma Alnuaimi",
+    "department": "GRD",
+    "title": "Rotating Circles",
+    "category": "Playground",
+    "types": [],
+    "sketchFile": "fatma-playground-rotating-circles/fatma-playground-rotating-circles.js"
+  },
+  {
+    "id": "kavya-playground-stack-of-pages-W",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Stacked W",
+    "category": "Playground",
+    "types": [
+      "Type"
+    ],
+    "sketchFile": "kavya-playground-stack-of-pages-W/kavya-playground-stack-of-pages-W.js"
+  },
+  {
+    "id": "mohamed-playground-illegal-circle-pattern",
+    "student": "Mohamed Kashwani",
+    "department": "GRD",
+    "title": "Illegal Circle Pattern",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type",
+      "Color"
+    ],
+    "sketchFile": "mohamed-playground-illegal-circle-pattern/mohamed-playground-illegal-circle-pattern.js",
+    "instructions": "Click..."
+  },
+  {
+    "id": "kavya-playground-mouse-reactive-trigonometric-S",
+    "student": "Kavya Ajith",
+    "department": "GRD",
+    "title": "Trigonometric S",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "Type"
+    ],
+    "sketchFile": "kavya-playground-mouse-reactive-trigonometric-S/kavya-playground-mouse-reactive-trigonometric-S.js",
+    "instructions": "Move the mouse to influence the lines."
+  },
+  {
+    "id": "leena-playground-3D",
+    "student": "Leena Ulaiwi",
+    "department": "GRD",
+    "title": "3D",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "leena-playground-3D/leena-playground-3D.js",
+    "instructions": "Move the mouse to influence the polygons. Click for new polygons."
+  },
+  {
+    "id": "farida-remix-arnout-remix",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Arnout Remix",
+    "category": "Remix",
+    "types": [
+      "Image"
+    ],
+    "sketchFile": "farida-remix-arnout-remix/farida-remix-arnout-remix.js",
+    "instructions": "Click to weave and unweave."
+  },
+  {
+    "id": "farida-typelab-triphobia-I",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Triphobic I",
+    "category": "Typelab",
+    "types": [
+      "Mouse",
+      "Type",
+      "Grid"
+    ],
+    "sketchFile": "farida-typelab-triphobia-I/farida-typelab-triphobia-I.js",
+    "instructions": "Move the mouse over the i."
+  },
+  {
+    "id": "shalina-playground-fan-exhaust",
+    "student": "Shalina Siddiqui",
+    "department": "GRD",
+    "title": "Random Path",
+    "category": "Playground",
+    "types": [
+      "Mouse"
+    ],
+    "sketchFile": "shalina-playground-fan-exhaust/shalina-playground-fan-exhaust.js"
+  },
+  {
+    "id": "farida-playground-interactive-polygon",
+    "student": "Farida Mohamed",
+    "department": "GRD",
+    "title": "Interactive Polygon",
+    "category": "Playground",
+    "types": [
+      "Mouse",
+      "3D"
+    ],
+    "sketchFile": "farida-playground-interactive-polygon/farida-playground-interactive-polygon.js",
+    "instructions": "Move the mouse to the center."
   }
 ]

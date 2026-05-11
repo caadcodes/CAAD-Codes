@@ -1,8 +1,13 @@
 let pg;
-let tX = 50, tY = 50; 
+let tX = 50, tY = 50;
 let fd = [];
-let fs = []; 
-let on = []; 
+let fs = [];
+let on = [];
+let qFont;
+
+function preload() {
+  qFont = loadFont('BytesquareRegularDemo-pglRy.ttf');
+}
 
 function setup() {
   createCanvas(800, 800);
@@ -21,8 +26,8 @@ function setup() {
   pg.noStroke();
   pg.textSize(800);
   pg.textAlign(CENTER, CENTER);
-  pg.textFont('sans-serif'); 
-  pg.text("q", pg.width / 2, pg.height / 2);
+  pg.textFont(qFont);
+  pg.text("q", pg.width / 2, pg.height / 2 - 160);
 }
 
 function draw() {

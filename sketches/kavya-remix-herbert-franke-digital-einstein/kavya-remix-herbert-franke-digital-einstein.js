@@ -91,7 +91,7 @@ function drawShape(x, y, s1, s2, type) { // parenthesis has attributes for drawS
 }
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(880, 1000);
   frameRate(25);
 }
 

@@ -22,8 +22,7 @@ function draw() {
   
   push();
   fill(255);
-  stroke(0);
-  strokeWeight(2);
+  noStroke();
   rect(0, 350, 250, 100);
   
   noStroke(); 
@@ -44,7 +43,7 @@ function draw() {
   rotateZ(radians(angle));
   rotateY(radians(angle));
   translate(width / 2.5 - 500, height / 2.5 - 500, 0);
-  sphere(25);
+  sphere(42);
   pop();
   
   push();
@@ -54,7 +53,7 @@ function draw() {
   rotateZ(radians(angle));
   rotateY(radians(angle));
   translate(width * 3 / 5 - 500, height * 3 / 5 - 500, 0);
-  sphere(25);
+  sphere(42);
   pop();
   
   push();
@@ -64,7 +63,7 @@ function draw() {
   rotateZ(angle3);
   rotateZ(radians(angle2));
   rotateY(radians(angle2));
-  box(250, 20, 20);
+  box(420, 33.6, 33.6);
   pop();
 }
 

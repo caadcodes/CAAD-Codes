@@ -35,6 +35,7 @@ function draw() {
 
   let tileW = width / cols;
   let tileH = height / rows;
+  const SCALE = 1.4;
 
   pg.loadPixels();
 
@@ -51,10 +52,10 @@ function draw() {
       if (b > 100) {
         push();
 
-        let posX = x * tileW - width / 2;
-        let posY = y * tileH - height / 2;
+        let posX = (x * tileW - width / 2) * SCALE;
+        let posY = (y * tileH - height / 2) * SCALE;
 
-        let z = cos(frameCount * 0.05 + (x + y) * 0.9) * 50;
+        let z = cos(frameCount * 0.05 + (x + y) * 0.9) * 50 * SCALE;
 
         translate(posX, posY, z);
 
@@ -63,7 +64,7 @@ function draw() {
 
         let s = map(sin(frameCount * 0.05 + x), -1, 1, 2, 10);
 
-        sphere(s);
+        sphere(s * SCALE);
 
         rotateX(frameCount * 0.9);
 

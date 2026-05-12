@@ -30,12 +30,13 @@ function setup() {
 function draw() {
   background(0);
   lights();
+  translate(0, -height * 0.3, 0); // move composition up by 30% of canvas height
 
   rotateY(frameCount * 0.01 + mouseX * 0.005);
 
   let tileW = width / cols;
   let tileH = height / rows;
-  const SCALE = 1.4;
+  const SCALE = 1.82; // 1.4 × 1.3 (+30%)
 
   pg.loadPixels();
 

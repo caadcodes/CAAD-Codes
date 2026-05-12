@@ -1,186 +1,133 @@
-let letterPoints = [];
-let originalPoints = [];
+/* p5.js port of Shalina's "m" (originally Processing + Geomerative).
+
+   Original Processing reference:
+     RG.setPolygonizerLength(1);
+     letterShape = RG.getText("m", "Sandra.ttf", 200, CENTER);
+     points = letterShape.getPoints();
+     // on press → spreadAmount lerps toward 10, on release toward 0
+     // angle = i * 50;  target = original + (cos, sin) * spread
+     // points[i] = lerp(points[i], target, 0.2);
+     translate(width/2, height/2 + 60);
+     fill(#F62DAE); sphere(2) at each point
+
+   Conversion notes:
+     - opentype.load gives an opentype.Font; we walk its path commands and
+       split a new contour at every moveTo, then rebuild each contour as an
+       SVG `d` string sampled with SVGPathElement.getPointAtLength at
+       1-unit spacing — the direct equivalent of RG.setPolygonizerLength(1).
+     - Sampled points are bbox-centred so the glyph sits at the WEBGL
+       origin; the per-frame translate(0, 60) then matches Processing's
+       translate(width/2, height/2 + 60) (in WEBGL the origin is already
+       the canvas centre, so width/2, height/2 collapses to 0, 0). */
+
+let font = null;
+let pts = [];          // mutable points {x, y} — animated each frame
+let originalPts = [];  // immutable copies for the spread origin
 let spreadAmount = 0;
-let myFont;
 
 function preload() {
-  myFont = loadFont('Sandra.ttf', () => {
-    extractPoints("m", 500);
+  opentype.load('Sandra.ttf', (err, f) => {
+    if (err) { console.error('Font load failed:', err); return; }
+    font = f;
+    buildPoints();
   });
 }
 
 function setup() {
   createCanvas(800, 600, WEBGL);
-}
-
-function draw() {
-  background(0);
-  ambientLight(100);
-  directionalLight(255, 255, 255, 0, 0, -1);
-
-  // slower reaction
-  let targetSpread = mouseIsPressed ? 40 : 0;
-  spreadAmount = lerp(spreadAmount, targetSpread, 0.02);
-
-  // freeze when fully reached target
-  let freeze = abs(spreadAmount - targetSpread) < 0.5;
-
-  let t = spreadAmount;
-
-  for (let i = 0; i < letterPoints.length; i++) {
-    let angle = i * 50;
-
-    let spreadX = cos(angle) * spreadAmount;
-    let spreadY = sin(angle) * spreadAmount;
-
-    let phase = i * 2.3;
-
-    let loopX = cos(t * 0.15 + phase) * spreadAmount * 0.5;
-    let loopY = sin(t * 0.15 + phase) * spreadAmount * 0.5;
-
-    let targetX = originalPoints[i].x + spreadX + loopX;
-    let targetY = originalPoints[i].y + spreadY + loopY;
-
-    // stop movement when frozen
-    if (!freeze) {
-      letterPoints[i].x = lerp(letterPoints[i].x, targetX, 0.03);
-      letterPoints[i].y = lerp(letterPoints[i].y, targetY, 0.03);
-    }
-  }
-
-  translate(0, 0, 0);
   noStroke();
-  fill('#F62DAE');
-
-  for (let i = 0; i < letterPoints.length; i++) {
-    push();
-    translate(letterPoints[i].x, letterPoints[i].y, 0);
-    sphere(2, 6, 6);
-    pop();
-  }
 }
 
-function extractPoints(letter, fontSize) {
-  let w = 800, h = 600;
-  let offscreen = document.createElement('canvas');
-  offscreen.width = w;
-  offscreen.height = h;
-  let ctx = offscreen.getContext('2d');
+function buildPoints() {
+  /* Sample the "m" glyph at size 240 (200 × 1.2 — enlarged by 20%). */
+  const otPath = font.getPath('m', 0, 0, 240);
 
-  ctx.font = `${fontSize}px Sandra`;
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  ctx.fillStyle = 'white';
-  ctx.fillText(letter, w / 2, h / 2);
-
-  let imageData = ctx.getImageData(0, 0, w, h);
-  let data = imageData.data;
-
-  function isLit(x, y) {
-    if (x < 0 || x >= w || y < 0 || y >= h) return false;
-    return data[(y * w + x) * 4] > 128;
-  }
-
-  function isEdge(x, y) {
-    if (!isLit(x, y)) return false;
-    return !isLit(x + 1, y) || !isLit(x - 1, y) ||
-           !isLit(x, y + 1) || !isLit(x, y - 1);
-  }
-
-  const dx8 = [1, 1, 0, -1, -1, -1, 0, 1];
-  const dy8 = [0, 1, 1, 1, 0, -1, -1, -1];
-
-  let visited = new Set();
-  let allContours = [];
-
-  function findNextStart() {
-    for (let y = 0; y < h; y++) {
-      for (let x = 0; x < w; x++) {
-        if (!visited.has(y * w + x) && isEdge(x, y)) {
-          return { x, y };
-        }
-      }
+  /* Split commands by moveTo; rebuild each contour as an SVG path string. */
+  const contourDs = [];
+  let current = '';
+  for (const cmd of otPath.commands) {
+    if (cmd.type === 'M') {
+      if (current) contourDs.push(current);
+      current = `M ${cmd.x} ${cmd.y}`;
+    } else if (cmd.type === 'L') {
+      current += ` L ${cmd.x} ${cmd.y}`;
+    } else if (cmd.type === 'C') {
+      current += ` C ${cmd.x1} ${cmd.y1} ${cmd.x2} ${cmd.y2} ${cmd.x} ${cmd.y}`;
+    } else if (cmd.type === 'Q') {
+      current += ` Q ${cmd.x1} ${cmd.y1} ${cmd.x} ${cmd.y}`;
+    } else if (cmd.type === 'Z') {
+      current += ' Z';
     }
-    return null;
   }
+  if (current) contourDs.push(current);
 
-  function traceContour(startX, startY) {
-    let contour = [];
-    let cx = startX, cy = startY;
-    let prevDir = 0;
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const POLY = 1; // RG.setPolygonizerLength(1) — sample every ~1 unit
+  const sampled = [];
 
-    for (let iter = 0; iter < 100000; iter++) {
-      let key = cy * w + cx;
-
-      if (contour.length > 2 && cx === startX && cy === startY) break;
-
-      if (!visited.has(key)) {
-        visited.add(key);
-        contour.push({ x: cx, y: cy });
-      }
-
-      let found = false;
-      let startDir = (prevDir + 5) % 8;
-
-      for (let d = 0; d < 8; d++) {
-        let dir = (startDir + d) % 8;
-        let nx = cx + dx8[dir];
-        let ny = cy + dy8[dir];
-
-        if (isEdge(nx, ny) && !visited.has(ny * w + nx)) {
-          prevDir = dir;
-          cx = nx;
-          cy = ny;
-          found = true;
-          break;
-        }
-      }
-
-      if (!found) break;
-    }
-
-    return contour;
-  }
-
-  let start;
-  while ((start = findNextStart()) !== null) {
-    let contour = traceContour(start.x, start.y);
-    if (contour.length > 10) allContours.push(contour);
-  }
-
-  let allPoints = [];
-  for (let contour of allContours) {
-    for (let p of contour) {
-      allPoints.push(p);
+  for (const d of contourDs) {
+    const svgPath = document.createElementNS(SVG_NS, 'path');
+    svgPath.setAttribute('d', d);
+    const total = svgPath.getTotalLength();
+    if (total === 0) continue;
+    const n = max(2, floor(total / POLY));
+    for (let i = 0; i < n; i++) {
+      const pt = svgPath.getPointAtLength((i / n) * total);
+      sampled.push({ x: pt.x, y: pt.y });
     }
   }
 
-  let minX = w, maxX = 0, minY = h, maxY = 0;
-
-  for (let p of allPoints) {
+  /* Bbox-centre so the glyph sits at (0, 0) in WEBGL coords — matches
+     Geomerative's CENTER alignment. */
+  let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+  for (const p of sampled) {
     if (p.x < minX) minX = p.x;
     if (p.x > maxX) maxX = p.x;
     if (p.y < minY) minY = p.y;
     if (p.y > maxY) maxY = p.y;
   }
+  const cx = (minX + maxX) / 2;
+  const cy = (minY + maxY) / 2;
 
-  let centerX = (minX + maxX) / 2;
-  let centerY = (minY + maxY) / 2;
+  for (const p of sampled) {
+    const x = p.x - cx;
+    const y = p.y - cy;
+    pts.push({ x, y });
+    originalPts.push({ x, y });
+  }
+}
 
-  letterPoints = [];
-  originalPoints = [];
+function draw() {
+  background(0);
+  lights();
 
-  let skip = 1;
+  /* Hold a black frame until the font has been parsed. */
+  if (pts.length === 0) return;
 
-  for (let i = 0; i < allPoints.length; i += skip) {
-    letterPoints.push({
-      x: allPoints[i].x - centerX,
-      y: allPoints[i].y - centerY
-    });
+  /* spreadAmount lerps toward 10 while pressed, toward 0 otherwise. */
+  spreadAmount = lerp(spreadAmount, mouseIsPressed ? 10 : 0, 0.07);
 
-    originalPoints.push({
-      x: allPoints[i].x - centerX,
-      y: allPoints[i].y - centerY
-    });
+  /* Each point eases toward originalPoint + (cos(angle), sin(angle)) * spread.
+     angle = i * 50 in radians — large multiples → effectively scattered. */
+  for (let i = 0; i < pts.length; i++) {
+    const angle = i * 50;
+    const targetX = originalPts[i].x + cos(angle) * spreadAmount;
+    const targetY = originalPts[i].y + sin(angle) * spreadAmount;
+    pts[i].x = lerp(pts[i].x, targetX, 0.2);
+    pts[i].y = lerp(pts[i].y, targetY, 0.2);
+  }
+
+  /* WEBGL origin is the canvas centre. Was translate(0, 60) to match the
+     Processing source; the user pulled the glyph up by 10% of canvas
+     height (= 60px), so the +60 cancels and we sit at the origin. */
+  translate(0, 0);
+  noStroke();
+  fill('#F62DAE');
+
+  for (let i = 0; i < pts.length; i++) {
+    push();
+    translate(pts[i].x, pts[i].y, 0);
+    sphere(2.4, 8, 6); // 2 × 1.2 — dot radius scales with the 20% enlargement
+    pop();
   }
 }

@@ -117,7 +117,7 @@ function draw() {
     if (pts.length > 0) {
       noStroke();
       fill(255, 150);
-      translate(width / 2 - glyphCx, height / 2 + 100 - glyphCy);
+      translate(width / 2 - glyphCx, height / 2 + 100 - height * 0.1 - glyphCy);
       for (let i = 0; i < pts.length; i++) {
         for (let j = 0; j < pts[i].length; j++) {
           rect(pts[i][j].x, pts[i][j].y, 8, 8);
@@ -143,7 +143,7 @@ function draw() {
      CENTER-aligned RShape (bbox already centred). Our points are still in
      raw glyph coords, so we subtract the bbox centre here to get the same
      net positioning. */
-  translate(width / 2 - glyphCx, height / 2 + 100 - glyphCy);
+  translate(width / 2 - glyphCx, height / 2 + 100 - height * 0.1 - glyphCy);
 
   smoothVol = lerp(smoothVol, amp.getLevel(), 0.3);
   peakVol   = max(peakVol * 0.9, smoothVol);

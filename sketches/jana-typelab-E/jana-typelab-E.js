@@ -28,10 +28,11 @@ function setup() {
 }
 
 function draw() {
-  // fade trail
+  // fade trail — lower alpha lets strokes accumulate longer for a brighter image
   noStroke();
-  fill(0, 40);
+  fill(0, 12);
   rect(0, 0, width, height);
+  strokeWeight(3); // thicker points so each stroke deposits more light
 
   // center canvas
   translate(width / 2, height / 2);
@@ -63,7 +64,7 @@ function draw() {
       let offset = k * 15;
 
       let hue = map(sin(frameCount * 0.02 + i * 0.01), -1, 1, 180, 300);
-      stroke(hue, 200, 255);
+      stroke(hue, 100, 255); // lower saturation pushes colors toward white = brighter
 
       point(newX + offset, newY + offset);
     }

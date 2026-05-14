@@ -12,3 +12,9 @@
 # Logs / temp
 *.log
 *.tmp
+
+# Recording-script artifacts (record-logo.js installs deps locally)
+node_modules/
+logo-frames/
+package.json
+package-lock.json

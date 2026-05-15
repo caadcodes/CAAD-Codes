@@ -8,9 +8,18 @@ function preload() {
 
 function setup() {
   createCanvas(300, 400);
+  pixelDensity(1);
 }
 
 function draw() {
+  /* Guard against draw running before both images finish loading — p5's
+     preload should block setup but on mobile Safari the async decode of
+     JPEG/PNG can race the first draw call. Holding a black frame until
+     both images are ready avoids the "blank canvas" symptom there. */
+  if (!img || !face) {
+    background(0);
+    return;
+  }
   background(0);
 
   // monalisa

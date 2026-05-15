@@ -87,8 +87,12 @@ function draw() {
   noStroke();
   fill(255, 90);
   /* Original Processing: translate(width/2.5, height + 150) on a CENTER-
-     aligned RShape. Subtract the bbox centre to get the same net offset. */
-  translate(width / 2.5 - glyphCx, height + 150 - glyphCy);
+     aligned RShape — pushes the asterisk's bbox centre well below the
+     canvas (intentional artistic crop). On narrow viewports (mobile
+     overlay or preview iframe) that crop hides too much of the form,
+     so we centre the bbox vertically when windowWidth ≤ 768. */
+  const yOffset = (windowWidth <= 768) ? height / 2 : height + 150;
+  translate(width / 2.5 - glyphCx, yOffset - glyphCy);
 
   if (!micStarted) {
     /* Pre-mic resting state — static asterisk so the card preview has

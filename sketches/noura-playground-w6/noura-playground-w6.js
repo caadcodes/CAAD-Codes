@@ -17,7 +17,8 @@ function preload() {
 
 function setup() {
   createCanvas(900, 600);
-    img.resize(50, 0); 
+  pixelDensity(1);
+    img.resize(50, 0);
   background(250);
   frameRate(30);
 

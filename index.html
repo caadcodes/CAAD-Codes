@@ -487,6 +487,15 @@
       margin-top: 0.45rem;
     }
     #overlay-instructions[hidden] { display: none; }
+    /* Mobile-only disclaimer is appended inside #overlay-instructions by JS
+       when window.innerWidth ≤ 768. Block-level so it sits on a new line
+       below the project's instructions text (can't use <br> — the mobile
+       @media block hides those universally). Inherits font/color from
+       #overlay-instructions so it matches the existing style. */
+    .overlay-instructions-mobile-note {
+      display: block;
+      margin-top: 0.45rem;
+    }
 
     /* Close — bare x glyph, pinned to the top-right corner of the
        overlay (full-screen, not the inner sketch box). */
@@ -532,6 +541,268 @@
     #overlay-prev { left:  1.5rem; }
     #overlay-next { right: 1.5rem; }
 
+    /* Mobile-only state set by JS when IntersectionObserver auto-activates
+       a card. Lives outside the @media block so it doesn't accidentally
+       fire on desktop if dev tools simulate a width change. */
+    .card.mobile-active .card-preview iframe {
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       Mobile responsive layout (≤768px) — every desktop rule above is
+       untouched; this block adapts layout for narrow viewports.
+    ═══════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+
+      /* Body — flex column for reordering. */
+      body {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+      }
+      header          { order: 0; } /* logo + metadata + links — top */
+      #index-panel    { order: 1; } /* about text */
+      #grid           { order: 2; }
+      #mobile-bottom-index { order: 3; }
+      #overlay        { order: 99; }
+
+      /* Forced line breaks in the source HTML (topbar metadata, About
+         paragraph, filter descriptions) interfere with mobile reflow —
+         hide them universally inside this media query. */
+      br { display: none; }
+
+      /* ── Header — logo is back to position:fixed (sticky, like desktop)
+            so it floats over content as the page scrolls. The header
+            itself reserves vertical space for the fixed logo via
+            min-height, and lays out the #header-right metadata/links
+            stack at the right edge (justify-content:flex-end). */
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 0;
+        min-height: calc(94vw * 200 / 882);
+        padding: 0;
+        grid-template-columns: none;
+        position: relative;
+      }
+
+      /* Logo — 72vw × 1.3 = 94vw (per +30% mobile bump). Fixed at the
+         top of the viewport with pointer-events:none so it doesn't trap
+         clicks/scrolls. The canvas right ~50% is transparent so the
+         #header-right metadata column sits over it cleanly. */
+      #caad-logo {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 50;
+        width: 94vw !important;
+        max-width: 94vw !important;
+        height: calc(94vw * 200 / 882) !important;
+        margin: 0 !important;
+        pointer-events: none;
+      }
+
+      /* Right-side stack: metadata + links, right-aligned. Sits over the
+         logo canvas's transparent right portion (z-index above the
+         canvas) so it shares the same horizontal band visually. */
+      #header-right {
+        position: relative;
+        z-index: 51;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.4rem;
+        padding: 0.25rem var(--cell-px) 0.25rem 0;
+        text-align: right;
+        flex: 0 0 auto;
+        width: 42vw;
+        max-width: 42vw;
+      }
+
+      /* ── Top metadata — vertical stack of three lines, right-aligned. */
+      #topbar {
+        position: static;
+        display: block;
+        grid-template-columns: none;
+        padding: 0;
+        background: transparent;
+        border-bottom: none;
+        text-align: right;
+      }
+      #topbar span {
+        display: block;
+        font-size: 0.5rem;
+        padding: 1px 0;
+        line-height: 1.25;
+        text-align: right;
+      }
+      #topbar span:nth-child(1),
+      #topbar span:nth-child(2) { display: none; }
+
+      /* Links stack vertically, right-aligned, slightly larger than the
+         metadata above so they read as the primary action items. */
+      .header-links {
+        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.25rem;
+        padding: 0;
+        justify-content: flex-end;
+      }
+      .header-links a { font-size: 0.7rem; }
+
+      /* ── Top index panel — only About is visible at the top on mobile;
+            the others are JS-moved into #mobile-bottom-index below the grid. */
+      #index-panel {
+        grid-template-columns: 1fr;
+      }
+      #index-panel .index-col {
+        padding: 0.8rem var(--cell-px) 1.2rem;
+        border-right: none;
+      }
+      #index-panel .index-col:not(:first-child) { display: none; }
+      .about-text {
+        font-size: 0.875rem;  /* 14px */
+        line-height: 1.5;
+      }
+      /* "Hover to preview" hint is meaningless on touch — kill it. */
+      .about-instruction { display: none !important; }
+
+      /* ── Grid — 2 columns on mobile; card aspect-ratio:1/1 from desktop
+            rule remains correct. */
+      #grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      /* JS hides cards beyond the first 50 with this class until "Show more". */
+      .card.mobile-hidden { display: none; }
+
+      /* "Show more" toggle — added by JS, spans the full grid width. */
+      #show-more-btn {
+        grid-column: 1 / -1;
+        font-family: var(--mono);
+        font-size: 0.7rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--text);
+        background: var(--surface);
+        border: none;
+        border-top: 0.5px solid var(--border);
+        border-bottom: 0.5px solid var(--border);
+        padding: 1.4rem 1rem;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+      }
+      #show-more-btn:active { opacity: 0.6; }
+
+      /* ── Bottom mobile index — accordion list of Students / Projects / Types
+            (Tools is removed entirely by JS). */
+      #mobile-bottom-index {
+        display: flex;
+        flex-direction: column;
+        border-top: 0.5px solid var(--border);
+      }
+      #mobile-bottom-index .index-col {
+        padding: 0;
+        border-right: none;
+        border-bottom: 0.5px solid var(--border);
+      }
+      #mobile-bottom-index .col-label {
+        padding: 1rem var(--cell-px);
+        cursor: pointer;
+        user-select: none;
+        margin-bottom: 0;
+        border-bottom: none;
+        position: relative;
+        font-size: 0.6rem;
+      }
+      #mobile-bottom-index .col-label::after {
+        content: '+';
+        position: absolute;
+        right: var(--cell-px);
+        top: 1rem;
+        font-family: var(--mono);
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      #mobile-bottom-index .index-col[data-mobile-open="true"] .col-label::after {
+        content: '−';
+      }
+      #mobile-bottom-index .index-col .filter-list {
+        display: none;
+        padding: 0 var(--cell-px) 1rem;
+      }
+      #mobile-bottom-index .index-col .students-two-col {
+        display: none;
+        padding: 0 var(--cell-px) 1rem;
+      }
+      #mobile-bottom-index .index-col[data-mobile-open="true"] .filter-list {
+        display: block;
+      }
+      #mobile-bottom-index .index-col[data-mobile-open="true"] .students-two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      #mobile-bottom-index .index-col[data-mobile-open="true"] .students-two-col .filter-list {
+        display: block;
+        padding: 0;
+      }
+
+      /* ── Overlay — full screen, tap targets ≥44px per platform guidelines. */
+      #overlay-close {
+        padding: 0.8rem 1rem;
+        min-width: 44px;
+        min-height: 44px;
+        font-size: 1.8rem;
+        top: 0.5rem;
+        right: 0.5rem;
+      }
+      #overlay-prev,
+      #overlay-next {
+        min-width: 44px;
+        min-height: 44px;
+        font-size: 1.8rem;
+      }
+      #overlay-prev { left:  0.25rem; }
+      #overlay-next { right: 0.25rem; }
+
+      /* ── Mobile overlay: truly full-screen, no scroll, no default
+            touch behaviour. touch-action:none + JS touchmove
+            preventDefault stops the page underneath from scrolling and
+            blocks pinch-zoom inside the overlay. justify-content:center
+            (inherited from the base #overlay rule) vertically centers
+            the [sketch + info] group; both are flex:0 0 auto so the
+            group's intrinsic height is what gets centered. */
+      #overlay {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        touch-action: none;
+        padding: 0;
+        gap: 0.75rem;
+      }
+      #overlay-inner {
+        flex: 0 0 auto;
+        width: 100vw !important;
+        max-width: 100vw !important;
+      }
+      #overlay-info {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        padding: 0 var(--cell-px);
+        flex: 0 0 auto;
+      }
+      /* Prev/next arrows hidden on mobile — swipe gestures handle
+         navigation; the arrows would just be extra tap targets. */
+      #overlay-prev,
+      #overlay-next { display: none; }
+    }
+
   </style>
 </head>
 <body>
@@ -543,7 +814,7 @@
   <span></span>
   <span></span>
   <span>American University of Sharjah</span>
-  <span>DES 394 / 20<br>Intro to Creative Coding</span>
+  <span>DES 394 / 20 <br>Intro to Creative Coding</span>
   <span>Est. Spring 2026</span>
 </div>
 
@@ -562,7 +833,7 @@
   <!-- 1 · About -->
   <div class="index-col">
     <div class="col-label">About</div>
-    <p class="about-text">A repository for all creative coding sketches and projects<br>created by students from the College of Architecture,<br>Art &amp; Design at the American University of Sharjah.<br>The course is led by Prof.&nbsp;Naz&nbsp;Naddaf.</p>
+    <p class="about-text">A repository for all creative coding sketches and projects <br>created by students from the College of Architecture, <br>Art &amp; Design at the American University of Sharjah. <br>The course is led by Prof.&nbsp;Naz&nbsp;Naddaf.</p>
     <p class="about-instruction">Hover to preview — click to explore.</p>
   </div>
 
@@ -608,7 +879,7 @@
   <div class="index-col">
     <div class="col-label">Projects</div>
     <ul class="filter-list">
-      <li><button class="filter-btn" data-kind="category" data-value="Playground"><span class="filter-num">01</span><span class="filter-name">Playground<span class="filter-desc">Weekly experiments<br>and trials</span></span></button></li>
+      <li><button class="filter-btn" data-kind="category" data-value="Playground"><span class="filter-num">01</span><span class="filter-name">Playground<span class="filter-desc">Weekly experiments <br>and trials</span></span></button></li>
       <li><button class="filter-btn" data-kind="category" data-value="Remix"><span class="filter-num">02</span><span class="filter-name">Remix<span class="filter-desc">Recreating and reimagining artworks of the past</span></span></button></li>
       <li><button class="filter-btn" data-kind="category" data-value="Typelab"><span class="filter-num">03</span><span class="filter-name">Typelab<span class="filter-desc">Experiments with letterforms</span></span></button></li>
     </ul>
@@ -828,6 +1099,16 @@ function destroyOtherPreviews(exceptCard) {
 function destroyAllPreviews() { destroyOtherPreviews(null); }
 
 /* ═══════════════════════════════════════════════════
+   Mobile detection — runtime check (matchMedia is live, so this stays
+   correct across orientation changes). Hoisted function declaration so
+   the ambient IIFE below can reference it without a TDZ trap.
+═══════════════════════════════════════════════════ */
+const MOBILE_BREAKPOINT = 768;
+function isMobile() {
+  return window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`).matches;
+}
+
+/* ═══════════════════════════════════════════════════
    Per-sketch drawing-bounds overrides.
    When a sketch draws its content within a sub-region of its canvas
    (e.g. Spikey 8 calls translate(width/2 - 30, height/2 + 250) which
@@ -877,8 +1158,13 @@ window.addEventListener('message', (e) => {
       if (!inner) return;
       const vw   = window.innerWidth;
       const vh   = window.innerHeight;
-      const maxW = vw * 0.80;
-      const maxH = vh * 0.80;
+      /* On mobile use the full viewport (minus a small reserve for the
+         info block + close button) so the iframe genuinely fills the
+         screen. Desktop keeps the 80% cap so there's room for the info
+         block underneath without scrolling. */
+      const isMobileOverlay = vw <= MOBILE_BREAKPOINT;
+      const maxW = isMobileOverlay ? vw           : vw * 0.80;
+      const maxH = isMobileOverlay ? vh - 140     : vh * 0.80;
       const ar   = d.w / d.h;
       let cw, ch;
       if (maxW / ar <= maxH) { cw = maxW; ch = maxW / ar; }
@@ -934,6 +1220,13 @@ function setFilter(kind, value) {
   }
   applyFilter();
   syncFilterUI();
+  /* On mobile the filter list lives at the bottom of the page; after
+     tapping it the user wants to see the resulting grid, so jump back
+     up to the top of #grid. */
+  if (isMobile()) {
+    const grid = document.getElementById('grid');
+    if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 function applyFilter() {
@@ -1036,6 +1329,10 @@ function renderCard(project, code) {
   card._code    = code;
 
   card.addEventListener('mouseenter', () => {
+    /* On mobile, touch fires synthetic mouseenter on tap; we don't want
+       hover-style preview activation there. The mobile auto-activate
+       observer handles iframe lifecycle on its own. */
+    if (isMobile()) return;
     /* Strict 1-at-a-time: kill any other live preview iframe BEFORE creating
        this one. Multiple iframes alive simultaneously each run their own p5
        draw loop, which is the main source of perceived lag. */
@@ -1114,16 +1411,58 @@ function openOverlay(project, code) {
     escHtml(project.student || '') +
     (project.department ? `<sup>${escHtml(project.department)}</sup>` : '');
 
-  /* Optional instructions: only render the element if there's content,
-     so empty/missing fields take up no space at all. */
+  /* Instructions resolution:
+       Desktop — always project.instructions.
+       Mobile  — three cases:
+         a) instructionsMobile field is PRESENT but empty ("")
+              → suppress the desktop text entirely; show ONLY the
+                disclaimer. Opt-in for sketches whose desktop hint
+                (e.g. "click", "use mouse") doesn't make sense on touch.
+         b) instructionsMobile field is non-empty
+              → show that text + the disclaimer below.
+         c) instructionsMobile field is absent
+              → fall back to project.instructions + disclaimer.
+     Block-level span used for the disclaimer (not <br>) because the
+     mobile @media block hides <br> universally. */
   const instr = document.getElementById('overlay-instructions');
-  const instrText = (project.instructions || '').toString().trim();
-  if (instrText) {
-    instr.textContent = instrText;
-    instr.hidden = false;
-  } else {
+  const isMobileView = window.innerWidth <= MOBILE_BREAKPOINT;
+  const desktopText  = (project.instructions       || '').toString().trim();
+  const mobileText   = (project.instructionsMobile || '').toString().trim();
+  const hasMobileField = Object.prototype.hasOwnProperty.call(project, 'instructionsMobile');
+
+  function appendMobileDisclaimer(target) {
+    const note = document.createElement('span');
+    note.className = 'overlay-instructions-mobile-note';
+    note.textContent = 'For the full interactive experience, view on desktop.';
+    target.appendChild(note);
+  }
+
+  if (isMobileView && hasMobileField && !mobileText) {
+    /* Case (a): empty instructionsMobile → disclaimer only. */
     instr.textContent = '';
-    instr.hidden = true;
+    appendMobileDisclaimer(instr);
+    instr.hidden = false;
+  } else if (isMobileView) {
+    /* Cases (b) and (c): use mobileText if any, else desktopText. */
+    const txt = mobileText || desktopText;
+    if (txt) {
+      instr.textContent = '';
+      instr.appendChild(document.createTextNode(txt));
+      appendMobileDisclaimer(instr);
+      instr.hidden = false;
+    } else {
+      instr.textContent = '';
+      instr.hidden = true;
+    }
+  } else {
+    /* Desktop — unchanged behaviour. */
+    if (desktopText) {
+      instr.textContent = desktopText;
+      instr.hidden = false;
+    } else {
+      instr.textContent = '';
+      instr.hidden = true;
+    }
   }
 
   /* Remember which sketch is showing so prev/next can find its index in
@@ -1131,6 +1470,12 @@ function openOverlay(project, code) {
   currentOverlayProject = project;
 
   overlayEl.classList.add('active');
+  /* Mobile: lock the page underneath so background scroll can't bleed
+     through while the overlay is open. Restored in closeOverlay. */
+  if (window.innerWidth <= MOBILE_BREAKPOINT) {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+  }
   console.log(`[caad] overlay → ${project.id}`);
 }
 
@@ -1167,6 +1512,10 @@ function navigateOverlay(delta) {
 function closeOverlay() {
   overlayEl.classList.remove('active');
   currentOverlayProject = null;
+  /* Restore the body/html overflow that openOverlay set on mobile.
+     Setting to empty string lets the document's normal CSS take over. */
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
   /* Actually destroy the fullscreen iframe (not just navigate it to about:blank)
      so the sketch stops drawing immediately and its blob URL is freed. Replace
      with an empty placeholder element so the static <iframe id="overlay-frame">
@@ -1308,6 +1657,9 @@ const ambient = (() => {
 
   function scheduleNext() {
     if (!isIdle) return;
+    /* On mobile, IntersectionObserver-based auto-activation replaces the
+       cursor-idle ambient cycle — never spin this up there. */
+    if (isMobile()) return;
     const next = pickNext();
     if (next) {
       activate(next);
@@ -1351,6 +1703,41 @@ document.getElementById('overlay-close').addEventListener('click', closeOverlay)
 document.getElementById('overlay-prev') .addEventListener('click', e => { e.stopPropagation(); navigateOverlay(-1); });
 document.getElementById('overlay-next') .addEventListener('click', e => { e.stopPropagation(); navigateOverlay( 1); });
 overlayEl.addEventListener('click', e => { if (e.target === overlayEl) closeOverlay(); });
+
+/* Mobile-only touch handling for the fullscreen overlay.
+     touchstart: record start position.
+     touchmove:  preventDefault so the page underneath can't scroll
+                 and pinch-zoom can't fire inside the overlay (combined
+                 with the CSS `touch-action:none` for belt-and-braces).
+     touchend:   horizontal swipe (|dx| > 50, dx-dominant)  → navigate
+                 vertical-down swipe (dy > 80, dy-dominant) → close. */
+(function () {
+  let touchStartX = 0, touchStartY = 0;
+  overlayEl.addEventListener('touchstart', (e) => {
+    if (window.innerWidth > MOBILE_BREAKPOINT) return;
+    const t = e.changedTouches[0];
+    touchStartX = t.clientX;
+    touchStartY = t.clientY;
+  }, { passive: true });
+  /* passive:false so preventDefault is allowed. */
+  overlayEl.addEventListener('touchmove', (e) => {
+    if (window.innerWidth > MOBILE_BREAKPOINT) return;
+    e.preventDefault();
+  }, { passive: false });
+  overlayEl.addEventListener('touchend', (e) => {
+    if (window.innerWidth > MOBILE_BREAKPOINT) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - touchStartX;
+    const dy = t.clientY - touchStartY;
+    if (Math.abs(dy) >= Math.abs(dx)) {
+      /* Vertical-dominant: down-swipe past threshold closes the overlay. */
+      if (dy > 80) closeOverlay();
+      return;
+    }
+    if (dx < -50) navigateOverlay( 1); // swipe left → next
+    else if (dx > 50) navigateOverlay(-1); // swipe right → previous
+  }, { passive: true });
+})();
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape')        closeOverlay();
   /* Arrow keys only navigate when the overlay is the active surface,
@@ -1449,6 +1836,11 @@ async function init() {
     gridEl.appendChild(renderCard(projects[i], sources[i]));
   }
 
+  /* Mobile-only DOM reshuffle + IntersectionObserver auto-activate.
+     No-op on desktop. Runs after the grid is populated so the show-more
+     button and the auto-activate observer can see every card. */
+  initMobileLayout();
+
   /* ?debug=1 → eagerly load every iframe to surface any sketches that fail
      to render. Each failure paints a red error overlay on its card and is
      listed in the console summary. Doesn't block normal hover/click. */
@@ -1457,6 +1849,169 @@ async function init() {
       console.warn('[caad debug] pipeline error:', err)
     );
   }
+}
+
+/* ═══════════════════════════════════════════════════
+   Mobile layout adaptations — pure JS, gated on isMobile().
+     • setupMobileBottomIndex:   moves the Students / Projects / Types
+       columns from the top #index-panel down into a new
+       #mobile-bottom-index container below the grid, removes Tools, and
+       wires accordion toggles on the column labels.
+     • setupMobileShowMore:      hides cards beyond the first 50 with a
+       .mobile-hidden class and appends a "Show more →" button that
+       reveals them on tap.
+     • setupMobileAutoActivate:  IntersectionObserver picks the card
+       currently most-visible in the viewport and activates exactly one
+       at a time, destroying the iframe when that card scrolls away or
+       is filtered out.
+   Ambient (cursor-idle) is gated off on mobile inside its own scheduleNext.
+═══════════════════════════════════════════════════ */
+const MOBILE_VISIBLE_COUNT = 50;
+
+function initMobileLayout() {
+  if (!isMobile()) return;
+  document.body.classList.add('is-mobile');
+  setupMobileHeader();
+  setupMobileBottomIndex();
+  setupMobileShowMore();
+  setupMobileAutoActivate();
+}
+
+function setupMobileHeader() {
+  /* Wrap the right-side header content (topbar metadata + .header-links)
+     into a single #header-right flex column inside <header>, so the
+     mobile CSS can lay out logo-left / right-stack-right via flex. */
+  const header = document.querySelector('header');
+  const topbar = document.getElementById('topbar');
+  const links  = document.querySelector('.header-links');
+  if (!header || !topbar || !links) return;
+
+  const right = document.createElement('div');
+  right.id = 'header-right';
+  /* Order inside right column: topbar first, then links. */
+  right.appendChild(topbar);
+  right.appendChild(links);
+  header.appendChild(right);
+}
+
+function setupMobileBottomIndex() {
+  const panel = document.getElementById('index-panel');
+  const grid  = document.getElementById('grid');
+  if (!panel || !grid) return;
+
+  const cols = panel.querySelectorAll('.index-col');
+  /* DOM order: [0] About, [1] Students, [2] Types, [3] Projects, [4] Tools.
+     Spec order at the bottom: Students → Projects → Types. Tools is removed. */
+  const students = cols[1];
+  const types    = cols[2];
+  const projects = cols[3];
+  const tools    = cols[4];
+
+  if (tools) tools.remove();
+
+  const bottom = document.createElement('div');
+  bottom.id = 'mobile-bottom-index';
+
+  if (students) bottom.appendChild(students);
+  if (projects) bottom.appendChild(projects);
+  if (types)    bottom.appendChild(types);
+
+  grid.parentNode.insertBefore(bottom, grid.nextSibling);
+
+  /* Accordion: each column starts collapsed; tapping the label flips
+     data-mobile-open, which the CSS reads to show/hide the list. */
+  bottom.querySelectorAll('.index-col').forEach(col => {
+    col.setAttribute('data-mobile-open', 'false');
+    const label = col.querySelector('.col-label');
+    if (!label) return;
+    label.setAttribute('role', 'button');
+    label.addEventListener('click', () => {
+      const open = col.getAttribute('data-mobile-open') === 'true';
+      col.setAttribute('data-mobile-open', open ? 'false' : 'true');
+    });
+  });
+}
+
+function setupMobileShowMore() {
+  const grid = document.getElementById('grid');
+  if (!grid) return;
+  const cards = Array.from(grid.querySelectorAll('.card'));
+  if (cards.length <= MOBILE_VISIBLE_COUNT) return;
+
+  for (let i = MOBILE_VISIBLE_COUNT; i < cards.length; i++) {
+    cards[i].classList.add('mobile-hidden');
+  }
+
+  const btn = document.createElement('button');
+  btn.id = 'show-more-btn';
+  btn.type = 'button';
+  btn.textContent = 'Show more →';
+  /* The hidden cards still sit in grid order after card[49]; the button
+     becomes the last visible flow item and appears immediately under the
+     50th card because the hidden ones take no layout space. */
+  grid.appendChild(btn);
+
+  btn.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('mobile-hidden'));
+    btn.remove();
+  });
+}
+
+function setupMobileAutoActivate() {
+  const cards = Array.from(document.querySelectorAll('#grid .card'));
+  if (cards.length === 0) return;
+
+  /* Map(card → intersectionRatio) so we can pick the N most-visible
+     cards each pass. MAX_ACTIVE=2 allows both columns of the 2-col
+     mobile grid to run simultaneously. */
+  const intersecting = new Map();
+  const activeCards = new Set();
+  const MAX_ACTIVE = 2;
+
+  const io = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        intersecting.set(entry.target, entry.intersectionRatio);
+      } else {
+        intersecting.delete(entry.target);
+      }
+    }
+    pickActive();
+  }, { rootMargin: '0px 0px 500px 0px', threshold: 0 });
+
+  function pickActive() {
+    /* Candidates: visible (not mobile-hidden, not filtered-out) and
+       currently intersecting. Sort descending by ratio. */
+    const candidates = [];
+    for (const [card, ratio] of intersecting) {
+      if (card.classList.contains('mobile-hidden')) continue;
+      if (card.classList.contains('filtered-out')) continue;
+      candidates.push({ card, ratio });
+    }
+    candidates.sort((a, b) => b.ratio - a.ratio);
+    const want = new Set(candidates.slice(0, MAX_ACTIVE).map(c => c.card));
+
+    /* Tear down any active card that's no longer in the top-N. */
+    for (const card of Array.from(activeCards)) {
+      if (!want.has(card)) {
+        card.classList.remove('mobile-active');
+        const f = card.querySelector('.card-preview > iframe');
+        if (f) destroyPreviewIframe(f);
+        activeCards.delete(card);
+      }
+    }
+
+    /* Activate any new top-N card that isn't already active. */
+    for (const card of want) {
+      if (activeCards.has(card)) continue;
+      if (!card._ensureFrame) continue;
+      card.classList.add('mobile-active');
+      card._ensureFrame();
+      activeCards.add(card);
+    }
+  }
+
+  cards.forEach(c => io.observe(c));
 }
 
 /* ═══════════════════════════════════════════════════

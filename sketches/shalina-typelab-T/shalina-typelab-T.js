@@ -15,18 +15,13 @@ function preload() {
 
 function setup() {
   createCanvas(900, 900, WEBGL);
+  pixelDensity(1);
 }
 
 function draw() {
   background(0);
 
   if (!started) {
-    textFont(myFont);
-    fill(255);
-    noStroke();
-    textSize(20);
-    textAlign(CENTER, CENTER);
-    text("click to start + allow mic", 0, 0);
     return;
   }
 

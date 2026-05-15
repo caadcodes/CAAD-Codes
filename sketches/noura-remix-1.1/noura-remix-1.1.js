@@ -126,3 +126,17 @@ function mousePressed() {
 function mouseReleased() {
   spinBoost = 0;
 }
+
+/* Mobile touch aliases: p5's synthetic mouse events sometimes don't
+   fire inside the sandboxed gallery iframe, so route touch handlers
+   straight to the same logic. Returning false suppresses default
+   scroll/zoom behaviour. */
+function touchStarted() {
+  mousePressed();
+  return false;
+}
+
+function touchEnded() {
+  mouseReleased();
+  return false;
+}

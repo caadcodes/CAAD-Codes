@@ -46,6 +46,7 @@ function preload() {
 
 function setup() {
   createCanvas(1000, 1000, WEBGL);
+  pixelDensity(1);
 
   blue = [
     color(127, 166, 214),

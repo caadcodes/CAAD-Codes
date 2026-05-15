@@ -16,6 +16,7 @@ function preload() {
 
 function setup() {
   createCanvas(1150, 700);
+  pixelDensity(1);
   imageMode(CENTER);
   frameRate(6);
 }

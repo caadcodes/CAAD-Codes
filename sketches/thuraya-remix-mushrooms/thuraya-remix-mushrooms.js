@@ -79,3 +79,12 @@ function drawShroomzOverlay() {
 function mousePressed() {
   showSVG = !showSVG;
 }
+
+/* Mobile: p5's automatic touch→mouse synthesis doesn't always fire
+   reliably inside the sandboxed gallery iframe — aliasing touchStarted
+   to mousePressed makes taps work on touch devices. Returning false
+   suppresses the default scroll/zoom behaviour. */
+function touchStarted() {
+  mousePressed();
+  return false;
+}

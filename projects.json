@@ -10,7 +10,8 @@
       "Image"
     ],
     "sketchFile": "leena-remix-dancing/leena-remix-dancing.js",
-    "instructions": "Click to start the party! Move the mouse to dance!"
+    "instructions": "Click to start the party! Move the mouse to dance!",
+    "instructionsMobile": "Tap to start the party! Drag to dance!"
   },
   {
     "id": "kavya-remix-herbert-franke-digital-einstein",
@@ -35,7 +36,8 @@
       "Particles"
     ],
     "sketchFile": "noura-typelab-7/noura-typelab-7.js",
-    "instructions": "Move the mouse to influence the wave."
+    "instructions": "Move the mouse to influence the wave.",
+    "instructionsMobile": "Drag to influence the wave."
   },
   {
     "id": "thuraya-typelab-Q",
@@ -51,7 +53,8 @@
       "Image"
     ],
     "sketchFile": "thuraya-typelab-Q/thuraya-typelab-Q.js",
-    "instructions": "Click anywhere on the Q. Press 'R' to reset."
+    "instructions": "Click anywhere on the Q. Press 'R' to reset.",
+     "instructionsMobile": "Tap anywhere on the Q."
   },
   {
     "id": "fatma-remix-vera-molnar",
@@ -64,7 +67,8 @@
       "Grid"
     ],
     "sketchFile": "fatma-remix-vera-molnar/fatma-remix-vera-molnar.js",
-    "instructions": "Move the mouse to bring order to chaos."
+    "instructions": "Move the mouse to bring order to chaos.",
+    "instructionsMobile": "Drag to bring order to chaos."
   },
   {
     "id": "layan-typelab-C",
@@ -77,7 +81,8 @@
       "Type"
     ],
     "sketchFile": "layan-typelab-C/layan-typelab-C.js",
-    "instructions": "Move across the Y axis to change number of circles."
+    "instructions": "Move across the Y axis to change number of circles.",
+    "instructionsMobile": "Drag across the Y axis to change number of circles."
   },
   {
     "id": "shalina-remix-joan-miro",
@@ -89,7 +94,8 @@
       "Mouse"
     ],
     "sketchFile": "shalina-remix-joan-miro/shalina-remix-joan-miro.js",
-    "instructions": "Move the mouse over the red lines."
+    "instructions": "Move the mouse over the red lines...",
+    "instructionsMobile": "Tap the red lines..."
   },
   {
     "id": "mohamed-playground-infinite-scaffolding",
@@ -124,7 +130,8 @@
       "Mouse"
     ],
     "sketchFile": "deema-remix-the-swan-no.-17/deema-remix-the-swan-no.-17.js",
-    "instructions": "Move the mouse to spin and multiply."
+    "instructions": "Move the mouse to spin and multiply.",
+    "instructionsMobile": "Drag to spin and multiply."
   },
   {
     "id": "noura-playground-w4.1",
@@ -157,7 +164,8 @@
       "Type"
     ],
     "sketchFile": "farida-typelab-spikey-8/farida-typelab-spikey-8.js",
-    "instructions": "Move the mouse horizontally to change rotation speed and vertically to change spike length. Click to flip rotation direction."
+    "instructions": "Move the mouse horizontally to change rotation speed and vertically to change spike length. Click to flip rotation direction.",
+    "instructionsMobile": "Drag to change rotation speed and spike length."
   },
   {
     "id": "thuraya-remix-mushrooms",
@@ -170,7 +178,8 @@
       "Image"
     ],
     "sketchFile": "thuraya-remix-mushrooms/thuraya-remix-mushrooms.js",
-    "instructions": "Click to reveal effect of Mushrooms."
+    "instructions": "Click to reveal effect of Mushrooms.",
+     "instructionsMobile": "Tap to reveal effect of Mushrooms."
   },
   {
     "id": "kavya-playground-fractal-tree",
@@ -182,7 +191,8 @@
       "Mouse"
     ],
     "sketchFile": "kavya-playground-fractal-tree/kavya-playground-fractal-tree.js",
-    "instructions": "Move mouse horizontally to grow the fractal."
+    "instructions": "Move mouse horizontally to grow the fractal.",
+     "instructionsMobile": "Drag horizontally to grow the fractal."
   },
   {
     "id": "jana-playground-mona-lisa",
@@ -195,7 +205,8 @@
       "Image"
     ],
     "sketchFile": "jana-playground-mona-lisa/jana-playground-mona-lisa.js",
-    "instructions": "Click for a surprise."
+    "instructions": "Click for a surprise :*",
+    "instructionsMobile": "Tap for a surprise :*"
   },
   {
     "id": "mohamed-playground-spiral-debris",
@@ -208,7 +219,8 @@
       "3D"
     ],
     "sketchFile": "mohamed-playground-spiral-debris/mohamed-playground-spiral-debris.js",
-    "instructions": "Move the mouse to influence the scale and position of debris."
+    "instructions": "Move the mouse to influence the scale and position of debris.",
+    "instructionsMobile": "Tap to start. Drag to influence the scale and position of debris."
   },
   {
     "id": "fatma-playground-expanding-rings",
@@ -220,7 +232,8 @@
       "Mouse"
     ],
     "sketchFile": "fatma-playground-expanding-rings/fatma-playground-expanding-rings.js",
-    "instructions": "Move the mouse vertically to influence the distance, frequency, and number of rings."
+    "instructions": "Move the mouse vertically to influence the distance, frequency, and number of rings.",
+    "instructionsMobile": "Drag vertically to influence the distance, frequency, and number of rings."
   },
   {
     "id": "shalina-typelab-1",
@@ -232,7 +245,8 @@
       "Type"
     ],
     "sketchFile": "shalina-typelab-1/shalina-typelab-1.js",
-    "instructions": "Hover over the 1..."
+    "instructions": "Hover over the 1...",
+    "instructionsMobile": ""
   },
   {
     "id": "layan-typelab-flee-N",
@@ -256,7 +270,8 @@
       "Mouse",
       "Type"
     ],
-    "sketchFile": "kavya-playground-following-eyes/kavya-playground-following-eyes.js"
+    "sketchFile": "kavya-playground-following-eyes/kavya-playground-following-eyes.js",
+    "instructionsMobile": "Drag to influence the eyes."
   },
   {
     "id": "noura-playground-w5.1",
@@ -279,7 +294,8 @@
       "Color"
     ],
     "sketchFile": "mohamed-playground-R-party/mohamed-playground-R-party.js",
-    "instructions": "Move the mouse to influence scale and position of R's."
+    "instructions": "Move the mouse to influence scale and position of R's.",
+    "instructionsMobile": "Tap to start. Drag to scale and position of R's."
   },
   {
     "id": "thuraya-playground-disco lights",
@@ -292,7 +308,8 @@
       "Grid"
     ],
     "sketchFile": "thuraya-playground-disco lights/thuraya-playground-disco lights.js",
-    "instructions": "Move the mouse to influence the grid."
+    "instructions": "Move the mouse to influence the grid.",
+    "instructionsMobile": "Drag to move the grid."
   },
   {
     "id": "fatma-typelab-G",
@@ -317,7 +334,8 @@
       "Image"
     ],
     "sketchFile": "leena-playground-smiley-face/leena-playground-smiley-face.js",
-    "instructions": "Click for smiles and frowns."
+    "instructions": "Click for smiles and frowns.",
+    "instructionsMobile": "Tap for smiles and frowns."
   },
   {
     "id": "kavya-playground-following-squares",
@@ -330,20 +348,22 @@
       "Grid"
     ],
     "sketchFile": "kavya-playground-following-squares/kavya-playground-following-squares.js",
-    "instructions": "Move mouse to spin and change color."
+    "instructions": "Move mouse to spin and change color.",
+    "instructionsMobile": "Drag to spin and change color."
   },
   {
     "id": "shalina-typelab-M",
     "student": "Shalina Siddiqui",
     "department": "GRD",
-    "title": "M",
+    "title": "Curly M",
     "category": "Typelab",
     "types": [
       "Type",
       "Particles"
     ],
     "sketchFile": "shalina-typelab-M/shalina-typelab-M.js",
-    "instructions": "Click and hold to influence the particles."
+    "instructions": "Click and hold to influence the curls.",
+    "instructionsMobile": "Tap and hold to influence the curls."
   },
   {
     "id": "mohamed-playground-move-square",
@@ -355,7 +375,8 @@
       "Keyboard"
     ],
     "sketchFile": "mohamed-playground-move-square/mohamed-playground-move-square.js",
-    "instructions": "Click to start. Use the arrow keys to move the square."
+    "instructions": "Click to start. Use the arrow keys to move the square.",
+    "instructionsMobile": ""
   },
   {
     "id": "noura-playground-w6",
@@ -369,7 +390,8 @@
       "Image"
     ],
     "sketchFile": "noura-playground-w6/noura-playground-w6.js",
-    "instructions": "Move the mouse to influence text boxes."
+    "instructions": "Move the mouse to influence text boxes.",
+    "instructionsMobile": "Drag to influence text boxes."
   },
   {
     "id": "kavya-playground-hide-and-seek",
@@ -383,7 +405,8 @@
       "Grid"
     ],
     "sketchFile": "kavya-playground-hide-and-seek/kavya-playground-hide-and-seek.js",
-    "instructions": "Move the mouse to move the grid."
+    "instructions": "Move the mouse to move the grid.",
+    "instructionsMobile": "Drag to move the grid."
   },
   {
     "id": "thuraya-playground-circles",
@@ -394,7 +417,9 @@
     "types": [
       "Mouse"
     ],
-    "sketchFile": "thuraya-playground-circles/thuraya-playground-circles.js"
+    "sketchFile": "thuraya-playground-circles/thuraya-playground-circles.js",
+    "instructions": "Move the mouse...",
+    "instructionsMobile": "Drag to draw with circles..."
   },
   {
     "id": "layan-typelab-flee-N2",
@@ -408,7 +433,8 @@
       "Particles"
     ],
     "sketchFile": "layan-typelab-flee-N2/layan-typelab-flee-N2.js",
-    "instructions": "Move the mouse over the N."
+    "instructions": "Move the mouse over the N.",
+    "instructionsMobile": "Drag over the N..."
   },
   {
     "id": "fatma-typelab-H",
@@ -422,7 +448,8 @@
       "Particles"
     ],
     "sketchFile": "fatma-typelab-H/fatma-typelab-H.js",
-    "instructions": "Move the mouse to push the orange sand."
+    "instructions": "Move the mouse to push the orange sand.",
+    "instructionsMobile": ""
   },
   {
     "id": "mohamed-typelab-listening-U",
@@ -432,7 +459,8 @@
     "category": "Typelab",
     "types": [],
     "sketchFile": "mohamed-typelab-listening-U/mohamed-typelab-listening-U.js",
-    "instructions": ""
+    "instructions": "",
+    "instructionsMobile": "For the full interactive experience, view on desktop."
   },
   {
     "id": "kavya-playground-gradient-spiral-andmore",
@@ -453,7 +481,8 @@
     "category": "Typelab",
     "types": [],
     "sketchFile": "shalina-typelab-T/shalina-typelab-T.js",
-    "instructions": "Click to turn on mic."
+    "instructions": "Click to turn on mic.",
+    "instructionsMobile": ""
   },
   {
     "id": "noura-remix-1.2",
@@ -466,7 +495,8 @@
       "Grid"
     ],
     "sketchFile": "noura-remix-1.2/noura-remix-1.2.js",
-    "instructions": "Click for chaos!"
+    "instructions": "Click for chaos!",
+    "instructionsMobile": "For the full interactive experience, view on desktop."
   },
   {
     "id": "thuraya-playground-glittery-box",
@@ -480,7 +510,9 @@
       "Particles"
     ],
     "sketchFile": "thuraya-playground-glittery-box/thuraya-playground-glittery-box.js",
-    "instructions": "Click for the party!"
+    "instructions": "Click for the party!",
+    "instructionsMobile": "Drag for the party!"
+
   },
   {
     "id": "mohamed-typelab-moving-around",
@@ -493,7 +525,8 @@
       "Type"
     ],
     "sketchFile": "mohamed-typelab-moving-around/mohamed-typelab-moving-around.js",
-    "instructions": "Click to start. Use the up and down arrow keys to adjust the speed."
+    "instructions": "Click to start. Use the up and down arrow keys to adjust the speed.",
+    "instructionsMobile": ""
   },
   {
     "id": "kavya-playground-superb-umbrella",
@@ -505,7 +538,8 @@
       "Mouse"
     ],
     "sketchFile": "kavya-playground-superb-umbrella/kavya-playground-superb-umbrella.js",
-    "instructions": "Move the mouse to influence the shape and color."
+    "instructions": "Move the mouse to influence the shape and color.",
+    "instructionsMobile": "Tap and drag to influence the shape and color."
   },
   {
     "id": "noura-typelab-at",
@@ -520,7 +554,8 @@
       "3D"
     ],
     "sketchFile": "noura-typelab-at/noura-typelab-at.js",
-    "instructions": "Hover over the @ to reveal."
+    "instructions": "Hover over the @ to reveal.",
+    "instructionsMobile": ""
   },
   {
     "id": "shalina-typelab-Y",
@@ -533,7 +568,8 @@
       "3D"
     ],
     "sketchFile": "shalina-typelab-Y/shalina-typelab-Y.js",
-    "instructions": "Click to expand."
+    "instructions": "Click to expand.",
+    "instructionsMobile": "Tap and hold to expand."
   },
   {
     "id": "leena-typelab-R",
@@ -557,7 +593,8 @@
       "Mouse"
     ],
     "sketchFile": "kavya-remix-karl-gerstner-color-lines/kavya-remix-karl-gerstner-color-lines.js",
-    "instructions": "Click and hold to reveal."
+    "instructions": "Click and hold to reveal.",
+    "instructionsMobile": "Tap and hold to reveal."
   },
   {
     "id": "kavya-typelab-S-universe",
@@ -571,7 +608,8 @@
       "Particles"
     ],
     "sketchFile": "kavya-typelab-S-universe/kavya-typelab-S-universe.js",
-    "instructions": "Move the mouse horizontally to reveal the universe."
+    "instructions": "Move the mouse horizontally to reveal the universe.",
+    "instructionsMobile": "Tap and drag horizontally to reveal the universe."
   },
   {
     "id": "kavya-playground-random-square-circle-cursor",
@@ -583,7 +621,8 @@
       "Mouse"
     ],
     "sketchFile": "kavya-playground-random-square-circle-cursor/kavya-playground-random-square-circle-cursor.js",
-    "instructions": "Move the mouse to change the number of squares."
+    "instructions": "Move the mouse to change the number of squares.",
+    "instructionsMobile": "Drag to change the number of squares."
   },
   {
     "id": "layan_remix_treachery-of-images",
@@ -596,7 +635,8 @@
       "Keyboard"
     ],
     "sketchFile": "layan_remix_treachery-of-images/layan_remix_treachery-of-images.js",
-    "instructions": "Click to start. Instead of pipe, type in the names of some familiar objects..."
+    "instructions": "Click to start. Instead of pipe, type in the names of some familiar objects...",
+    "instructionsMobile": ""
   },
   {
     "id": "deema-typelab-rockin-4",
@@ -610,7 +650,8 @@
       "Sound"
     ],
     "sketchFile": "deema-typelab-rockin-4/deema-typelab-rockin-4.js",
-    "instructions": "Click to start listening. Play a Linkin Park song..."
+    "instructions": "Click to start listening. Play a Linkin Park song...",
+    "instructionsMobile": ""
   },
   {
     "id": "thuraya-playground-rotating-sphere",
@@ -624,7 +665,8 @@
       "Color"
     ],
     "sketchFile": "thuraya-playground-rotating-sphere/thuraya-playground-rotating-sphere.js",
-    "instructions": "Move the mouse to change color."
+    "instructions": "Move the mouse to change color.",
+    "instructionsMobile": "Tap and drag to change color."
   },
   {
     "id": "shalina-playground-fan-exhaust",
@@ -635,7 +677,8 @@
     "types": [
       "Mouse"
     ],
-    "sketchFile": "shalina-playground-fan-exhaust/shalina-playground-fan-exhaust.js"
+    "sketchFile": "shalina-playground-fan-exhaust/shalina-playground-fan-exhaust.js",
+    "instructionsMobile": "Tap and drag to paint the path."
   },
   {
     "id": "mohamed-playground-rotating-rectangle",
@@ -658,7 +701,8 @@
       "Mouse"
     ],
     "sketchFile": "noura-playground-w3.1/noura-playground-w3.1.js",
-    "instructions": "Move the mouse to influence shape of the brush."
+    "instructions": "Move the mouse to influence shape of the brush.",
+    "instructionsMobile": "Tap and drag to paint."
   },
   {
     "id": "noura-typelab-L",
@@ -672,7 +716,8 @@
       "3D"
     ],
     "sketchFile": "noura-typelab-L/noura-typelab-L.js",
-    "instructions": "Move the mouse to influence color and rotation."
+    "instructions": "Move the mouse to influence color and rotation.",
+    "instructionsMobile": "Tap and drag to influence color and rotation."
   },
   {
     "id": "thuraya-typelab-6",
@@ -686,7 +731,8 @@
       "Sound"
     ],
     "sketchFile": "thuraya-typelab-6/thuraya-typelab-6.js",
-    "instructions": "Click anywhere to enable your microphone..."
+    "instructions": "Click anywhere to enable your microphone...",
+    "instructionsMobile":""
   },
   {
     "id": "thuraya-typelab-x",
@@ -699,7 +745,8 @@
       "Type"
     ],
     "sketchFile": "thuraya-typelab-x/thuraya-typelab-x.js",
-    "instructions": "Click and hold the X."
+    "instructions": "Click and hold the X.",
+    "instructionsMobile": "Tap and hold anywhere."
   },
   {
     "id": "kavya-playground-stack-of-pages-W",
@@ -722,7 +769,9 @@
       "Mouse",
       "3D"
     ],
-    "sketchFile": "jana-playground-cube&ball/jana-playground-cube&ball.js"
+    "sketchFile": "jana-playground-cube&ball/jana-playground-cube&ball.js",
+     "instructionsMobile": "Drag the sphere..."
+
   },
   {
     "id": "mohamed-playground-jungle-spiral",
@@ -755,7 +804,8 @@
       "3D"
     ],
     "sketchFile": "farida-playground-rotating-ring/farida-playground-rotating-ring.js",
-    "instructions": "Hover over the ring."
+    "instructions": "Hover over the ring.",
+    "instructionsMobile": "Tap the top left corner of the ring."
   },
   {
     "id": "fatma-remix-mohamedmelehi",
@@ -765,7 +815,8 @@
     "category": "Remix",
     "types": [],
     "sketchFile": "fatma-remix-mohamedmelehi/fatma-remix-mohamedmelehi.js",
-    "instructions": "Click to reset."
+    "instructions": "Click to reset.",
+     "instructionsMobile": "Tap to reveal..."
   },
   {
     "id": "mohamed-typelab-set-speed",
@@ -779,7 +830,8 @@
       "3D"
     ],
     "sketchFile": "mohamed-typelab-set-speed/mohamed-typelab-set-speed.js",
-    "instructions": "Type in number to set speed, and press enter. Enter 0 to reset."
+    "instructions": "Type in number to set speed, and press enter. Enter 0 to reset.",
+    "instructionsMobile": ""
   },
   {
     "id": "farida-playground-illusion-bloom",
@@ -792,7 +844,8 @@
       "3D"
     ],
     "sketchFile": "farida-playground-illusion-bloom/farida-playground-illusion-bloom.js",
-    "instructions": "Hover over the top of the white circle."
+    "instructions": "Hover over the top of the white circle.",
+    "instructionsMobile": "Tap the white circle..."
   },
   {
     "id": "kavya-playground-press-to-reveal-W",
@@ -805,7 +858,8 @@
       "Type"
     ],
     "sketchFile": "kavya-playground-press-to-reveal-W/kavya-playground-press-to-reveal-W.js",
-    "instructions": "Press and hold to reveal."
+    "instructions": "Press and hold to reveal.",
+    "instructionsMobile": "Tap and hold to reveal."
   },
   {
     "id": "mohamed-typelab-every-script",
@@ -819,13 +873,14 @@
       "Grid"
     ],
     "sketchFile": "mohamed-typelab-every-script/mohamed-typelab-every-script.js",
-    "instructions": "Click to change scripts."
+    "instructions": "Click to change scripts.",
+    "instructionsMobile": ""
   },
   {
     "id": "deema-typelab-K",
     "student": "Deema Abdalrahman",
     "department": "GRD",
-    "title": "3D K",
+    "title": "DNA K",
     "category": "Typelab",
     "types": [
       "Mouse",
@@ -833,7 +888,8 @@
       "Type"
     ],
     "sketchFile": "deema-typelab-K/deema-typelab-K.js",
-    "instructions": "Move the mouse horizontally to change rotation speed and view."
+    "instructions": "Move the mouse horizontally to rotate.",
+    "instructionsMobile": "Drag horizontally to rotate."
   },
   {
     "id": "thuraya-typelab-question",
@@ -847,7 +903,8 @@
       "Particles"
     ],
     "sketchFile": "thuraya-typelab-question/thuraya-typelab-question.js",
-    "instructions": "Move the mouse to influence the particles."
+    "instructions": "Move the mouse to influence the particles.",
+    "instructionsMobile": "Drag to influence the particles."
   },
   {
     "id": "layan-typelab-Xray-A",
@@ -859,7 +916,8 @@
       "Type"
     ],
     "sketchFile": "layan-typelab-Xray-A/layan-typelab-Xray-A.js",
-    "instructions": ""
+    "instructions": "",
+    "instructionsMobile": "Tap or drag on the A..."
   },
   {
     "id": "kavya-playground-ticking_clock",
@@ -891,7 +949,8 @@
       "Mouse"
     ],
     "sketchFile": "kavya-playground-stars-and-appearing-circles/kavya-playground-stars-and-appearing-circles.js",
-    "instructions": "Click for random."
+    "instructions": "Click for random.",
+  "instructionsMobile": ""
   },
   {
     "id": "thuraya-playground-ello",
@@ -903,7 +962,8 @@
       "Mouse",
       "Type"
     ],
-    "sketchFile": "thuraya-playground-ello/thuraya-playground-ello.js"
+    "sketchFile": "thuraya-playground-ello/thuraya-playground-ello.js",
+    "instructionsMobile": "Hold or drag to say ello."
   },
   {
     "id": "noura-typelab-V",
@@ -918,7 +978,8 @@
       "Image"
     ],
     "sketchFile": "noura-typelab-V/noura-typelab-V.js",
-    "instructions": "Click to dance. Click again to reset."
+    "instructions": "Click to dance. Click again to reset.",
+    "instructionsMobile": ""
   },
   {
     "id": "jana-typelab-I",
@@ -931,7 +992,8 @@
       "Type"
     ],
     "sketchFile": "jana-typelab-I/jana-typelab-I.js",
-    "instructions": "Click and hold to reveal."
+    "instructions": "Click and hold to reveal.",
+    "instructionsMobile": "Tap and hold to reveal."
   },
   {
     "id": "fatma-playground-confetti",
@@ -943,7 +1005,8 @@
       "Mouse"
     ],
     "sketchFile": "fatma-playground-confetti/fatma-playground-confetti.js",
-    "instructions": "Move the mouse to erase. Click to reset."
+    "instructions": "Move the mouse to erase. Click to reset.",
+    "instructionsMobile": "Drag to erase."
   },
   {
     "id": "kavya-playground-sunstar",
@@ -1000,7 +1063,8 @@
       "Color"
     ],
     "sketchFile": "mohamed-playground-marshmallow-paint-splat/mohamed-playground-marshmallow-paint-splat.js",
-    "instructions": "Move the mouse."
+    "instructions": "Move the mouse.",
+    "instructionsMobile": "Drag or tap..."
   },
   {
     "id": "farida-playground-interactive-polygon",
@@ -1013,7 +1077,8 @@
       "3D"
     ],
     "sketchFile": "farida-playground-interactive-polygon/farida-playground-interactive-polygon.js",
-    "instructions": "Move the mouse to the center."
+    "instructions": "Move the mouse to the center.",
+    "instructionsMobile": "Tap in the center... Tap out to reset."
   },
   {
     "id": "thuraya-playground-dancing-q",
@@ -1027,7 +1092,8 @@
       "Color"
     ],
     "sketchFile": "thuraya-playground-dancing-q/thuraya-playground-dancing-q.js",
-    "instructions": "Move the mouse over the Q to influence particles."
+    "instructions": "Move the mouse over the Q to influence particles.",
+     "instructionsMobile": "Hold and drag over the Q to influence particles."
   },
   {
     "id": "jana-remix-syed-raza",
@@ -1072,7 +1138,8 @@
       "Mouse"
     ],
     "sketchFile": "fatma-playground-growing-circles/fatma-playground-growing-circles.js",
-    "instructions": "Circles follow mouse. Click to reset."
+    "instructions": "Circles follow mouse. Click to reset.",
+    "instructionsMobile": "Drag the circles..."
   },
   {
     "id": "kavya-playground-mouse-reactive-trigonometric-S",
@@ -1085,7 +1152,8 @@
       "Type"
     ],
     "sketchFile": "kavya-playground-mouse-reactive-trigonometric-S/kavya-playground-mouse-reactive-trigonometric-S.js",
-    "instructions": "Move the mouse to influence the lines."
+    "instructions": "Move the mouse to influence the lines.",
+    "instructionsMobile": "Drag to influence the lines."
   },
   {
     "id": "mohamed-playground-lol-crazy",
@@ -1098,7 +1166,8 @@
       "Type"
     ],
     "sketchFile": "mohamed-playground-lol-crazy/mohamed-playground-lol-crazy.js",
-    "instructions": "Move the mouse to influence color and position."
+    "instructions": "Move the mouse to influence color and position.",
+     "instructionsMobile": "Drag to influence color and position."
   },
   {
     "id": "jana-typelab-E",
@@ -1110,7 +1179,8 @@
       "Type"
     ],
     "sketchFile": "jana-typelab-E/jana-typelab-E.js",
-    "instructions": "Click to restrain the E."
+    "instructions": "Click to restrain the E.",
+    "instructionsMobile": "Tap and hold to restrain the E."
   },
   {
     "id": "mohamed-remix-culture",
@@ -1124,7 +1194,8 @@
       "Color"
     ],
     "sketchFile": "mohamed-remix-culture/mohamed-remix-culture.js",
-    "instructions": "Click and hold on each shape in the image."
+    "instructions": "Click and hold on each shape in the image...",
+    "instructionsMobile": "Tap and hold on each shape in the image..."
   },
   {
     "id": "leena-playground-3D",
@@ -1137,7 +1208,8 @@
       "3D"
     ],
     "sketchFile": "leena-playground-3D/leena-playground-3D.js",
-    "instructions": "Move the mouse to influence the polygons. Click for new polygons."
+    "instructions": "Move the mouse to influence the polygons. Click for new polygons.",
+    "instructionsMobile": "Tap and drag to influence the polygons."
   },
   {
     "id": "kavya-typelab-fractal-field-9",
@@ -1150,7 +1222,8 @@
       "Type"
     ],
     "sketchFile": "kavya-typelab-fractal-field-9/kavya-typelab-fractal-field-9.js",
-    "instructions": "Move the mouse to influence the fractals."
+    "instructions": "Move the mouse to influence the fractals.",
+    "instructionsMobile": "Tap and drag to influence the fractals."
   },
   {
     "id": "jana-typelab-ampersand",
@@ -1164,7 +1237,8 @@
       "Grid"
     ],
     "sketchFile": "jana-typelab-ampersand/jana-typelab-ampersand.js",
-    "instructions": "Click and hold to pause the rain. R to reset."
+    "instructions": "Click and hold to pause the rain. R to reset.",
+    "instructionsMobile": "Tap and hold to pause the rain."
   },
   {
     "id": "fatma-playground-layered-rotating-G",
@@ -1188,7 +1262,8 @@
       "Color"
     ],
     "sketchFile": "layan-playground-exploding-colors/layan-playground-exploding-colors.js",
-    "instructions": "Move the mouse horizontally and vertically to see colors explode."
+    "instructions": "Move the mouse horizontally and vertically to see colors explode.",
+    "instructionsMobile": "Tap and drag to see colors explode."
   },
   {
     "id": "mohamed-playground-illegal-circle-pattern",
@@ -1202,7 +1277,8 @@
       "Color"
     ],
     "sketchFile": "mohamed-playground-illegal-circle-pattern/mohamed-playground-illegal-circle-pattern.js",
-    "instructions": "Click..."
+    "instructions": "Click...",
+    "instructionsMobile": ""
   },
   {
     "id": "fatma-playground-oscillating-orbit",
@@ -1214,7 +1290,9 @@
       "Mouse"
     ],
     "sketchFile": "fatma-playground-oscillating-orbit/fatma-playground-oscillating-orbit.js",
-    "instructions": "Move the mouse to increase/decrease distance between circles."
+    "instructions": "Move the mouse to increase/decrease distance between circles.",
+    "instructionsMobile": "Drag to increase/decrease distance between circles."
+
   },
   {
     "id": "kavya-playground-red-tubelight-S",
@@ -1227,7 +1305,9 @@
       "Type"
     ],
     "sketchFile": "kavya-playground-red-tubelight-S/kavya-playground-red-tubelight-S.js",
-    "instructions": "Move the mouse horizontally to increase/decrease intensity of light."
+    "instructions": "Move the mouse horizontally to increase/decrease intensity of light.",
+    "instructionsMobile": "Tap and drag horizontally to increase/decrease intensity of light."
+
   },
   {
     "id": "kavya-playground-3d-mouse-sphere",
@@ -1240,7 +1320,8 @@
       "3D"
     ],
     "sketchFile": "kavya-playground-3d-mouse-sphere/kavya-playground-3d-mouse-sphere.js",
-    "instructions": "Move to influence polygon detail, color and scale."
+    "instructions": "Move to influence polygon detail, color and scale.",
+    "instructionsMobile": "Tap and drag to influence polygon detail, color and scale."
   },
   {
     "id": "mohamed-playground-circle-pattern",
@@ -1253,7 +1334,8 @@
       "Color"
     ],
     "sketchFile": "mohamed-playground-circle-pattern/mohamed-playground-circle-pattern.js",
-    "instructions": "Click to reset and change colors."
+    "instructions": "Click to reset and change colors.",
+    "instructionsMobile": ""
   },
   {
     "id": "fatma-playground-continuous-layers",
@@ -1265,7 +1347,8 @@
       "Mouse"
     ],
     "sketchFile": "fatma-playground-continuous-layers/fatma-playground-continuous-layers.js",
-    "instructions": "Layers follow your mouse."
+    "instructions": "Layers follow your mouse.",
+    "instructionsMobile": "Tap and drag..."
   },
   {
     "id": "fatma-playground-3d-orbit",
@@ -1309,7 +1392,8 @@
       "Grid"
     ],
     "sketchFile": "mohamed-playground-mouse-circle-square/mohamed-playground-mouse-circle-square.js",
-    "instructions": "Click to change grid."
+    "instructions": "Click to change grid.",
+    "instructionsMobile": ""
   },
   {
     "id": "mohamed-remix-elements",
@@ -1322,7 +1406,8 @@
       "Image"
     ],
     "sketchFile": "mohamed-remix-elements/mohamed-remix-elements.js",
-    "instructions": "Click and hold on each of the vertical circles."
+    "instructions": "Click and hold on each of the vertical circles.",
+     "instructionsMobile": "Tap and hold on each of the vertical circles."
   },
   {
     "id": "fatma-playground-overlapping-circles",
@@ -1334,7 +1419,8 @@
       "Mouse"
     ],
     "sketchFile": "fatma-playground-overlapping-circles/fatma-playground-overlapping-circles.js",
-    "instructions": "Move the mouse horizontally to increase/decrease number of circles."
+    "instructions": "Move the mouse horizontally to increase/decrease number of circles.",
+    "instructionsMobile": "Drag horizontally to increase/decrease number of circles."
   },
   {
     "id": "deema-playground-crystal-glitch",
@@ -1347,7 +1433,8 @@
       "Color"
     ],
     "sketchFile": "deema-playground-crystal-glitch/deema-playground-crystal-glitch.js",
-    "instructions": ""
+    "instructions": "",
+     "instructionsMobile": "Drag to spin..."
   },
   {
     "id": "farida-playground-rainbow-spiral",
@@ -1369,7 +1456,8 @@
       "Grid"
     ],
     "sketchFile": "thuraya-playground-dotty-q/thuraya-playground-dotty-q.js",
-    "instructions": "Move the mouse to infuence the scale of the grid."
+    "instructions": "Move the mouse to infuence the scale of the grid.",
+     "instructionsMobile": "Drag to infuence the scale of the grid."
   },
   {
     "id": "thuraya-playground-fish",
@@ -1406,7 +1494,8 @@
       "Type"
     ],
     "sketchFile": "kavya-playground-draw-with-time/kavya-playground-draw-with-time.js",
-    "instructions": "Click to reset."
+    "instructions": "Click to reset.",
+    "instructionsMobile": "Drag to draw with time..."
   },
   {
     "id": "kavya-playground-W-electricity",
@@ -1419,7 +1508,8 @@
       "Type"
     ],
     "sketchFile": "kavya-playground-W-electricity/kavya-playground-W-electricity.js",
-    "instructions": "Move the mouse to influence the jitter."
+    "instructions": "Move the mouse to influence the jitter.",
+    "instructionsMobile": "Drag to influence the jitter."
   },
   {
     "id": "kavya-playground-jumping-9",
@@ -1433,7 +1523,8 @@
       "Grid"
     ],
     "sketchFile": "kavya-playground-jumping-9/kavya-playground-jumping-9.js",
-    "instructions": "Move the mouse to move the grid."
+    "instructions": "Move the mouse to move the grid.",
+    "instructionsMobile": "Drag to move the grid."
   },
   {
     "id": "mohamed-playground-real-clock",
@@ -1454,7 +1545,9 @@
       "Mouse"
     ],
     "sketchFile": "kavya-playground-growing-tan-W/kavya-playground-growing-tan-W.js",
-    "instructions": "Move mouse horizontally to increase/decrease the size of squares."
+    "instructions": "Move mouse horizontally to increase/decrease the size of squares.",
+    "instructionsMobile": "Drag horizontally to increase/decrease the size of squares."
+
   },
   {
     "id": "kavya-playground-smooth_trigonometric-S",
@@ -1466,7 +1559,9 @@
       "Mouse"
     ],
     "sketchFile": "kavya-playground-smooth_trigonometric-S/kavya-playground-smooth_trigonometric-S.js",
-    "instructions": "Move the mouse to influence the outline."
+    "instructions": "Move the mouse to influence the outline.",
+    "instructionsMobile": "Drag to influence the outline."
+
   },
   {
     "id": "fatma-playground-rotating-squares",
@@ -1478,7 +1573,8 @@
       "Mouse"
     ],
     "sketchFile": "fatma-playground-rotating-squares/fatma-playground-rotating-squares.js",
-    "instructions": "Move the mouse to increase/decrease speed and number of squares."
+    "instructions": "Move the mouse to increase/decrease speed and number of squares.",
+    "instructionsMobile": ""
   },
   {
     "id": "kavya-playground-RGB-circandsquare",
@@ -1504,7 +1600,8 @@
       "3D"
     ],
     "sketchFile": "kavya-playground-colourful-sunstar/kavya-playground-colourful-sunstar.js",
-    "instructions": "Click to stop"
+    "instructions": "Click to stop",
+    "instructionsMobile": ""
   },
   {
     "id": "jana-remix-mohamed-melehi",
@@ -1514,7 +1611,8 @@
     "category": "Remix",
     "types": [],
     "sketchFile": "jana-remix-mohamed-melehi/jana-remix-mohamed-melehi.js",
-    "instructions": "Click to hear it come to life."
+    "instructions": "Click to hear it come to life.",
+    "instructionsMobile": ""
   },
   {
     "id": "farida-typelab-triphobia-!",
@@ -1528,7 +1626,8 @@
       "Grid"
     ],
     "sketchFile": "farida-typelab-triphobia-I/farida-typelab-triphobia-I.js",
-    "instructions": "Move the mouse over the i."
+    "instructions": "Move the mouse over the i.",
+    "instructionsMobile": "Drag over the i."
   },
   {
     "id": "noura-remix-1.1",
@@ -1541,7 +1640,8 @@
       "Color"
     ],
     "sketchFile": "noura-remix-1.1/noura-remix-1.1.js",
-    "instructions": "Click to change colors."
+    "instructions": "Click to change colors.",
+    "instructionsMobile": "Tap to change colors."
   },
   {
     "id": "fatma-typelab-plus",
@@ -1578,7 +1678,8 @@
       "3D"
     ],
     "sketchFile": "farida-playground-spinning-cube/farida-playground-spinning-cube.js",
-    "instructions": "Cube follows your mouse."
+    "instructions": "Cube follows your mouse.",
+     "instructionsMobile": "Cube follows your finger..."
   },
   {
     "id": "farida-remix-arnout-remix",
@@ -1590,7 +1691,8 @@
       "Image"
     ],
     "sketchFile": "farida-remix-arnout-remix/farida-remix-arnout-remix.js",
-    "instructions": "Click to weave and unweave."
+    "instructions": "Click to weave and unweave.",
+    "instructionsMobile": ""
   },
   {
     "id": "thuraya-playground-AHHH",
@@ -1615,7 +1717,8 @@
       "Color"
     ],
     "sketchFile": "mohamed-playground-disco-dots/mohamed-playground-disco-dots.js",
-    "instructions": "Hover over the shapes to continue build. Click to reset and change colors. "
+    "instructions": "Hover over the shapes to continue build. Click to reset and change colors.",
+    "instructionsMobile": ""
   },
   {
     "id": "shalina-remix-syed-raza",
@@ -1627,7 +1730,8 @@
       "Keyboard"
     ],
     "sketchFile": "shalina-remix-syed-raza/shalina-remix-syed-raza.js",
-    "instructions": "Click to start. Use arrow keys to move the circles."
+    "instructions": "Click to start. Use arrow keys to move the circles.",
+    "instructionsMobile": ""
   },
   {
     "id": "jana-typelab-O",
@@ -1641,7 +1745,8 @@
       "3D"
     ],
     "sketchFile": "jana-typelab-O/jana-typelab-O.js",
-    "instructions": "Click to speed up."
+    "instructions": "Click to speed up.",
+    "instructionsMobile": "Tap and hold to speed up."
   },
   {
     "id": "kavya-playground-growing-RGB-circnsquare",
@@ -1662,7 +1767,8 @@
     "category": "Typelab",
     "types": [],
     "sketchFile": "kavya-typelab-electric-shock-W/kavya-typelab-electric-shock-W.js",
-    "instructions": ""
+    "instructions": "",
+    "instructionsMobile": "Don't touch the W..."
   },
   {
     "id": "layan_remix_hilma_af_klint_evolution",
@@ -1674,7 +1780,8 @@
       "Mouse"
     ],
     "sketchFile": "layan_remix_hilma_af_klint_evolution/layan_remix_hilma_af_klint_evolution.js",
-    "instructions": "Click to evolve."
+    "instructions": "Click to evolve...",
+    "instructionsMobile": "Tap to evolve..."
   },
   {
     "id": "shalina-playground-ellipse-layers",
@@ -1686,7 +1793,8 @@
       "Mouse"
     ],
     "sketchFile": "shalina-playground-ellipse-layers/shalina-playground-ellipse-layers.js",
-    "instructions": "Move the mouse to expand or contract."
+    "instructions": "Move the mouse to expand or contract.",
+   "instructionsMobile": "Tap and drag to expand or contract."
   },
   {
     "id": "kavya-playground-rotating-text",
@@ -1713,7 +1821,8 @@
       "Image"
     ],
     "sketchFile": "kavya-playground-digital-xray/kavya-playground-digital-xray.js",
-    "instructions": "Move mouse to reveal."
+    "instructions": "Move mouse to reveal.",
+    "instructionsMobile": "Drag to reveal..."
   },
   {
     "id": "thuraya-remix-triangles",
@@ -1725,7 +1834,8 @@
       "Mouse"
     ],
     "sketchFile": "thuraya-remix-triangles/thuraya-remix-triangles.js",
-    "instructions": "Move the mouse horizontally to influence the lines."
+    "instructions": "Move the mouse horizontally to influence the lines.",
+    "instructionsMobile": "Drag across the screen to influence the lines."
   },
   {
     "id": "layan-playground-springy-type",
@@ -1750,7 +1860,8 @@
       "Mouse"
     ],
     "sketchFile": "deema-playground-mousey/deema-playground-mousey.js",
-    "instructions": "Click to reset."
+    "instructions": "Click to reset.",
+    "instructionsMobile": ""
   },
   {
     "id": "jana-playground-typography",
@@ -1787,7 +1898,9 @@
       "Color"
     ],
     "sketchFile": "thuraya-playground-spikey/thuraya-playground-spikey.js",
-    "instructions": "Move the mouse horizontally to influence spikes. Move vertically to change color."
+    "instructions": "Move the mouse horizontally to influence spikes. Move vertically to change color.",
+        "instructionsMobile": "Tap and drag horizontally and vertically to influence the spikes..."
+
   },
   {
     "id": "kavya-playground-random-shapes",
@@ -1800,7 +1913,8 @@
       "Color"
     ],
     "sketchFile": "kavya-playground-random-shapes/kavya-playground-random-shapes.js",
-    "instructions": "Move the mouse across quadrants."
+    "instructions": "Move the mouse across quadrants.",
+    "instructionsMobile": "Tap on the quadrants."
   },
   {
     "id": "kavya-playground-RGB-growing-overlapping-squares",

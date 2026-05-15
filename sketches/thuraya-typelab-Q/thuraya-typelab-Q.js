@@ -85,3 +85,11 @@ function keyPressed() {
     }
   }
 }
+
+/* Mobile alias — explicit touchStarted so taps inside the sandboxed
+   gallery iframe reliably hit the same logic as a desktop click.
+   Returning false prevents the default scroll/zoom on tap. */
+function touchStarted() {
+  mousePressed();
+  return false;
+}

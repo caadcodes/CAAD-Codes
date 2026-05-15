@@ -28,6 +28,7 @@ function preload() {
 
 function setup() {
   createCanvas(1000, 700);
+  pixelDensity(1);
   textFont(myFont);
   textSize(48);
 }

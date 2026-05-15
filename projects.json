@@ -1045,9 +1045,12 @@
     "id": "leena-typelab-sketchy-asterisk",
     "student": "Leena Ulaiwi",
     "department": "GRD",
-    "title": "Sketchy Asterisk",
+    "title": "Anxious Asterisk",
     "category": "Typelab",
-    "types": [],
+    "types": [
+      "Type",
+      "Sound"
+    ],
     "sketchFile": "leena-typelab-sketchy-asterisk/leena-typelab-sketchy-asterisk.js",
     "instructions": ""
   },

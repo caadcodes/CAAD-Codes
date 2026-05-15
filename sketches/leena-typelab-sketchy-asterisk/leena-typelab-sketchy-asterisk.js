@@ -86,13 +86,13 @@ function draw() {
 
   noStroke();
   fill(255, 90);
-  /* Original Processing: translate(width/2.5, height + 150) on a CENTER-
-     aligned RShape — pushes the asterisk's bbox centre well below the
-     canvas (intentional artistic crop). On narrow viewports (mobile
-     overlay or preview iframe) that crop hides too much of the form,
-     so we centre the bbox vertically when windowWidth ≤ 768. */
-  const yOffset = (windowWidth <= 768) ? height / 2 : height + 150;
-  translate(width / 2.5 - glyphCx, yOffset - glyphCy);
+  /* Centre the asterisk's sampled-bbox at (width/2, height/2). The
+     original Processing translate(width/2.5, height + 150) pushed it
+     into the lower-right and below the canvas — that crop was masking
+     most of the form on both desktop and mobile. After this translate,
+     a point at glyph coords (glyphCx, glyphCy) (the bbox centre) lands
+     at the canvas centre, with the rest of the points falling around it. */
+  translate(width / 2 - glyphCx, height / 2 - glyphCy);
 
   if (!micStarted) {
     /* Pre-mic resting state — static asterisk so the card preview has

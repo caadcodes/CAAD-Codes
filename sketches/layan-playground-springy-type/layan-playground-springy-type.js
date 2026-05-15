@@ -92,7 +92,7 @@ let steps = Math.max(1, Math.floor(lineDist / 3));
 
 function draw() {
   background(0);
-  translate(width / 2, height / 2 + 150);
+  translate(width / 2, height / 2 + 150 - height * 0.2);
 
   for (let i = 0; i < points.length; i++) {
     let p = map(points[i].y, -200, 200, 0, 1);

@@ -10,7 +10,7 @@ function setup() {
     } else {
       let glyphs = font.stringToGlyphs('!');
       let samples = 20;
-      let fontScale = 500 / font.unitsPerEm; // renamed from scale to fontScale
+      let fontScale = 600 / font.unitsPerEm; // 500 × 1.2 — enlarged by 20%
 
       for (let g = 0; g < glyphs.length; g++) {
         let glyph = glyphs[g];
@@ -110,14 +110,14 @@ function draw() {
 
   if (!fontReady) return;
 
-  translate(width / 2 - 30, height / 2 + 150);
+  translate(width / 2 - 110, height / 2 + 250);
 
   stroke(255, 255, 0);
   strokeWeight(1);
   fill(0);
 
-  let mx = mouseX - (width / 2 - 30);
-  let my = mouseY - (height / 2 + 150);
+  let mx = mouseX - (width / 2 - 110);
+  let my = mouseY - (height / 2 + 250);
 
   for (let i = 0; i < allPoints.length; i++) {
     for (let j = 0; j < allPoints[i].length; j++) {

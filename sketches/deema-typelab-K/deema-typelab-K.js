@@ -30,7 +30,7 @@ function setup() {
 function draw() {
   background(0);
   lights();
-  translate(0, -height * 0.3, 0); // move composition up by 30% of canvas height
+  translate(0, -height * 0.1, 0); // 10% of canvas height upward
 
   rotateY(frameCount * 0.01 + mouseX * 0.005);
 

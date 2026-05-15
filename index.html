@@ -497,6 +497,12 @@
       margin-top: 0.45rem;
     }
 
+    /* Mobile-only forced line break helper. Empty span, hidden on
+       desktop; the @media block below turns it into a CSS-generated
+       newline so the "American University / of Sharjah" two-line wrap
+       can be enforced without affecting desktop. */
+    .mobile-break { display: none; }
+
     /* Close — bare x glyph, pinned to the top-right corner of the
        overlay (full-screen, not the inner sketch box). */
     #overlay-close {
@@ -572,11 +578,12 @@
          hide them universally inside this media query. */
       br { display: none; }
 
-      /* ── Header — logo is back to position:fixed (sticky, like desktop)
-            so it floats over content as the page scrolls. The header
-            itself reserves vertical space for the fixed logo via
-            min-height, and lays out the #header-right metadata/links
-            stack at the right edge (justify-content:flex-end). */
+      /* ── Header — top padding equal to the page's left margin
+            (var(--cell-px)) so the logo + metadata aren't flush with the
+            very top of the viewport (status-bar area on mobile). header
+            reserves the logo's vertical space PLUS that padding via
+            min-height; padding-top pushes the #header-right flex item
+            down to match the logo's shifted top. */
       header {
         display: flex;
         flex-direction: row;
@@ -584,19 +591,18 @@
         align-items: flex-start;
         align-content: flex-start;
         gap: 0;
-        min-height: calc(94vw * 200 / 882);
-        padding: 0;
+        min-height: calc(var(--cell-px) + 94vw * 200 / 882);
+        padding: var(--cell-px) 0 0 0;
         grid-template-columns: none;
         position: relative;
       }
 
-      /* Logo — 72vw × 1.3 = 94vw (per +30% mobile bump). Fixed at the
-         top of the viewport with pointer-events:none so it doesn't trap
-         clicks/scrolls. The canvas right ~50% is transparent so the
-         #header-right metadata column sits over it cleanly. */
+      /* Logo — 72vw × 1.3 = 94vw (per +30% mobile bump). Fixed but
+         top:var(--cell-px) instead of top:0 so it gets the same breath-
+         ing room from the viewport top as the metadata column. */
       #caad-logo {
         position: fixed !important;
-        top: 0 !important;
+        top: var(--cell-px) !important;
         left: 0 !important;
         z-index: 50;
         width: 94vw !important;
@@ -607,16 +613,15 @@
       }
 
       /* Right-side stack: metadata + links, right-aligned. Sits over the
-         logo canvas's transparent right portion (z-index above the
-         canvas) so it shares the same horizontal band visually. */
+         logo canvas's transparent right portion. */
       #header-right {
         position: relative;
         z-index: 51;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: 0.4rem;
-        padding: 0.25rem var(--cell-px) 0.25rem 0;
+        gap: 0.75rem; /* ≈12px between metadata block and links group */
+        padding: 0 var(--cell-px) 0 0;
         text-align: right;
         flex: 0 0 auto;
         width: 42vw;
@@ -643,18 +648,35 @@
       #topbar span:nth-child(1),
       #topbar span:nth-child(2) { display: none; }
 
-      /* Links stack vertically, right-aligned, slightly larger than the
-         metadata above so they read as the primary action items. */
+      /* Links stack vertically, right-aligned. Larger gap between the
+         two links + extra vertical padding on each = ≥32px tap targets
+         so the two are easy to hit independently on touch. */
       .header-links {
         grid-column: auto;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: 0.25rem;
+        gap: 0.5rem; /* ≈8px between @caadcodes and github links */
         padding: 0;
         justify-content: flex-end;
       }
-      .header-links a { font-size: 0.7rem; }
+      .header-links a {
+        font-size: 0.85rem;          /* ≈13.6px — was 0.7rem (~11.2px) */
+        padding: 6px 0;              /* total tap height ≥ font + 12 ≈ 26-32px */
+        line-height: 1.2;
+        display: inline-block;
+      }
+
+      /* `<br class="mobile-break">` exemption. The block above sets
+         `br { display: none }` universally on mobile to suppress
+         desktop-only forced wraps in the about text/topbar — this rule
+         (class selector beats element selector by specificity) re-
+         enables our intentional mobile break in the AUS metadata. The
+         base `.mobile-break { display: none }` rule outside @media
+         hides it on desktop. */
+      .mobile-break {
+        display: inline;
+      }
 
       /* ── Top index panel — only About is visible at the top on mobile;
             the others are JS-moved into #mobile-bottom-index below the grid. */
@@ -813,7 +835,7 @@
 <div id="topbar">
   <span></span>
   <span></span>
-  <span>American University of Sharjah</span>
+  <span>American University<br class="mobile-break"> of Sharjah</span>
   <span>DES 394 / 20 <br>Intro to Creative Coding</span>
   <span>Est. Spring 2026</span>
 </div>
